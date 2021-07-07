@@ -10,6 +10,8 @@ module.exports = {
     },
     extend: {
       fontSize: { // https://type-scale.com/ using major third type scale
+        'sm': '.8rem',
+        'btn': '1.125rem',
         'lg': '1.25rem',
         'xl': '1.563rem',
         '2xl': '1.953rem',
@@ -24,11 +26,24 @@ module.exports = {
       colors: {
         gray: {
           DEFAULT: '#575F65',
+          light: '#828F96',
+          lighter: '#A5B1B8',
+          lightest: '#E6EDF0',
         },
         blue: {
           dark: '#292C52',
+          DEFAULT: '#3264FA',
+          picton: '#43B7E9',
         },
-        red: '#ff0000',
+        white: {
+          DEFAULT: '#FFFFFF',
+          ish: '#F5F8FA',
+        },
+        dark: '#15162F',
+        red: '#EA3434',
+        yellow: '#F9D026',
+        green: '#00B5AF',
+
       }
     },
   },
