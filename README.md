@@ -1,11 +1,13 @@
-# Tailwind CLI
+# miche.css
 
 ## Install dependencies
 ```
 npm install
 ```
 
-## Run tailwind cli in watch mode
+## Run the dev server
 ```
-npx tailwindcss -i src/tailwind.css -o dist/tailwind.css --watch
+npm start
 ```
+
+This will start a dev server and will watch the files for any change.
