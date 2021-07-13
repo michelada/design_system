@@ -3,11 +3,10 @@
   "author": "michelada.io",
   "name": "sips-and-bits.css",
   "scripts": {
-    "dev": "browser-sync start --server --files \"**/*.css\"",
-    "build": "postcss ./src/index.css --dir dist/",
-    "watch": "nodemon -x npm run build -w tailwind.config.js -w src/**/*.css -V",
-    "start": "run-p dev watch",
-    "check": "nodemon --help"
+    "dev": "browser-sync start --server --files \"**/*.css\", \"index.html\" ",
+    "build": "postcss ./src/index.css --dir dist/ -w src/*/**/*.css",
+    "watch": "nodemon -x npm run build",
+    "start": "run-p watch dev"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3"
