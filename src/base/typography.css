@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
   @font-face{
     font-family: "AvantGarde";
@@ -65,23 +61,5 @@
 
   a {
     @apply text-blue;
-  }
-}
-
-@layer components {
-  .font-bold {
-    @apply text-blue-dark;
-  }
-
-  .btn {
-    @apply border rounded-2xl px-9 py-2 font-bold font-avant text-btn;
-  }
-
-  .btn.primary {
-    @apply bg-blue text-white hover:bg-blue-700;
-  }
-
-  .btn.secondary {
-    @apply border-2 border-blue text-blue hover:bg-blue-50;
   }
 }
