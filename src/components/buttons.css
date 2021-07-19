@@ -1,0 +1,17 @@
+@layer components {
+  .font-bold {
+    @apply text-blue-dark;
+  }
+
+  .btn {
+    @apply border rounded-2xl px-9 py-2 font-bold font-avant text-btn;
+
+    &.primary {
+      @apply bg-blue text-white hover:bg-blue-700;
+    }
+
+    &.secondary {
+      @apply border-2 border-blue text-blue hover:bg-blue-50;
+    }
+  }
+}
