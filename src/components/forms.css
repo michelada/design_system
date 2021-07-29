@@ -1,0 +1,26 @@
+@layer base {
+  label {
+    @apply font-bold text-md mb-2;
+  }
+}
+
+@layer components {
+
+  input[type="text"] {
+    @apply rounded-lg border-gray-lighter placeholder-blue-wind;
+
+    &:hover {
+      @apply border-blue;
+    }
+
+    &:active,
+    &:focus {
+      @apply border-gray-lighter ring-0 text-dark-charcoal;
+    }
+
+    &[disabled] {
+      @apply bg-white-antiflash text-gray-light;
+    }
+  }
+
+}

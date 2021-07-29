@@ -138,6 +138,24 @@
                 </div>
               </div>
             </td>
+          </tr><tr>
+            <td class="text-right font-bold text-gray-500">
+              other colors
+            </td>
+            <td>
+              <div class="ml-5 grid grid-cols-5 gap-7">
+                <div class="text-center">
+                  <div class="bg-dark-charcoal w-10 h-10 rounded-full mx-auto"></div>
+                  <div class="w-full">#333333</div>
+                  <div class="w-full font-bold ">dark-charcoal</div>
+                </div>
+                <div class="text-center">
+                  <div class="bg-blue-wind w-10 h-10 rounded-full mx-auto"></div>
+                  <div class="w-full">#9CAFC8</div>
+                  <div class="w-full font-bold ">blue-wind</div>
+                </div>
+              </div>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -167,9 +185,13 @@
       <header>
         <h1 class='text-red'>Forms</h1>
       </header>
-      <div>
+      <div class='flex flex-col lg:w-1/4'>
         <label for='full-name'>Full Name</label>
         <input type='text' id='full-name' placeholder="Enter your name"/>
+      </div>
+      <div class='flex flex-col lg:w-1/4'>
+        <label for='full-name'>Disabled field</label>
+        <input type='text' id='full-name' placeholder="Enter your name" disabled value="Disabled value"/>
       </div>
     </section>
   </main>

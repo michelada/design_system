@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       fontSize: { // https://type-scale.com/ using major third type scale
         'sm': '.8rem',
+        'md': '.875rem',
         'btn': '1.125rem',
         'lg': '1.25rem',
         'xl': '1.563rem',
@@ -34,12 +35,17 @@ module.exports = {
           dark: '#292C52',
           DEFAULT: '#3264FA',
           picton: '#43B7E9',
+          wind: '#9CAFC8',
         },
         white: {
           DEFAULT: '#FFFFFF',
           ish: '#F5F8FA',
+          antiflash: "#EAF1F9",
         },
-        dark: '#15162F',
+        dark: {
+          DEFAULT: '#15162F',
+          charcoal: '#333333',
+        },
         red: '#EA3434',
         yellow: '#F9D026',
         green: '#00B5AF',
