@@ -13,10 +13,10 @@
       <header>
         <h1 class='text-red'>Typography</h1>
       </header>
-      <h1>H1 ITC Avant Garde Gothic - Bold </h1>
-      <h2>H2 ITC Avant Garde Gothic - Bold </h1>
-      <h3>H3 ITC Avant Garde Gothic - Bold </h1>
-      <h4>H4 ITC Avant Garde Gothic - Bold </h1>
+      <h1>H1 ITC Avant Garde Gothic - Bold 39px</h1>
+      <h2>H2 ITC Avant Garde Gothic - Bold 31px</h1>
+      <h3>H3 ITC Avant Garde Gothic - Bold 25px</h1>
+      <h4>H4 ITC Avant Garde Gothic - Bold 20px </h1>
       <p>Noto Sand Regular 16px</p>
       <p class='font-bold'>Noto Sand Regular 16px</p>
       <p class='text-gray-lighter'>Noto Sand Regular 16px</p>
@@ -25,6 +25,26 @@
       <div>
         <a href='http://www.michelada.io'>This is a link</a>
       </div>
+      <article class="my-5">
+        <h2>Lists</h2>
+        <div class="my-2">
+          <pre class="bg-white-ish p-2">simple list</pre>
+          <ul>
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+          </ul>
+        </div><div class="my-2">
+          <pre class="bg-white-ish p-2">with title / subtitle</pre>
+          <ul>
+            <li class="title">Title01</li>
+            <li class="subtitle">subtitle</li>
+            <li>content01</li>
+            <li>content02</li>
+            <li>content03</li>
+          </ul>
+        </div>
+      </article>
     </section>
     <section class="mt-10">
       <header>
@@ -127,11 +147,20 @@
         <h1 class="text-red">Buttons</h1>
       </header>
       <div>
-        <h4>Primary</h4>
-        <button class='btn primary'>Text Sample</button>
-
-        <h4>Secondary</h4>
-        <button class='btn secondary'>Text Sample</button>
+        <article>
+          <h4>Primary</h4>
+          <div class="flex gap-5">
+            <button class='btn primary'>Text Sample</button>
+            <button class='btn primary' disabled>Text</button>
+          </div>
+        </article>
+        <article>
+          <h4>Secondary</h4>
+          <div class="flex gap-5">
+            <button class='btn secondary'>Text Sample</button>
+            <button class='btn secondary' disabled>Text</button>
+          </div>
+        </article>
       </div>
     </section>
     <section class='mt-10'>

@@ -62,4 +62,14 @@
   a {
     @apply text-blue;
   }
+
+  li {
+    &.title {
+      @apply text-lg font-bold mb-4;
+    }
+
+    &.subtitle {
+      @apply font-bold;
+    }
+  }
 }
