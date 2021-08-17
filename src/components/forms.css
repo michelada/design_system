@@ -23,4 +23,12 @@
     }
   }
 
+  .form-checkbox,
+  .form-radio {
+    @apply w-6 h-6 focus:ring-0;
+  }
+
+  .form-checkbox {
+    @apply rounded;
+  }
 }
