@@ -189,28 +189,37 @@
         <label for='full-name'>Full Name</label>
         <input type='text' id='full-name' placeholder="Enter your name"/>
       </div>
-      <div class='flex flex-col lg:w-1/4'>
+      <div class='flex flex-col lg:w-1/4 mt-4'>
         <label for='full-name'>Disabled field</label>
         <input type='text' id='full-name' placeholder="Enter your name" disabled value="Disabled value"/>
       </div>
+      <!--<div class='flex flex-col lg:w-1/4 mt-4'>
+        <label for=''>Dropdown</label>
+        <select class="block w-full mt-1 rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+          <option>Corporate event</option>
+          <option>Wedding</option>
+          <option>Birthday</option>
+          <option>Other</option>
+        </select>
+      </div>-->
       <div class="block mt-4">
         <span class="text-gray-700">Checkboxes</span>
         <div class="mt-2">
           <div>
-            <label class="inline-flex items-center">
-              <input class="form-checkbox" type="checkbox" checked="">
+            <label class="inline-flex items-center font-normal">
+              <input type="checkbox" checked="">
               <span class="ml-2">Option 1</span>
             </label>
           </div>
           <div>
-            <label class="inline-flex items-center">
-              <input class="form-checkbox" type="checkbox">
+            <label class="inline-flex items-center font-normal">
+              <input type="checkbox">
               <span class="ml-2">Option 2</span>
             </label>
           </div>
           <div>
-            <label class="inline-flex items-center">
-              <input class="form-checkbox" type="checkbox">
+            <label class="inline-flex items-center font-normal">
+              <input type="checkbox">
               <span class="ml-2">Option 3</span>
             </label>
           </div>
@@ -220,25 +229,26 @@
         <span class="text-gray-700">Radio Buttons</span>
         <div class="mt-2">
           <div>
-            <label class="inline-flex items-center">
-              <input class="form-radio" type="radio" checked="" name="radio-direct" value="1">
+            <label class="inline-flex items-center font-normal">
+              <input type="radio" checked="" name="radio-direct" value="1">
               <span class="ml-2">Option 1</span>
             </label>
           </div>
           <div>
-            <label class="inline-flex items-center">
-              <input class="form-radio" type="radio" name="radio-direct" value="2">
+            <label class="inline-flex items-center font-normal">
+              <input type="radio" name="radio-direct" value="2">
               <span class="ml-2">Option 2</span>
             </label>
           </div>
           <div>
-            <label class="inline-flex items-center">
-              <input class="form-radio" type="radio" name="radio-direct" value="3">
+            <label class="inline-flex items-center font-normal">
+              <input type="radio" name="radio-direct" value="3">
               <span class="ml-2">Option 3</span>
             </label>
           </div>
         </div>
       </div>
+      
     </section>
   </main>
 </body>

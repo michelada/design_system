@@ -2,9 +2,14 @@
   label {
     @apply font-bold text-md mb-2;
   }
-}
 
-@layer components {
+  input[type="radio"] {
+    @apply w-6 h-6 focus:ring-0;
+  }
+
+  input[type="checkbox"] {
+    @apply  w-6 h-6 focus:ring-0 rounded;
+  }
 
   input[type="text"] {
     @apply rounded-lg border-gray-lighter placeholder-blue-wind;
@@ -21,14 +26,5 @@
     &[disabled] {
       @apply bg-white-antiflash text-gray-light;
     }
-  }
-
-  .form-checkbox,
-  .form-radio {
-    @apply w-6 h-6 focus:ring-0;
-  }
-
-  .form-checkbox {
-    @apply rounded;
   }
 }
