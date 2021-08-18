@@ -26,6 +26,14 @@
     &[disabled] {
       @apply bg-white-antiflash text-gray-light;
     }
+
+    &.valid {
+      @apply border-green text-dark-charcoal;
+    }
+
+    &.invalid {
+      @apply border-red text-dark-charcoal;
+    }
   }
 
   select {
@@ -41,6 +49,29 @@
     &:active,
     &:focus {
       @apply border-gray-lighter ring-0 text-dark-charcoal;
+    }
+  }
+
+  .input-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & input[type="text"] {
+      width: 100%;
+    }
+
+    & i {
+      position: absolute;
+      right: 0;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+
+      &::before {
+        font-size: 20px;
+      }
     }
   }
 }
