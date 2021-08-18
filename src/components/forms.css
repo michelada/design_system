@@ -26,14 +26,6 @@
     &[disabled] {
       @apply bg-white-antiflash text-gray-light;
     }
-
-    &.valid {
-      @apply border-green text-dark-charcoal;
-    }
-
-    &.invalid {
-      @apply border-red text-dark-charcoal;
-    }
   }
 
   select {
@@ -49,6 +41,18 @@
     &:active,
     &:focus {
       @apply border-gray-lighter ring-0 text-dark-charcoal;
+    }
+  }
+}
+
+@layer components {
+  input[type="text"] {
+    &.valid {
+      @apply border-green text-dark-charcoal;
+    }
+
+    &.invalid {
+      @apply border-red text-dark-charcoal;
     }
   }
 
