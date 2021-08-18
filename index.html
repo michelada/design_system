@@ -194,6 +194,21 @@
         <input type='text' id='full-name' placeholder="Enter your name" disabled value="Disabled value"/>
       </div>
       <div class='flex flex-col lg:w-1/4 mt-4'>
+        <label for='full-name'>Valid field</label>
+        <input type='text' id='full-name' class="valid" placeholder="Enter your name" value="Valid value"/>
+      </div>
+      <div class='flex flex-col lg:w-1/4 mt-4'>
+        <label for='full-name'>Invalid field</label>
+        <input type='text' id='full-name' class="invalid" placeholder="Enter your name" />
+      </div>
+      <div class='flex flex-col lg:w-1/4 mt-4'>
+        <label for='full-name'>Field with icon</label>
+        <div class="input-icon">
+          <input type='text' id='full-name' placeholder="Search your name" />
+          <i class="fa fa-search icon"></i>
+        </div>
+      </div>
+      <div class='flex flex-col lg:w-1/4 mt-4'>
         <label for=''>Select</label>
         <select>
           <option>Corporate event</option>
@@ -252,4 +267,5 @@
     </section>
   </main>
 </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </html>
