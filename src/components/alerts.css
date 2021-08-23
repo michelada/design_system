@@ -1,0 +1,100 @@
+@layer components {
+    .alert {
+        @apply rounded-lg absolute flex items-center px-4 py-4 z-50 top-0;
+        width: 400px;
+        min-height: 53px;
+        max-height: none;
+
+        &.info {
+           @apply bg-blue bg-opacity-10 border border-blue border-opacity-50 text-blue-dark font-bold text-base;
+        }
+
+        & .message {
+            padding-right: 15px;
+        }
+
+        & .image {
+            @apply pr-2.5 flex items-center;
+            min-width: 120px;
+            min-height: 120px;
+
+            & img {
+                @apply w-full h-full;
+            }
+        }
+
+        .left-icon {
+            @apply flex items-center;
+        }
+
+        &.error .left-icon, &.success .left-icon, &.warning .left-icon {
+            @apply pr-8;
+            width: 18px;
+            height: 18px;
+
+            & img {
+                min-width: 18px;
+                min-height: 18px;
+            }
+        }
+
+        &.error .left-icon .icon, &.success .left-icon .icon, &.warning .left-icon .icon {
+            @apply bg-no-repeat pr-8;
+            width: 18px;
+            height: 18px;
+        }
+
+        &.error .left-icon > .icon {
+            background-image: resolve("warning-white.svg");
+        }
+
+        &.success .left-icon > .icon {
+            background-image: resolve("check-white.svg");
+        }
+
+        &.warning .left-icon > .icon {
+            background-image: resolve("warning-black.svg");
+        }
+
+        & .btn-close {
+            @apply text-blue absolute mr-4 right-0 top-0 mt-5;
+            max-width: 14px;
+            max-height: 14px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            & .icon {
+                @apply bg-no-repeat pr-6;
+                max-width: 14px;
+                max-height: 14px;
+                background-image: resolve("x-blue.svg");
+            }
+        }
+
+        &.error, &.success, &.warning {
+            @apply rounded-none text-white text-base font-normal;
+        }
+
+        &.error {
+            @apply bg-red;
+        }
+
+        &.success {
+            @apply bg-green;
+        }
+
+        &.warning {
+            @apply bg-yellow-darker text-black;
+        }
+
+        &.error& .btn-close .icon, &.success& .btn-close .icon {
+            background-image: resolve("x-white.svg");
+        }
+
+        &.warning& .btn-close .icon {
+            background-image: resolve("x-black.svg");
+        }
+    }
+}

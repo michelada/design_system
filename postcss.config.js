@@ -3,5 +3,8 @@ module.exports = {
     require('postcss-import'),
     require('tailwindcss/nesting'),
     require('tailwindcss')("tailwind.config.js"),
+    require('postcss-assets')({
+      loadPaths: ['**']
+    })
   ]
 }
