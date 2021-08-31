@@ -4,7 +4,11 @@
   }
 
   .btn {
-    @apply border rounded-2xl px-9 py-2 font-bold font-avant text-btn;
+    @apply border rounded-2xl px-9 py-2 font-bold font-avant text-btn w-full;
+
+    @screen lg {
+      @apply w-auto;
+    }  
 
     &[disabled] {
       @apply cursor-not-allowed;

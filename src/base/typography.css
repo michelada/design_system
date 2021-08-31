@@ -44,19 +44,35 @@
   }
 
   h1 {
-    @apply text-3xl;
+    font-size: 2rem;
+
+    @screen lg {
+      @apply text-3xl;
+    }    
   }
 
   h2 {
-    @apply text-2xl;
+    font-size: 1.5rem;
+
+    @screen lg {
+      @apply text-2xl;
+    }   
   }
 
   h3 {
-    @apply text-xl;
+    @apply text-lg;
+
+    @screen lg {
+      @apply text-xl;
+    }  
   }
 
   h4 {
-    @apply text-lg;
+    @apply text-btn;
+    
+    @screen lg {
+      @apply text-lg;
+    }  
   }
 
   a {
