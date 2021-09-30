@@ -1,24 +1,38 @@
 {
   "version": "0.0.1",
   "author": "michelada.io",
-  "name": "sips-and-bits.css",
+  "name": "@micheladaio/sips-and-bits.css",
   "scripts": {
     "dev": "browser-sync start --server --files \"**/*.css\", \"index.html\" ",
-    "build": "postcss ./src/index.css --dir dist/ -w src/*/**/*.css",
-    "watch": "nodemon -x npm run build",
-    "start": "run-p watch dev"
+    "build:dev": "postcss ./src/index.css --dir dist/ -w src/*/**/*.css ",
+    "watch": "nodemon -x npm run build:dev",
+    "start": "run-p watch dev",
+    "build": "postcss ./src/index.css --dir dist/ src/*/**/*.css",
+    "build:cleancss": "cleancss -o ./dist/index.min.css ./dist/*.css",
+    "build:cleandist": "rimraf ./dist/*.css",
+    "prepare": "run-s build:cleandist build build:cleancss"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.3.3"
   },
   "devDependencies": {
     "browser-sync": "^2.27.4",
+    "clean-css-cli": "^5.3.3",
     "nodemon": "^2.0.12",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.3.5",
     "postcss-assets": "^6.0.0",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
+    "rimraf": "^3.0.2",
     "tailwindcss": "^2.2.4"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelada/design_system.git"
+  }, 
+  "bugs": {
+    "url": "https://github.com/michelada/design_system/issues"
+  },
+  "homepage": "https://github.com/michelada/design_system#readme"
 }
