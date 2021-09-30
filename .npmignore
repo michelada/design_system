@@ -1,0 +1,4 @@
+node_modules
+/src/**
+/postcss.config.js
+/tailwind.config.js
