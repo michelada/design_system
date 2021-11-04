@@ -55,3 +55,8 @@ After the designer approves your work, you move your ticket here and wait the ot
 **Done columna:**
 
 Every ticket that was moved to the public npm library is moved here. And your work is completed! 
+
+## Milestones
+
+We organize the work by milestone. After every milestone is completed, we shipped that code and publish a new version of the library.
+You can take a look at the milestones list to know in what milestone we are working on. 
