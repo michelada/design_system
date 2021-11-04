@@ -42,7 +42,11 @@ Good practices:
 
 **Ready for QA column:** 
 
-After your code review is approved, you make a demo with one of the designer availables in michelada to review how the component or visual element is displayed. After the designer approves the work.
+After your code review is approved, you make a demo with one of the designer availables in michelada to review how the component or visual element is displayed. 
+If the designer has some feedback, you take your ticket to in progress again and address the comments. If everything looks ok, you can continue with the next column. 
+
+Good practices:
+- When you get feedback from the designer, comment the feedback in the comments of the ticket, to leave evidence and let the reviewer know what are the new changes. 
 
 **Ready to publish column:**
 
