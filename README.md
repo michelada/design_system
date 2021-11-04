@@ -13,7 +13,7 @@ npm start
 This will start a dev server and will watch the files for any change.
 
 ## Development Workflow  
-Welcome to the design system project. Here, we use a different agile practice named Kanban to deliver beatiful CSS 👩‍💻
+Welcome to the design system project. Here, we use a different agile practice named Kanban to deliver fast and beatiful CSS 👩‍💻
 
 Let's talk about our workflow:
 1. First thing your need to know, there is no sprints! yay :dance_dog:
