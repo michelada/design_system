@@ -36,8 +36,8 @@ After you asigned your own ticket and you don't have questions, you can move you
 When you move your ticket to this column, make sure you have your PR open with the tag 'ready for review'
 
 Good practices:
-- In the description of your MR, add screenshots or videos to show have you have done. 
-- Share your PR url in the #design_system channel to let the team know about your work. 
+- In the description of your MR, add screenshots or videos to show how the component or feature looks. (Doing this also helps the reviewer)
+- Share your PR url in the #design_system channel to let the team know about your work. Y tiren paro para el review!
 - The techlead in charge of this project is the one that approves your code. 
 
 **Ready for QA column:** 
