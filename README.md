@@ -20,6 +20,7 @@ Let's talk about our workflow:
 2. You decide what to work on. You look at the tickets in the TODO column and assign the one that fits your availability.
    - If you have questions you can ask the Project Manager assigned to this project. 
    - Every ticket should have: description, narrative, definition of done, and acceptance criteria.
+3. Our board: https://github.com/michelada/design_system/projects/1
 
 ### Board statuses
 
@@ -59,4 +60,4 @@ Every ticket that was moved to the public npm library is moved here. And your wo
 ## Milestones
 
 We organize the work by milestone. After every milestone is completed, we shipped that code and publish a new version of the library.
-You can take a look at the milestones list to know in what milestone we are working on. 
+You can take a look at the milestones list to know in what milestone we are working on. https://github.com/michelada/design_system/milestones
