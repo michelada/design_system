@@ -9,3 +9,5 @@
 @import "components/buttons";
 @import "components/forms";
 @import "components/alerts";
+
+@import "vendor/fullcalendar";

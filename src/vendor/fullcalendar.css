@@ -1,0 +1,40 @@
+@import "fullcalendar/main.min.css";
+
+.fc-daygrid-day-number {
+  @apply text-dark-charcoal;
+}
+
+.fc-toolbar-title {
+  @apply text-xl !important;
+}
+
+.fc-toolbar {
+  justify-content: center !important;
+
+  .fc-button-primary {
+    @apply bg-transparent border-0 text-blue-dark !important;
+  }
+}
+
+.fc-day-today {
+  @apply bg-blue-dark !important;
+
+  .fc-daygrid-day-number {
+    @apply text-white font-bold !important;
+  }
+}
+
+.fc-daygrid-day {
+  border-color: text-gray-lighter !important;
+}
+
+.fc-theme-standard {
+  .fc-scrollgrid {
+    border-width: 0 !important;
+
+    .fc-scrollgrid-section > * {
+      border-width: 0 !important;
+    }
+  }
+}
+
