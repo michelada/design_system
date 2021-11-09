@@ -17,10 +17,10 @@
 }
 
 .fc-day-today {
-  @apply bg-blue-dark !important;
+  @apply bg-gray-lightest !important;
 
   .fc-daygrid-day-number {
-    @apply text-white font-bold !important;
+    @apply font-bold !important;
   }
 }
 
@@ -38,3 +38,16 @@
   }
 }
 
+.fc-h-event {
+  @apply bg-blue-dark border-dark-charcoal !important;
+}
+
+.fc-day {
+  &:hover {
+    @apply bg-blue !important; 
+
+    .fc-daygrid-day-number {
+      @apply text-white !important;
+    }
+  }
+}

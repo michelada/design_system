@@ -18,7 +18,12 @@
           start: 'prev',
           center: 'title',
           end: 'next'
-        } 
+        },
+        events: [
+              {id:1, title: 'test event', start: '2021-11-09'},
+              {id:1, title: 'second event', start: '2021-11-09'},
+              {id:1, title: 'week event', start: '2021-11-15 11:00', end: '2021-11-19 23:00'},
+            ]
       });
       calendar.render();
     });
