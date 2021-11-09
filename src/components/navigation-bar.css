@@ -63,7 +63,7 @@
                             @apply block left-0 md:absolute top-full rounded-b-lg w-full md:w-max md:z-50;
 
                             & li {
-                                @apply py-2 w-auto;
+                                @apply py-4 w-auto;
                             }
                         }
                     }
