@@ -33,15 +33,17 @@ module.exports = {
           lightest: '#E6EDF0',
         },
         blue: {
-          dark: '#292C52',
+          dark: '#15162F',
           DEFAULT: '#3264FA',
           picton: '#43B7E9',
           wind: '#9CAFC8',
+          selected: '#292C52',
         },
         white: {
           DEFAULT: '#FFFFFF',
           ish: '#F5F8FA',
           antiflash: "#EAF1F9",
+          selected: '#E6EDF0'
         },
         dark: {
           DEFAULT: '#15162F',

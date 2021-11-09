@@ -1,0 +1,74 @@
+@layer components {
+    
+    .header-nav {
+        @apply w-full;
+    }      
+
+    .dark {
+        @apply bg-blue-dark;
+
+        & a, span {
+            @apply text-white;
+        }
+    }
+    
+    .light {
+        @apply bg-white;
+
+        & a, span {
+            @apply text-blue-dark;
+        }
+    }
+
+    nav {
+        @apply w-full flex flex-col md:flex-row items-center justify-between;
+
+        & .logo {
+            @apply w-full md:w-1/4 flex flex-row justify-between items-center m-4;
+
+            .menu-mobile {
+                @apply flex md:hidden flex-row items-center;
+            }
+        }
+
+        & a {
+            @apply flex flex-row items-center;
+            
+            & img {
+                @apply mx-2;
+            }
+            
+        }
+
+        .navbar {
+            @apply md:w-3/4;
+
+            & ul {
+
+                &.menu {
+                    @apply w-full m-0 p-0 flex flex-col md:flex-row content-between justify-end items-center text-center;
+                }
+
+                & li {
+                    @apply p-4 w-auto;
+
+                    &.submenu {
+                        @apply md:relative;
+
+                        &>a {
+                            @apply inline-block;
+                        }
+
+                        & ul {
+                            @apply block left-0 md:absolute top-full rounded-b-lg w-full md:w-max md:z-50;
+
+                            & li {
+                                @apply m-2 py-2 w-auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
