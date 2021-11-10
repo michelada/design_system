@@ -10,3 +10,5 @@
 @import "components/forms";
 @import "components/alerts";
 @import "components/navigation-bar";
+
+@import "vendor/fullcalendar";

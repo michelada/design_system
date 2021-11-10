@@ -49,7 +49,7 @@ module.exports = {
           charcoal: '#333333',
         },
         yellow: {
-          default: '#F9D026',
+          DEFAULT: '#F9D026',
           darker: '#FFC800'
         },
         red: '#EA3434',
