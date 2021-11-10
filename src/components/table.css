@@ -1,9 +1,0 @@
-@layer components {
-    .mtable{
-        @apply w-full table-fixed
-    } 
-
-    .mth {
-        @apply mth text-gray-lighter font-normal
-    }
-}

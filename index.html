@@ -6,11 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="dist/index.css" rel="stylesheet">
   <title>MicheCSS</title>
+  <style>
+    .mtable {
+
+    }
+
+    .mth {
+      height: 56px;
+      padding: auto;
+    }
+
+    .mtr_active {
+      height: 56px;
+
+    }
+
+    .mtd_active {
+      padding-left: 16px;
+      height: 56px;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <main class="container mx-auto py-5">
     <!--  -->
-
     <section>
       <table class="mtable w-full table-fixed">
         <thead>
@@ -21,9 +41,10 @@
             <th class="mth text-gray-lighter font-normal">Titulo 04</th>
           </tr>
         </thead>
-        <tr class="w-full bg-blue-dark text-white h-1" >
-          <td colspan="4" class="text-white h-1"  >
-            Sección colapsable focus 
+        <tr class="mtr_active w-full bg-blue-dark text-white h-1 m-16 py-4" >
+          <td colspan="4" class="mtd_active text-white font-bold"  >
+            Sección colapsable focus
+            <i class="fa fa-search icon"></i>
           </td>
         </tr>
       </table>
