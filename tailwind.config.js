@@ -33,11 +33,10 @@ module.exports = {
           lightest: '#E6EDF0',
         },
         blue: {
-          dark: '#15162F',
+          dark: '#292C52',
           DEFAULT: '#3264FA',
           picton: '#43B7E9',
           wind: '#9CAFC8',
-          selected: '#292C52',
         },
         white: {
           DEFAULT: '#FFFFFF',

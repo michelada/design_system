@@ -5,7 +5,7 @@
     }      
 
     .dark {
-        @apply bg-blue-dark;
+        @apply bg-dark;
 
         & a, span {
             @apply text-white;
@@ -16,7 +16,7 @@
         @apply bg-white;
 
         & a, span {
-            @apply text-blue-dark;
+            @apply text-dark;
         }
     }
 
