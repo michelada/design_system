@@ -42,7 +42,7 @@ module.exports = {
           DEFAULT: '#FFFFFF',
           ish: '#F5F8FA',
           antiflash: "#EAF1F9",
-          selected: '#E6EDF0'
+          mystic: '#E6EDF0'
         },
         dark: {
           DEFAULT: '#15162F',
