@@ -42,13 +42,14 @@ module.exports = {
           DEFAULT: '#FFFFFF',
           ish: '#F5F8FA',
           antiflash: "#EAF1F9",
+          selected: '#E6EDF0'
         },
         dark: {
           DEFAULT: '#15162F',
           charcoal: '#333333',
         },
         yellow: {
-          default: '#F9D026',
+          DEFAULT: '#F9D026',
           darker: '#FFC800'
         },
         red: '#EA3434',
