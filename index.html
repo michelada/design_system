@@ -12,8 +12,20 @@
     }
 
     .mth {
+      padding-left: 16px;
+      height: 56px;
+      text-align: left;
+    }
+
+    .mtd {
+      padding-left: 16px;
       height: 56px;
       padding: auto;
+    }
+
+    .mtd_end {
+      text-align: right;
+      padding-right: 16px;
     }
 
     .mtr_active {
@@ -21,10 +33,27 @@
 
     }
 
+    .mtr_inactive {
+      height: 56px;
+      border-bottom: 1px solid rgba(165, 177, 184, 0.3);
+      border-top: 1px solid rgba(165, 177, 184, 0.3);
+    }
+
     .mtd_active {
       padding-left: 16px;
       height: 56px;
       width: 100%;
+    }
+
+    .mtd_inactive {
+      color: #3264FA;
+    }
+
+    .a_und {
+      text-decoration: underline;
+    }
+    .italic {
+      font-style: italic;
     }
   </style>
 </head>
@@ -39,12 +68,57 @@
             <th class="mth text-gray-lighter font-normal">Titulo 02</th>
             <th class="mth text-gray-lighter font-normal">Titulo 03</th>
             <th class="mth text-gray-lighter font-normal">Titulo 04</th>
+            <th class="mth text-gray-lighter font-normal">Titulo 05</th>
           </tr>
         </thead>
-        <tr class="mtr_active w-full bg-blue-dark text-white h-1 m-16 py-4" >
+        <tr class="mtr_active w-full bg-blue-dark text-white" >
           <td colspan="4" class="mtd_active text-white font-bold"  >
             Sección colapsable focus
-            <i class="fa fa-search icon"></i>
+          </td>
+          <td class="mtd_end">
+            <i class="fa fa-minus" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="mtd font-bold">Info 01_1</td>
+          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">
+            <a href='http://www.michelada.io' class="a_und">Info 03</a>
+          </td>
+          <td class="mtd italic">Info 04</td>
+          <td class="mtd">123456789</td>
+        </tr>
+        <tr class="mtr_odd bg-white-ish">
+          <td class="mtd font-bold">Info 01_1</td>
+          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">
+            <a href='http://www.michelada.io' class="a_und">Info 03</a>
+          </td>
+          <td class="mtd italic">Info 04</td>
+          <td class="mtd">123456789</td>
+        </tr><tr>
+          <td class="mtd font-bold">Info 01_1</td>
+          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">
+            <a href='http://www.michelada.io' class="a_und">Info 03</a>
+          </td>
+          <td class="mtd italic">Info 04</td>
+          <td class="mtd">123456789</td>
+        </tr>
+        <tr class="mtr_inactive w-full text-white  " >
+          <td colspan="4" class="mtd_inactive text-blue font-bold"  >
+            Sección colapsable 02
+          </td>
+          <td class="mtd_end">
+            <i class="fa fa-plus mtd_inactive" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr class="mtr_inactive w-full text-white  " >
+          <td colspan="4" class="mtd_inactive text-blue font-bold"  >
+            Sección colapsable 03
+          </td>
+          <td class="mtd_end">
+            <i class="fa fa-plus mtd_inactive" aria-hidden="true"></i>
           </td>
         </tr>
       </table>
