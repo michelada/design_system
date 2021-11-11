@@ -3,8 +3,8 @@
   "author": "michelada.io",
   "name": "@micheladaio/sips-and-bits.css",
   "scripts": {
-    "dev": "browser-sync start --server --files \"**/*.css\", \"index.html\" ",
-    "build:dev": "postcss -w ./src/index.css --dir dist/",
+    "dev": "browser-sync start --server --files \"dist/index.css\", \"*.html\" ",
+    "build:dev": "TAILWIND_MODE=watch postcss ./src/index.css --dir dist/ --watch --verbose",
     "start": "run-p dev build:dev",
     "build": "postcss ./src/index.css --dir dist/",
     "build:cleancss": "cleancss -o ./dist/index.min.css ./dist/*.css",
@@ -12,7 +12,8 @@
     "prepare": "run-s build:cleandist build build:cleancss"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.3.3"
+    "@tailwindcss/forms": "^0.3.3",
+    "fullcalendar": "^5.10.1"
   },
   "devDependencies": {
     "browser-sync": "^2.27.4",
