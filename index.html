@@ -7,80 +7,7 @@
   <link href="dist/index.css" rel="stylesheet">
   <title>MicheCSS</title>
   <style>
-    .mtable {
-
-    }
-
-    .mtr {
-      border-bottom: 1px solid rgba(165, 177, 184, 0.3);
-      height: 80%;
-    }
-
-    .mth {
-      padding-left: 16px;
-      height: 56px;
-      text-align: left;
-    }
-
-    .mtd {
-      padding-left: 16px;
-      height: 80px;
-    }
-
-    .mtd_end {
-      text-align: right;
-      padding-right: 16px;
-    }
-
-    .mtr_active {
-      height: 56px;
-    }
-
-    .mtr_odd {
-      border-bottom: 1px solid rgba(165, 177, 184, 0.3);
-    }
-
-    .mtr_colap_inactive {
-      height: 56px;
-      border-bottom: 1px solid rgba(165, 177, 184, 0.3);
-      border-top: 1px solid rgba(165, 177, 184, 0.3);
-    }
-
-    .mtd_active {
-      padding-left: 16px;
-      height: 80px;
-      width: 100%;
-    }
-
-    .mtd_inactive {
-      color: #3264FA;
-    }
-
-    .mtd_title {
-      padding-left: 16px
-    }
-
-    .a_und {
-      text-decoration: underline;
-    }
-    .italic {
-      font-style: italic;
-    }
-    .text-normal {
-      font-weight: 400;
-    }
-
-    .mtd_photo {
-      display: flex;
-      align-items: center;
-    }
-    .mtd_img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      margin-right: 8px;
-    }
-
+    
   </style>
 </head>
 <body>
@@ -410,18 +337,18 @@
       <h1 class='text-red'>Tables</h1>
     </header>
     <section>
-      <table class="mtable w-full table-fixed">
+      <table class="mtable">
         <thead>
           <tr>
-            <th class="mth text-gray-lighter font-normal">Titulo 01</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 02</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 03</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 04</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 05</th>
+            <th class="mth ">Titulo 01</th>
+            <th class="mth ">Titulo 02</th>
+            <th class="mth ">Titulo 03</th>
+            <th class="mth ">Titulo 04</th>
+            <th class="mth ">Titulo 05</th>
           </tr>
         </thead>
-        <tr class="mtr_active w-full bg-blue-dark text-white" >
-          <td colspan="4" class="mtd_title text-white font-bold"  >
+        <tr class="mtr_active" >
+          <td colspan="4" class="mtd_title "  >
             Sección colapsable focus
           </td>
           <td class="mtd_end">
@@ -429,13 +356,13 @@
           </td>
         </tr>
         <tr class="mtr">
-          <td class="mtd font-bold">
+          <td class="mtd">
             Info 01_1 <br/>
             <span class="text-normal">
               Info 01_2
             </span>
           </td>
-          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">Info 02</td>
           <td class="mtd">
             <a href='http://www.michelada.io' class="a_und">Info 03</a>
           </td>
@@ -444,14 +371,14 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i> 123456789
           </td>
         </tr>
-        <tr class="mtr_odd bg-white-ish">
-          <td class="mtd font-bold">
+        <tr class="mtr_odd ">
+          <td class="mtd">
             Info 01_hover<br/>
             <span class="text-normal">
               Info 01_2
             </span>
           </td>
-          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">Info 02</td>
           <td class="mtd">
             <a href='http://www.michelada.io' class="a_und">Info 03</a>
           </td>
@@ -461,13 +388,13 @@
           </td>
         </tr>
         <tr class="mtr">
-          <td class="mtd font-bold">
+          <td class="mtd">
             Info 01_1<br/>
             <span class="text-normal">
               Info 01_2
             </span>
           </td>
-          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">Info 02</td>
           <td class="mtd">
             <a href='http://www.michelada.io' class="a_und">Info 03</a>
           </td>
@@ -476,7 +403,7 @@
             <i class="fa fa-map-marker" aria-hidden="true"></i> 123456789
           </td>
         </tr>
-        <tr class="mtr_colap_inactive w-full text-white  " >
+        <tr class="mtr_colap_inactive   " >
           <td colspan="4" class="mtd_inactive mtd_title text-blue font-bold"  >
             Sección colapsable 02
           </td>
@@ -484,7 +411,7 @@
             <i class="fa fa-plus mtd_inactive" aria-hidden="true"></i>
           </td>
         </tr>
-        <tr class="mtr_colap_inactive w-full text-white  " >
+        <tr class="mtr_colap_inactive   " >
           <td colspan="4" class="mtd_inactive mtd_title text-blue font-bold"  >
             Sección colapsable 03
           </td>
@@ -494,21 +421,21 @@
         </tr>
       </table>
 
-      <table class="mtable w-full table-fixed">
+      <table class="mtable">
         <thead>
           <tr>
-            <th class="mth text-gray-lighter font-normal">Titulo 01</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 02</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 03</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 04</th>
-            <th class="mth text-gray-lighter font-normal">Titulo 05</th>
+            <th class="mth ">Titulo 01</th>
+            <th class="mth ">Titulo 02</th>
+            <th class="mth ">Titulo 03</th>
+            <th class="mth ">Titulo 04</th>
+            <th class="mth ">Titulo 05</th>
           </tr>
         </thead>
         <br/>
         <br/>
       
         <tr class="mtr">
-          <td class="mtd font-bold">
+          <td class="mtd">
             <div class="mtd_photo">
               <img  class="mtd_img" alt="staff at michelada" src="https://ca.slack-edge.com/T04JVG8N6-U02L4KYN2TT-93697421d231-512"/>
               <div>
@@ -519,7 +446,7 @@
               </div>
             </div>
           </td>
-          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">Info 02</td>
           <td class="mtd">
             <a href='http://www.michelada.io' class="a_und">Info 03</a>
           </td>
@@ -529,7 +456,7 @@
           </td>
         </tr>
         <tr class="mtr">
-          <td class="mtd font-bold">
+          <td class="mtd">
             <div class="mtd_photo">
               <img  class="mtd_img" alt="staff at michelada" src="https://ca.slack-edge.com/T04JVG8N6-U02L4KYN2TT-93697421d231-512"/>
               <div>
@@ -540,7 +467,7 @@
               </div>
             </div>
           </td>
-          <td class="mtd font-bold">Info 02</td>
+          <td class="mtd">Info 02</td>
           <td class="mtd">
             <a href='http://www.michelada.io' class="a_und">Info 03</a>
           </td>
