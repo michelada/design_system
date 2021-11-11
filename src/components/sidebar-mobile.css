@@ -40,13 +40,13 @@
       }
 
       &.slide-next {
-        background-image: inline('icon-next.svg');
+        background-image: url('icon-next.svg');
         background-position: calc(100% - 3rem) center;
       }
 
       &.slide-back {
         @apply pl-10 text-white font-bold;
-        background-image: inline('icon-back.svg');
+        background-image: url('icon-back.svg');
         background-position: 1rem center;
       }
 

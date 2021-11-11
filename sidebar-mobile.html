@@ -1,8 +1,6 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <!doctype html>
 <html>
 <head>
-  <!-- ... -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="dist/index.css" rel="stylesheet">
@@ -36,8 +34,17 @@
       return str.replace(regex, (m) => '&' + escapeChars[m] + ';');
     };
 
+    function hideSidebar(sidebar){
+      const params=location.search.slice(1).split('&');
+      if(params.includes('hideSidebar=true'))
+      sidebar.classList.add("hidden");
+    }
+
     function onLoad() {
       const sidebar = document.getElementById("sidebar-mobile-container");
+
+      hideSidebar(sidebar);
+
       const code = document.getElementById('code');
 
       const htmlEntities = escapeHTML(sidebar.outerHTML)
@@ -186,6 +193,4 @@
     </div>
   </div>
 </body>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </html>
