@@ -5,7 +5,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="dist/index.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js" integrity="sha256-XOMgUu4lWKSn8CFoJoBoGd9Q/OET+xrfGYSo+AKpFhE=" crossorigin="anonymous"></script>
   <title>MicheCSS</title>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        dayHeaders: false,
+        headerToolbar: {
+          start: 'prev',
+          center: 'title',
+          end: 'next'
+        },
+        events: [
+              {id:1, title: 'test event', start: '2021-11-09'},
+              {id:1, title: 'second event', start: '2021-11-09'},
+              {id:1, title: 'week event', start: '2021-11-15 11:00', end: '2021-11-19 23:00'},
+            ]
+      });
+      calendar.render();
+    });
+
+  </script>
 </head>
 <body>
   <main class="container mx-auto py-5">
@@ -162,6 +185,12 @@
     </section>
     <section class="mt-10">
       <header>
+        <h1 class='text-red'>Calendar</h1>
+      </header>
+      <div id="calendar"></div>
+    </section>
+    <section class="mt-10">
+      <header>
         <h1 class="text-red">Buttons</h1>
       </header>
       <div>
@@ -315,7 +344,7 @@
           </div>
         </div>
       </div>
-      <div class="block mt-6 relative h-15">
+      <div class="block mt-6 relative h-40">
         <div class="mt-4 relative h-14">
           <div class="alert info">
             <div class="image"><img src="src/assets/img/img-none.png" alt="Blank image"/></div>
@@ -323,6 +352,18 @@
             <button class="btn-close"><span class="icon"></span></button>
           </div>
         </div>
+      </div>
+      
+    </section>
+    <section class="mt-10">
+      <div class="w-full h-auto overflow-y-hidden">
+        <h1 class="text-red">Sidebar - mobile</h1>
+        <div class="flex">
+        <iframe title="sidebar" width="30%" height="700" src="./sidebar-mobile.html"></iframe>
+        <iframe title="code" class="hidden md:block" width="900" height="700" src="./sidebar-mobile.html"></iframe>
+      </div>
+       
+
       </div>
     </section>
   </main>

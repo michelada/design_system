@@ -3,70 +3,76 @@
     @apply absolute h-full top-0 inset-x-0 transition transform origin-top-right md:hidden;
 
     .sidebar {
-      @apply flex justify-between flex-col overflow-x-auto	shadow-lg ring-1 ring-black ring-opacity-5 bg-dark h-full;
-    }
-  }
-
-  .btn-sb-header {
-    @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-blue-dark;
-  }
-
-  .menu-items {
-    @apply mt-6 pt-4 pb-6;
-    height: auto;
-  }
-  .submenu-links {
-    @apply menu-items flex-1;
-  }
-  .submenu-items {
-    @apply py-6 bg-blue-dark;
-    height: inherit;
-  }
-
-  .items {
-    @apply grid gap-y-8;
-
-    img {
-      height: 20x;
-      width: 20px;
-    }
-  }
-
-  .item {
-    @apply -m-3 p-3 pl-10 flex text-gray-lighter items-center bg-no-repeat hover:bg-blue-dark hover:text-gray-lighter hover:font-bold;
-
-    &.sub-link {
-      @apply text-white;
+      @apply flex justify-between flex-col overflow-y-auto	overflow-x-hidden shadow-lg ring-1 ring-black ring-opacity-5 bg-dark h-full;
     }
 
-    &.slide-next {
-      background-image: inline('icon-next.svg');
-      background-position: calc(100% - 3rem) center;
+    .btn-sb-header {
+      @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-blue-dark;
     }
 
-    &.slide-back {
-      @apply pl-10 text-white font-bold;
-      background-image: inline('icon-back.svg');
-      background-position: 1rem center;
+    .menu-items {
+      @apply mt-6 pt-4 pb-6;
+      height: auto;
+    }
+    .submenu-links {
+      @apply mt-6 pt-4 pb-6 flex-1;
+    }
+    .submenu-items {
+      @apply py-6 bg-blue-dark;
+      flex: auto;
     }
 
-    &.is-selected {
-      @apply bg-blue-dark font-bold text-white;
+    nav.items {
+      @apply grid gap-y-8;
+      justify-content: normal;
 
-      img.selected-icon {
-        filter: brightness(0) invert(1);
+      img {
+        height: 20x;
+        width: 20px;
+      }
+    }
+
+    .item {
+      @apply -m-3 p-3 pl-10 flex text-gray-lighter items-center bg-no-repeat hover:bg-blue-dark hover:text-gray-lighter hover:font-bold;
+
+      &.sub-link {
+        @apply text-white;
+      }
+
+      &.slide-next {
+        background-image: inline('icon-next.svg');
+        background-position: calc(100% - 3rem) center;
+      }
+
+      &.slide-back {
+        @apply pl-10 text-white font-bold;
+        background-image: inline('icon-back.svg');
+        background-position: 1rem center;
+      }
+
+      &.is-selected {
+        @apply bg-blue-dark font-bold text-white;
+
+        img.selected-icon {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+
+    .sub-item {
+      @apply -m-3 p-3 pl-10 flex text-gray-lighter items-center hover:text-gray-lighter hover:font-bold hover:bg-dark;
+
+      &.is-selected {
+        @apply bg-dark font-bold text-white;
+
+        img.selected-icon {
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }
-
-  .sub-item {
-    @apply item hover:bg-dark;
-
-    &.is-selected {
-      @apply bg-dark font-bold text-white;
-      img.selected-icon {
-        filter: brightness(0) invert(1);
-      }
-    }
+  .code {
+    height: 40rem;
+    @apply overflow-y-auto bg-white-ish p-2 py-0;
   }
 }
