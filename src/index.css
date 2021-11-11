@@ -8,7 +8,7 @@
 
 @import "components/buttons";
 @import "components/forms";
-@import "components/alerts";
 @import "components/navigation-bar";
+@import "components/alerts";
 
 @import "vendor/fullcalendar";
