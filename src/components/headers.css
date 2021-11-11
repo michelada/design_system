@@ -1,0 +1,27 @@
+@layer components {
+  .header {
+    &.container {
+      @apply w-full pt-6 pb-4 px-4 bg-white min-w-min;
+
+      @screen lg {
+        @apply pt-10 pb-8 px-28;
+      }
+    }
+
+    &.title {
+      @apply font-bold font-avant text-blue-dark text-lg;
+
+      @screen lg {
+        @apply text-3xl max-w-xl;
+      }
+    }
+
+    &.description {
+      @apply text-gray;
+
+      @screen lg {
+        @apply max-w-xl;
+      }
+    }
+  }
+}
