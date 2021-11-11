@@ -23,10 +23,6 @@
       }
     }
 
-    .left-icon {
-      @apply flex items-center;
-    }
-
     &.error .left-icon,
     &.success .left-icon,
     &.warning .left-icon {
@@ -48,32 +44,13 @@
       height: 18px;
     }
 
-    &.error .left-icon > .icon {
-      background-image: inline('warning-white.svg');
-    }
-
-    &.success .left-icon > .icon {
-      background-image: inline('check-white.svg');
-    }
-
-    &.warning .left-icon > .icon {
-      background-image: inline('warning-black.svg');
-    }
-
     & .btn-close {
-      @apply text-blue absolute mr-4 right-0 top-0 mt-5;
+      @apply  absolute mr-4 right-0 top-0 mt-5;
       max-width: 14px;
       max-height: 14px;
 
       &:hover {
         cursor: pointer;
-      }
-
-      & .icon {
-        @apply bg-no-repeat pr-6;
-        max-width: 14px;
-        max-height: 14px;
-        background-image: inline('x-blue.svg');
       }
     }
 
@@ -97,11 +74,11 @@
 
     &.error& .btn-close .icon,
     &.success& .btn-close .icon {
-      background-image: inline('x-white.svg');
+      /*background-image: inline('x-white.svg');*/
     }
 
     &.warning& .btn-close .icon {
-      background-image: inline('x-black.svg');
+      /*  background-image: inline('x-black.svg');*/
     }
   }
 }
