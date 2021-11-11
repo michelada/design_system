@@ -1,82 +1,9 @@
 @layer components {
-    .mtable {
-        @apply  w-full table-fixed;
-    }
 
-    .mtr {
-        border-bottom: 1px solid rgba(165, 177, 184, 0.3);
-        height: 80px;
-    }
-
-    .mth {
-        @apply text-gray-lighter font-normal;
-        padding-left: 16px;
-        height: 56px;
-        text-align: left;
-    }
-  
-    .mtd {
-        @apply font-bold;
-        padding-left: 16px;
-        height: 80px;
-    }
-
-    .mtd_end {
-        text-align: right;
-        padding-right: 16px;
-    }
-    .mtd_photo {
-        display: flex;
-        align-items: center;
-     }
-    .mtd_img {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        margin-right: 8px;
-    }
-
-    .mtr_active {
-        @apply  w-full bg-blue-dark text-white;
-        height: 56px;
-    }
-
-    .mtr_odd {
-        @apply bg-white-ish;
+    .bbottom-gray {
         border-bottom: 1px solid rgba(165, 177, 184, 0.3);
     }
-    .mtr_colap_inactive {
-        @apply     w-full text-white;
-        height: 56px;
-        border-bottom: 1px solid rgba(165, 177, 184, 0.3);
+    .btop-gray {
         border-top: 1px solid rgba(165, 177, 184, 0.3);
     }
-
-    .mtd_active {
-        padding-left: 16px;
-        height: 80px;
-        width: 100%;
-    }
-
-    .mtd_inactive {
-      color: #3264FA;
-    }
-
-    .mtd_title {
-        @apply text-white font-bold;
-        padding-left: 16px
-    }
-
-    .a_und {
-      text-decoration: underline;
-    }
-    .italic {
-      font-style: italic;
-    }
-    .text-normal {
-      font-weight: 400;
-    }
-
-
-
 }
