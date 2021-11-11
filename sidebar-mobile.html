@@ -8,11 +8,36 @@
   <link href="dist/index.css" rel="stylesheet">
   <title>MicheCSS | sidebar-mobile</title>
   <script>
+   function onLoad() {
+      const sidebar = document.getElementById("sidebar-mobile-container");
+      const code = document.getElementById('code');
+
+      code.textContent = sidebar.outerHTML
+      const firstSection = document.querySelectorAll("[data-section='1']");
+      const secondSection = document.querySelectorAll("[data-section='2']");
+      const slideNext = document.getElementsByClassName("is-selected")[0];
+      const slideBack = document.getElementsByClassName("slide-back")[0];
+
+      function handleSlideBack(e) {
+        firstSection.forEach(section => section.classList.remove("hidden"));
+        secondSection.forEach(section => section.classList.add("hidden"));
+      }
+
+      function handleSlideNext(e) {
+        firstSection.forEach(section => section.classList.add("hidden"));
+        secondSection.forEach(section => section.classList.remove("hidden"));
+        slideBack.addEventListener("click", handleSlideBack)
+      }
+      slideNext.addEventListener("click", handleSlideNext)
+
+    }
+    window.addEventListener('load', onLoad)
+
   </script>
 </head>
 <body>
 <div class="relative bg-white h-screen">
-    <div class="sidebar-mobile-container">
+    <div id="sidebar-mobile-container" class="sidebar-mobile-container">
       <div class="sidebar">
         <div class="flex items-center justify-between pt-5 px-5">
             <div>
@@ -20,95 +45,112 @@
             </div>
             <div class="flex">
             <div class="mr-4">
-              <button type="button" class="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none">
+              <button type="button" class="btn-sb-header">
                 <span class="text-white">(0)</span>
                 <img class="ml-2" src="src/assets/img/bell.svg" alt="Notificaciones">
               </button>
             </div>
             <div class="-mr-2 self-center">
-              <button type="button" class="rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none">
+              <button type="button" class="btn-sb-header">
                 <span class="sr-only">Close menu</span>
                 <img class="" src="src/assets/img/x-gray.svg" alt="Cerrar">
               </button>
             </div>
           </div>
         </div>
-        <div class="pt-4 pb-6 px-5">
-          <div class="menu-items mt-6">
-            <nav class="items grid gap-y-8">
+          <div data-section="1" class="menu-items">
+            <nav class="items">
               <a href="#" class="item slide-next is-selected">
-                <img class="" src="src/assets/img/icon-heart.svg" alt="link01">
-                <span class="ml-3 text-base ">
+                <img class=" selected-icon" src="src/assets/img/icon-heart.svg" alt="link01">
+                <span class="ml-3 text-base">
                   link01
-                </span>
+                </span> 
               </a>
-              <a href="#" class="item ">
+              <a href="#" class="item slide-next">
                 <img class="" src="src/assets/img/icon-users.svg" alt="link02">
-                <span class="ml-3 text-base text-gray-lighter">
+                <span class="ml-3 text-base">
                   link02
                 </span>
               </a>
              
-              <a href="#" class="item ">
+              <a href="#" class="item slide-next">
                 <img class="" src="src/assets/img/icon-chart-bar.svg" alt="link03">
-                <span class="ml-3 text-base text-gray-lighter">
+                <span class="ml-3 text-base">
                   link03
                 </span>
               </a>
-              <a href="#" class="item ">
+              <a href="#" class="item slide-next">
                 <img class="" src="src/assets/img/icon-envelop.svg" alt="link04">
-                <span class="ml-3 text-base text-gray-lighter">
+                <span class="ml-3 text-base">
+                  link04
+                </span>
+              </a>
+            </nav>
+          </div>
+          <div data-section="2" class="submenu-links hidden">
+            <nav class="items">
+              <a href="#" class="item slide-back">
+                <img class="" src="src/assets/img/icon-dashboard.svg" alt="link01">
+                <span class="ml-3 text-base ">
+                  link01
+                </span> 
+              </a>
+              <a href="#" class="item sub-link is-selected">
+                <img class="" src="src/assets/img/icon-users.svg" alt="link02">
+                <span class="ml-3 text-base">
+                  link02
+                </span>
+              </a>
+              <a href="#" class="item sub-link">
+                <img class="" src="src/assets/img/icon-calendar.svg" alt="link03">
+                <span class="ml-3 text-base">
+                  link03
+                </span>
+              </a>
+              <a href="#" class="item sub-link">
+                <img class="" src="src/assets/img/icon-calendar.svg" alt="link04">
+                <span class="ml-3 text-base">
                   link04
                 </span>
               </a>
               
             </nav>
           </div>
-        </div>
-        <div class="submenu-items">
-          <div class="grid">
-            <nav class="grid gap-y-8">
-              <a href="#" class="-m-3 p-3 flex items-center rounded-md">
+        <div data-section="1" id="submenu-items" class="submenu-items">
+            <nav class="items">
+              <a href="#" class="sub-item">
                 <img class="" src="src/assets/img/icon-user.svg" alt="link05">
-                <span class="ml-3 text-base font-bold text-gray-lighter">
+                <span class="ml-3">
                   link05
                 </span>
               </a>
-              <a href="#" class="-m-3 p-3 flex items-center rounded-md">
+              <a href="#" class="sub-item">
                 <img class="" src="src/assets/img/icon-edit.svg" alt="link06">
-                <span class="ml-3 text-base font-bold text-gray-lighter">
+                <span class="ml-3">
                   link06
                 </span>
               </a>
-              <a href="#" class="-m-3 p-3 flex items-center rounded-md">
+              <a href="#" class="sub-item is-selected">
                 <img class="" src="src/assets/img/icon-switchprof.svg" alt="link07">
-                <span class="ml-3 text-base font-bold text-gray-lighter">
+                <span class="ml-3">
                   link07
                 </span>
               </a>
-              <a href="#" class="-m-3 p-3 flex items-center rounded-md">
+              <a href="#" class="sub-item">
                 <img class="" src="src/assets/img/icon-logout.svg" alt="link08">
-                <span class="ml-3 text-base font-bold text-gray-lighter">
+                <span class="ml-3">
                   link08
                 </span>
               </a>
-              
             </nav>
-          </div>
         </div>
       </div>
     </div>
-    <div class="code">
+    <h4 class="text-center	">Cambia las dimensiones de la pantalla para visualizar el sidebar</h4>
+    <div class="code h-full">
       <pre class="scrollbar-none overflow-x-auto language-html">
-              <code class="language-html">
-                <a href="#" class="-m-3 p-3 flex items-center rounded-md">
-                  <img class="" src="src/assets/img/icon-logout.svg" alt="Cerrar sesión">
-                  <span class="ml-3 text-base font-bold text-gray-lighter">
-                    link08
-                  </span>
-                </a>
+              <code id="code" class="language-html">
               </code>
-
       </pre>
     </div>
   </div>

@@ -1,31 +1,47 @@
 @layer components {
   .sidebar-mobile-container {
-    @apply absolute h-full top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden;
+    @apply absolute h-full top-0 inset-x-0 transition transform origin-top-right md:hidden;
 
     .sidebar {
-      @apply flex justify-between flex-col rounded-lg overflow-x-auto	shadow-lg ring-1 ring-black ring-opacity-5 bg-dark h-full;
+      @apply flex justify-between flex-col overflow-x-auto	shadow-lg ring-1 ring-black ring-opacity-5 bg-dark h-full;
     }
   }
 
-  .menu-items {
-    height: auto;
+  .btn-sb-header {
+    @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-blue-dark;
   }
 
+  .menu-items {
+    @apply mt-6 pt-4 pb-6;
+    height: auto;
+  }
+  .submenu-links {
+    @apply menu-items flex-1;
+  }
   .submenu-items {
-    @apply py-6 px-5  bg-blue-dark;
+    @apply py-6 bg-blue-dark;
     height: inherit;
   }
 
+  .items {
+    @apply grid gap-y-8;
+
+    img {
+      height: 20x;
+      width: 20px;
+    }
+  }
+
   .item {
-    @apply -m-3 p-3 flex text-gray-lighter items-center rounded-md bg-no-repeat hover:bg-blue-dark hover:font-bold;
+    @apply -m-3 p-3 pl-10 flex text-gray-lighter items-center bg-no-repeat hover:bg-blue-dark hover:text-gray-lighter hover:font-bold;
 
     &.sub-link {
       @apply text-white;
     }
 
     &.slide-next {
-      background-image: inline('next.svg');
-      background-position: calc(100% - 2rem) center;
+      background-image: inline('icon-next.svg');
+      background-position: calc(100% - 3rem) center;
     }
 
     &.slide-back {
@@ -36,14 +52,23 @@
 
     &.is-selected {
       @apply bg-blue-dark font-bold text-white;
-    }
 
-    img {
-      height: 20x;
-      width: 15px;
+      img.selected-icon {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  .sub-item {
+    @apply item hover:bg-dark;
+
+    &.is-selected {
+      @apply bg-dark font-bold text-white;
+      img.selected-icon {
+        filter: brightness(0) invert(1);
+      }
     }
   }
   .code {
-    @apply bg-blue bg-opacity-10 border border-blue border-opacity-50 text-blue-dark font-bold text-base;
   }
 }
