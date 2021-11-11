@@ -7,31 +7,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="dist/index.css" rel="stylesheet">
   <title>MicheCSS | sidebar-mobile</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
   <script>
-   function onLoad() {
-      const sidebar = document.getElementById("sidebar-mobile-container");
-      const code = document.getElementById('code');
+ const escapeChars = {
+        '¢': 'cent',
+        '£': 'pound',
+        '¥': 'yen',
+        '€': 'euro',
+        '©': 'copy',
+        '®': 'reg',
+        '<': 'lt',
+        '>': 'gt',
+        '"': 'quot',
+        '&': 'amp',
+        '\'': '#39'
+      };
 
-      code.textContent = sidebar.outerHTML
-      const firstSection = document.querySelectorAll("[data-section='1']");
-      const secondSection = document.querySelectorAll("[data-section='2']");
-      const slideNext = document.getElementsByClassName("is-selected")[0];
-      const slideBack = document.getElementsByClassName("slide-back")[0];
-
-      function handleSlideBack(e) {
-        firstSection.forEach(section => section.classList.remove("hidden"));
-        secondSection.forEach(section => section.classList.add("hidden"));
+      const regexString = '[';
+      for (const key in escapeChars) {
+        regexString += key;
       }
+      regexString += ']';
 
-      function handleSlideNext(e) {
-        firstSection.forEach(section => section.classList.add("hidden"));
-        secondSection.forEach(section => section.classList.remove("hidden"));
-        slideBack.addEventListener("click", handleSlideBack)
+      const regex = new RegExp(regexString, 'g');
+
+      function escapeHTML(str) {
+        return str.replace(regex,  (m) => '&' + escapeChars[m] + ';');
+      };
+
+      function onLoad() {
+        const sidebar = document.getElementById("sidebar-mobile-container");
+        const code = document.getElementById('code');
+
+        const htmlEntities = escapeHTML(sidebar.outerHTML)
+        code.innerHTML = htmlEntities;
+
+        Prism.highlightAll();
+
+        const firstSection = document.querySelectorAll("[data-section='1']");
+        const secondSection = document.querySelectorAll("[data-section='2']");
+        const slideNext = document.getElementsByClassName("is-selected")[0];
+        const slideBack = document.getElementsByClassName("slide-back")[0];
+
+        function handleSlideBack(e) {
+          firstSection.forEach(section => section.classList.remove("hidden"));
+          secondSection.forEach(section => section.classList.add("hidden"));
+        }
+
+        function handleSlideNext(e) {
+          firstSection.forEach(section => section.classList.add("hidden"));
+          secondSection.forEach(section => section.classList.remove("hidden"));
+          slideBack.addEventListener("click", handleSlideBack)
+        }
+        slideNext.addEventListener("click", handleSlideNext)
+
       }
-      slideNext.addEventListener("click", handleSlideNext)
-
-    }
-    window.addEventListener('load', onLoad)
+      window.addEventListener('load', onLoad)
 
   </script>
 </head>
@@ -146,11 +178,10 @@
         </div>
       </div>
     </div>
-    <h4 class="text-center	">Cambia las dimensiones de la pantalla para visualizar el sidebar</h4>
+    <h4 class="text-center"> Change the screen dimensions to display the sidebar</h4>
     <div class="code h-full">
-      <pre class="scrollbar-none overflow-x-auto language-html">
-              <code id="code" class="language-html">
-              </code>
+      <pre  class="scrollbar-none overflow-x-auto bg-white-ish p-2">
+           <code id="code" class="language-markup"></code>
       </pre>
     </div>
   </div>
