@@ -1,27 +1,27 @@
 @layer components {
   .header {
-    &.container {
-      @apply w-full pt-6 pb-4 px-4 bg-white min-w-min;
-
+    &.main-container {
+      @apply bg-white w-full min-w-min pt-6 pb-4 px-4 flex flex-col lg:flex-row;
+      
       @screen lg {
         @apply pt-10 pb-8 px-28;
       }
     }
 
-    &.title {
-      @apply font-bold font-avant text-blue-dark text-lg;
+    &.text-container {
+      @apply w-full min-w-min;
+    }
 
-      @screen lg {
-        @apply text-3xl max-w-xl;
-      }
+    &.add-on-container {
+      @apply lg:w-2/5 min-w-min px-4 py-4 flex justify-center lg:justify-end space-x-6;
+    }
+
+    &.title {
+      @apply lg:max-w-xl font-bold font-avant text-blue-dark text-lg lg:text-3xl;
     }
 
     &.description {
-      @apply text-gray;
-
-      @screen lg {
-        @apply max-w-xl;
-      }
+      @apply lg:max-w-xl text-gray;
     }
   }
 }
