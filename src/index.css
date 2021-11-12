@@ -11,4 +11,6 @@
 @import "components/navigation-bar";
 @import "components/alerts";
 @import "components/menus";
+@import "components/tabs";
+
 @import "vendor/fullcalendar";
