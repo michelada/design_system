@@ -12,5 +12,3 @@
 @import "components/alerts";
 @import "components/table";
 @import "vendor/fullcalendar";
-
-@import "@fortawesome/fontawesome-free/css/all.min";
