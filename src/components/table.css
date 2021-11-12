@@ -1,9 +1,0 @@
-@layer components {
-
-    .bbottom-gray {
-        border-bottom: 1px solid rgba(165, 177, 184, 0.3);
-    }
-    .btop-gray {
-        border-top: 1px solid rgba(165, 177, 184, 0.3);
-    }
-}
