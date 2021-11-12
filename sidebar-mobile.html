@@ -7,71 +7,8 @@
   <title>MicheCSS | sidebar-mobile</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/themes/prism.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
-  <script>
-    const escapeChars = {
-      '¢': 'cent',
-      '£': 'pound',
-      '¥': 'yen',
-      '€': 'euro',
-      '©': 'copy',
-      '®': 'reg',
-      '<': 'lt',
-      '>': 'gt',
-      '"': 'quot',
-      '&': 'amp',
-      '\'': '#39'
-    };
-
-    let regexString = '[';
-    for (let key in escapeChars) {
-      regexString += key;
-    }
-    regexString += ']';
-
-    const regex = new RegExp(regexString, 'g');
-
-    function escapeHTML(str) {
-      return str.replace(regex, (m) => '&' + escapeChars[m] + ';');
-    };
-
-    function hideSidebar(sidebar){
-      const params=location.search.slice(1).split('&');
-      if(params.includes('hideSidebar=true'))
-      sidebar.classList.add("hidden");
-    }
-
-    function onLoad() {
-      const sidebar = document.getElementById("sidebar-mobile-container");
-
-      hideSidebar(sidebar);
-
-      const code = document.getElementById('code');
-
-      const htmlEntities = escapeHTML(sidebar.outerHTML)
-      code.innerHTML = htmlEntities;
-
-      Prism.highlightAll();
-
-      const firstSection = document.querySelectorAll("[data-section='1']");
-      const secondSection = document.querySelectorAll("[data-section='2']");
-      const slideNext = document.getElementsByClassName("is-selected")[0];
-      const slideBack = document.getElementsByClassName("slide-back")[0];
-
-      function handleSlideBack(e) {
-        firstSection.forEach(section => section.classList.remove("hidden"));
-        secondSection.forEach(section => section.classList.add("hidden"));
-      }
-
-      function handleSlideNext(e) {
-        firstSection.forEach(section => section.classList.add("hidden"));
-        secondSection.forEach(section => section.classList.remove("hidden"));
-        slideBack.addEventListener("click", handleSlideBack)
-      }
-      slideNext.addEventListener("click", handleSlideNext)
-
-    }
-    window.addEventListener('load', onLoad)
-  </script>
+  <script src="src/js/app.js"></script>
+  <script src="src/js/sidebar-mobile.js"></script>
 </head>
 <body>
   <div class="relative bg-white h-full">
@@ -99,7 +36,7 @@
         <div data-section="1" class="menu-items">
           <nav class="items">
             <a href="#" class="item slide-next is-selected">
-              <img class=" selected-icon" src="src/assets/img/icon-heart.svg" alt="link01">
+              <img class="selected-icon" src="src/assets/img/icon-heart.svg" alt="link01">
               <span class="ml-3 text-base">
                 link01
               </span>
@@ -129,12 +66,12 @@
           <nav class="items">
             <a href="#" class="item slide-back">
               <img class="" src="src/assets/img/icon-dashboard.svg" alt="link01">
-              <span class="ml-3 text-base ">
+              <span class="text-base ">
                 link01
               </span>
             </a>
             <a href="#" class="item sub-link is-selected">
-              <img class="" src="src/assets/img/icon-users.svg" alt="link02">
+              <img class="selected-icon" src="src/assets/img/icon-users.svg" alt="link02">
               <span class="ml-3 text-base">
                 link02
               </span>
