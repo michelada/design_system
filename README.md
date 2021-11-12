@@ -4,7 +4,7 @@ CSS library app built for michelada.io by michelada engineers
 
 ### Tech Stack
 
--
+- 
 
 ### Local Environment Setup
 
@@ -21,7 +21,6 @@ npm install
 ```
 
 3. Run the dev server
-
 ```
 npm start
 ```
@@ -31,10 +30,10 @@ This will start a dev server and will watch the files for any change.
 ### Workflow
 
 1. Create a branch from main/master
-   1.1. feature: feature/functionality-name when is a new feature
-   1.2. chore: chore/functionality-name when is a chore work, configs, rename, etc
-   1.3. bug-fix: bugfix/functionality-name when is a bug on the live site that should be fixed and merged into the next deployment
-   1.4. hot-fix: hotfix/functionality-name comes from the need to act immediately upon an undesired state of a live production version. A hotfix is not required to be be pushed during a scheduled deployment.
+  1.1. feature: feature/functionality-name when is a new feature
+  1.2. chore: chore/functionality-name when is a chore work, configs, rename, etc
+  1.3. bug-fix: bugfix/functionality-name when is a bug on the live site that should be fixed and merged into the next deployment
+  1.4. hot-fix: hotfix/functionality-name comes from the need to act immediately upon an undesired state of a live production version. A hotfix is not required to be be pushed during a scheduled deployment.
 2. Add commits
 3. Open a merge request (name it following the merge request naming convention)
 4. Discuss and review your code
@@ -61,21 +60,21 @@ We use [semantic-release](https://github.com/semantic-release/semantic-release) 
   └─⫸ Change Type: build|ci|docs|feat|fix|perf|refactor|test
 ```
 
+
 #### Deploy
 
 - #### Production
 
   Once QA approves the changes, a manual deploy to production...
 
-## Kanban Workflow
 
+## Kanban Workflow  
 Here, we use a different agile practice named Kanban to deliver fast and beatiful CSS 👩‍💻
 
 Let's talk about our agile workflow:
-
 1. First thing your need to know, there is no sprints! yay :dance_dog:
 2. You decide what to work on. You look at the tickets in the TODO column and assign the one that fits your availability.
-   - If you have questions you can ask the Project Manager assigned to this project.
+   - If you have questions you can ask the Project Manager assigned to this project. 
    - Every ticket should have: description, narrative, definition of done, and acceptance criteria.
 3. Our board: https://github.com/michelada/design_system/projects/1
 
@@ -94,27 +93,25 @@ After you asigned your own ticket and you don't have questions, you can move you
 When you move your ticket to this column, make sure you have your PR open with the tag 'ready for review'
 
 Good practices:
-
 - In the description of your MR, add screenshots or videos to show how the component or feature looks. (Doing this also helps the reviewer)
 - Share your PR url in the #design_system channel to let the team know about your work. Y tiren paro para el review!
-- The techlead in charge of this project is the one that approves your code.
+- The techlead in charge of this project is the one that approves your code. 
 
-**Ready for QA column:**
+**Ready for QA column:** 
 
-After your code review is approved, you make a demo with one of the designer availables in michelada to review how the component or visual element is displayed.
-If the designer has some feedback, you take your ticket to in progress again and address the comments. If everything looks ok, you can continue with the next column.
+After your code review is approved, you make a demo with one of the designer availables in michelada to review how the component or visual element is displayed. 
+If the designer has some feedback, you take your ticket to in progress again and address the comments. If everything looks ok, you can continue with the next column. 
 
 Good practices:
-
-- When you get feedback from the designer, comment the feedback in the comments of the ticket, to leave evidence and let the reviewer know what are the new changes.
+- When you get feedback from the designer, comment the feedback in the comments of the ticket, to leave evidence and let the reviewer know what are the new changes. 
 
 **Ready to publish column:**
 
-After the designer approves your work, you move your ticket here and wait the other work of the milestonre to release it together, create a new version of the library and then publish it in the npm server.
+After the designer approves your work, you move your ticket here and wait the other work of the milestonre to release it together, create a new version of the library and then publish it in the npm server. 
 
 **Done columna:**
 
-Every ticket that was moved to the public npm library is moved here. And your work is completed!
+Every ticket that was moved to the public npm library is moved here. And your work is completed! 
 
 ## Milestones
 
