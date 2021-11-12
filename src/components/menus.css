@@ -1,29 +1,29 @@
 @layer components {
     .menu {
         @apply bg-dark flex justify-center relative flex-wrap w-24 h-full;
-        @screen lg {
+        @screen md {
             @apply w-72;
         }
         & .logo {
             @apply inline-block cursor-pointer h-4 mt-7;
-            @screen lg {
+            @screen md {
                 @apply h-6 mt-4
             }
         }
         & li {
             @apply flex flex-row justify-center items-center text-gray-light cursor-pointer font-sans not-italic font-semibold h-24 text-base leading-6;
-            @screen lg {
+            @screen md {
                 @apply justify-start;
             }
             & img {
                 @apply ml-0 inline;
-                @screen lg {
+                @screen md {
                     @apply ml-8;
                 }
             }
             & span {
                 @apply hidden;
-                @screen lg {
+                @screen md {
                     @apply ml-4 inline;
                 }
             }
@@ -36,24 +36,24 @@
         }
         .toggle-menu {
             @apply flex flex-row flex-1 justify-center text-gray-lighter;
-            @screen lg {
+            @screen md {
                 @apply justify-end;
             }
             & i {
                 @apply cursor-pointer pb-5;
-                @screen lg {
+                @screen md {
                     @apply pr-5;
                 }
             }
             & .fa-compress {
                 @apply hidden;
-                @screen lg {
+                @screen md {
                     @apply inline;
                 }
             }
             & .fa-expand {
                 @apply inline;
-                @screen lg {
+                @screen md {
                     @apply hidden;
                 }
             }
