@@ -1,6 +1,6 @@
 @layer components {
   .alert {
-    @apply rounded-lg absolute flex items-center px-4 py-4 z-50 top-0;
+    @apply rounded-lg relative flex items-center px-4 py-4 z-50 top-0;
     width: 400px;
     min-height: 53px;
     max-height: none;
@@ -21,10 +21,6 @@
       & img {
         @apply w-full h-full;
       }
-    }
-
-    .left-icon {
-      @apply flex items-center;
     }
 
     &.error .left-icon,
@@ -48,32 +44,13 @@
       height: 18px;
     }
 
-    &.error .left-icon > .icon {
-      background-image: inline('warning-white.svg');
-    }
-
-    &.success .left-icon > .icon {
-      background-image: inline('check-white.svg');
-    }
-
-    &.warning .left-icon > .icon {
-      background-image: inline('warning-black.svg');
-    }
-
     & .btn-close {
-      @apply text-blue absolute mr-4 right-0 top-0 mt-5;
+      @apply  absolute mr-4 right-0 top-0 mt-5;
       max-width: 14px;
       max-height: 14px;
 
       &:hover {
         cursor: pointer;
-      }
-
-      & .icon {
-        @apply bg-no-repeat pr-6;
-        max-width: 14px;
-        max-height: 14px;
-        background-image: inline('x-blue.svg');
       }
     }
 
@@ -97,11 +74,11 @@
 
     &.error& .btn-close .icon,
     &.success& .btn-close .icon {
-      background-image: inline('x-white.svg');
+      /*background-image: inline('x-white.svg');*/
     }
 
     &.warning& .btn-close .icon {
-      background-image: inline('x-black.svg');
+      /*  background-image: inline('x-black.svg');*/
     }
   }
 }
