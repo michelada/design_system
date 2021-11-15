@@ -1,21 +1,77 @@
 # miche.css
 
-## Install dependencies
+CSS library app built for michelada.io by michelada engineers
+
+### Tech Stack
+
+- 
+
+### Local Environment Setup
+
+1. Clone the project
+
+```
+git clone git@github.com:michelada/design_system.git
+```
+
+2. Install dependencies
+
 ```
 npm install
 ```
 
-## Run the dev server
+3. Run the dev server
 ```
 npm start
 ```
 
 This will start a dev server and will watch the files for any change.
 
-## Development Workflow  
-Welcome to the design system project. Here, we use a different agile practice named Kanban to deliver fast and beatiful CSS 👩‍💻
+### Workflow
 
-Let's talk about our workflow:
+1. Create a branch from main/master
+  1.1. feature: feature/functionality-name when is a new feature
+  1.2. chore: chore/functionality-name when is a chore work, configs, rename, etc
+  1.3. bug-fix: bugfix/functionality-name when is a bug on the live site that should be fixed and merged into the next deployment
+  1.4. hot-fix: hotfix/functionality-name comes from the need to act immediately upon an undesired state of a live production version. A hotfix is not required to be be pushed during a scheduled deployment.
+2. Add commits
+3. Open a merge request (name it following the merge request naming convention)
+4. Discuss and review your code
+5. Have QA test your changes in a review app
+6. Merge to main/master branch
+7. Have QA test your changes in integration on the staging environment
+8. Deploy to production
+
+### Merge request naming convention
+
+We use [semantic-release](https://github.com/semantic-release/semantic-release) to keep a consistent versioning of our code base, semantic-release uses the commit messages to determine the type of changes in the codebase. Following formalized conventions for commit messages, semantic-release automatically determines the next semantic version number, generates a changelog and publishes the release. But in our case, we don't require you to follow this convention on every single commit you add, instead, just follow the convention on the name of your merge request, for this we use the [Angular Commit Message Conventions](https://github.com/angular/angular/blob/master/CONTRIBUTING.md#-commit-message-format)
+
+```
+<type>(<scope>): <short summary>
+  │       │             │
+  │       │             └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │       │
+  │       └─⫸ Change Scope: animations|bazel|benchpress|common|compiler|compiler-cli|core|
+  │                          elements|forms|http|language-service|localize|platform-browser|
+  │                          platform-browser-dynamic|platform-server|router|service-worker|
+  │                          upgrade|zone.js|packaging|changelog|dev-infra|docs-infra|migrations|
+  │                          ngcc|ve
+  │
+  └─⫸ Change Type: build|ci|docs|feat|fix|perf|refactor|test
+```
+
+
+#### Deploy
+
+- #### Production
+
+  Once QA approves the changes, a manual deploy to production...
+
+
+## Kanban Workflow  
+Here, we use a different agile practice named Kanban to deliver fast and beatiful CSS 👩‍💻
+
+Let's talk about our agile workflow:
 1. First thing your need to know, there is no sprints! yay :dance_dog:
 2. You decide what to work on. You look at the tickets in the TODO column and assign the one that fits your availability.
    - If you have questions you can ask the Project Manager assigned to this project. 
