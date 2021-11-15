@@ -11,5 +11,3 @@
 @import "components/navigation-bar";
 @import "components/alerts";
 @import "vendor/fullcalendar";
-
-@import "@fortawesome/fontawesome-free/css/all.min";
