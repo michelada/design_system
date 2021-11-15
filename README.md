@@ -117,3 +117,15 @@ Every ticket that was moved to the public npm library is moved here. And your wo
 
 We organize the work by milestone. After every milestone is completed, we shipped that code and publish a new version of the library.
 You can take a look at the milestones list to know in what milestone we are working on. https://github.com/michelada/design_system/milestones
+
+## How to publish a new version in npm
+
+1. Logging into npm (be part of michelada organization in npm)
+2. Update the version number in package.json
+   - You can do it manually, updating the version number in the package.json.
+   - Or using the command `npm --no-git-tag-version version <update_type|number>` in the folder terminal. https://docs.npmjs.com/cli/v7/commands/npm-version
+   - The "version" field must be in the form x.x.x and follow the semantic-versioning guidelines. https://docs.npmjs.com/about-semantic-versioning
+3. Run the command `npm publish --access public`
+4. Verify in npm if the new version and the package is updated.
+   **_ Do not forget to push your changes _**
+   []
