@@ -10,6 +10,9 @@ module.exports = {
       avant: ['AvantGarde']
     },
     extend: {
+      boxShadow: {
+        'card': '4px 4px 8px rgba(0, 0, 0, 0.08)',
+      },
       fontSize: { // https://type-scale.com/ using major third type scale
         'sm': '.8rem',
         'md': '.875rem',
