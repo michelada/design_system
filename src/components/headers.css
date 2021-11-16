@@ -13,7 +13,7 @@
     }
 
     &.add-on-container {
-      @apply lg:w-2/5 min-w-min px-4 py-4 flex justify-center lg:justify-end space-x-6;
+      @apply lg:w-2/5 min-w-min px-0 lg:px-4 py-4 flex justify-end lg:justify-end space-x-6;
     }
 
     &.title {
