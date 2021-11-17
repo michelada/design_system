@@ -11,9 +11,9 @@
 @import "components/navigation-bar";
 @import "components/alerts";
 @import "components/headers";
-@import "components/menus/menus";
+@import "components/menus";
 @import "components/tabs";
 @import 'components/sidebar-mobile';
-@import 'components/cards/cards';
+@import 'components/cards';
 
 @import 'vendor/fullcalendar';
