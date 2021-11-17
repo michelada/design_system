@@ -14,5 +14,6 @@
 @import "components/menus";
 @import "components/tabs";
 @import 'components/sidebar-mobile';
+@import 'components/cards';
 
 @import 'vendor/fullcalendar';
