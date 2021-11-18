@@ -1,19 +1,26 @@
 @layer components {
   .tbl-collapsable-mbl {
+    @apply h-full w-full transition transform origin-top-right md:hidden;
+
     td {
       @apply relative flex justify-between items-center w-full h-full px-4;
     }
-    @apply h-full w-full transition transform origin-top-right md:hidden;
 
     .container-expand {
-      @apply h-14;
+      @apply h-14 bg-white;
+
       & > td:after {
         content: '';
         width: calc(100% - 2rem);
         @apply bottom-0 block absolute  h-px bg-white-ish h-0.5;
       }
+
       &.isSelected {
         @apply bg-white-ish border-none;
+      }
+
+      span {
+        @apply text-md font-normal text-blue-dark ml-1;
       }
     }
     input[type='checkbox'] {
@@ -22,6 +29,7 @@
 
     .expandable {
       @apply bg-white-ish;
+
       td {
         &:after {
           content: '';
@@ -30,13 +38,17 @@
         }
         @apply pt-4 inline-block  pb-2;
       }
+
       &.no-border > td:after {
         @apply hidden;
       }
+
       ul > li {
         @apply flex mb-1;
+
         img {
           @apply mr-2;
+
           &.icon-chevron-left {
             @apply self-start	pt-1;
           }

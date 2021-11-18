@@ -1,0 +1,5 @@
+@layer components {
+    .card {
+        @apply flex flex-col p-10 bg-white shadow-card rounded-lg sm:w-full md:w-120;
+    }
+}

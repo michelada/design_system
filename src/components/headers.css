@@ -1,6 +1,6 @@
 @layer components {
-  .header {
-    &.main-container {
+  header {
+    &.page-header {
       @apply bg-white w-full min-w-min pt-6 pb-4 px-4 flex flex-col lg:flex-row;
       
       @screen lg {
@@ -8,20 +8,12 @@
       }
     }
 
-    &.text-container {
+    & section {
       @apply w-full min-w-min;
     }
 
-    &.add-on-container {
+    & aside {
       @apply lg:w-2/5 min-w-min px-0 lg:px-4 py-4 flex justify-end lg:justify-end space-x-6;
-    }
-
-    &.title {
-      @apply lg:max-w-xl font-bold font-avant text-blue-dark text-lg lg:text-3xl;
-    }
-
-    &.description {
-      @apply lg:max-w-xl text-gray;
     }
   }
 }

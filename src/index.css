@@ -15,5 +15,6 @@
 @import 'components/tabs';
 @import 'components/sidebar-mobile';
 @import 'components/tbl-collapsable-mobile';
+@import 'components/cards';
 
 @import 'vendor/fullcalendar';
