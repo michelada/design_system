@@ -1,0 +1,53 @@
+@layer components {
+  .tbl-collapsable-mbl {
+    td {
+      @apply relative flex justify-between items-center w-full h-full px-4;
+    }
+    @apply h-full w-full transition transform origin-top-right md:hidden;
+
+    .container-expand {
+      @apply h-14;
+      & > td:after {
+        content: '';
+        width: calc(100% - 2rem);
+        @apply bottom-0 block absolute  h-px bg-white-ish h-0.5;
+      }
+      &.isSelected {
+        @apply bg-white-ish border-none;
+      }
+    }
+    input[type='checkbox'] {
+      display: none;
+    }
+
+    .expandable {
+      @apply bg-white-ish;
+      td {
+        &:after {
+          content: '';
+          width: calc(100% - 2rem);
+          @apply bottom-0 block absolute bg-opacity-30 h-px bg-gray-lighter;
+        }
+        @apply pt-4 inline-block  pb-2;
+      }
+      &.no-border > td:after {
+        @apply hidden;
+      }
+      ul > li {
+        @apply flex mb-1;
+        img {
+          @apply mr-2;
+          &.icon-chevron-left {
+            @apply self-start	pt-1;
+          }
+        }
+      }
+    }
+    .user-profile {
+      @apply justify-between items-center mb-2;
+      div {
+        @apply w-4/5;
+      }
+    }
+  }
+}
