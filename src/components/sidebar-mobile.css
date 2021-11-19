@@ -70,7 +70,7 @@
   }
   .code {
     height: 40rem;
-    @apply overflow-y-auto bg-white-ish p-2 py-0;
+    @apply overflow-y-auto bg-white-ish p-2 py-0 text-sm;
   }
   .icon-arrow {
     @apply absolute border-r-2 border-b-2 h-2.5 w-2.5 bg-transparent border-gray-light rounded-sm;
