@@ -1,10 +1,6 @@
 @layer components {
-  .sidebar-mobile-container {
-    @apply absolute h-full top-0 inset-x-0 transition transform origin-top-right md:hidden;
-
-    .sidebar {
-      @apply flex justify-between flex-col overflow-y-auto	overflow-x-hidden shadow-lg ring-1 ring-black ring-opacity-5 bg-dark h-full;
-    }
+  .sidebar-mobile {
+    @apply flex justify-between flex-col overflow-y-auto overflow-x-hidden shadow-lg bg-dark h-full absolute top-0 inset-x-0 transition transform origin-top-right md:hidden;
 
     .btn-sb-header {
       @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-blue-dark;
@@ -66,6 +62,10 @@
 
     img.selected-icon {
       filter: brightness(0) invert(1);
+    }
+
+    &.compress {
+      @apply hidden;
     }
   }
   .code {
