@@ -1,6 +1,6 @@
 @layer components {
   .sidebar-mobile-container {
-    @apply absolute h-full top-0 inset-x-0 transition transform origin-top-right md:hidden;
+    @apply absolute h-full top-0 inset-x-0 transition transform origin-top-right;
 
     .sidebar {
       @apply flex justify-between flex-col overflow-y-auto	overflow-x-hidden shadow-lg ring-1 ring-black ring-opacity-5 bg-dark h-full;
