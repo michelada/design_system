@@ -1,74 +1,101 @@
 @layer components {
-    
-    .header-nav {
-        @apply w-full;
-    }      
+  .header-nav {
+    @apply w-full;
+  }
 
-    .dark {
-        @apply bg-dark;
+  .dark {
+    @apply bg-dark;
 
-        & a, span {
-            @apply text-white;
-        }
+    & a,
+    span {
+      @apply text-white;
     }
-    
-    .light {
-        @apply bg-white;
+  }
 
-        & a, span {
-            @apply text-dark;
-        }
+  .light {
+    @apply bg-dark md:bg-white;
+
+    & a,
+    span {
+      @apply text-dark;
+    }
+  }
+
+  nav {
+    @apply w-full flex flex-col md:flex-row items-center justify-end;
+
+    & .logo {
+      @apply w-full md:hidden flex flex-row justify-between items-center m-4;
+
+      .menu-mobile {
+        @apply flex md:hidden flex-row items-center;
+      }
     }
 
-    nav {
-        @apply w-full flex flex-col md:flex-row items-center justify-between;
+    & a {
+      @apply flex flex-row items-center;
 
-        & .logo {
-            @apply w-full md:w-1/4 flex flex-row justify-between items-center m-4;
+      & img {
+        @apply mx-2;
+      }
+    }
 
-            .menu-mobile {
-                @apply flex md:hidden flex-row items-center;
-            }
+    .navbar {
+      @apply hidden md:block md:w-auto;
+
+      & ul {
+        &.menu {
+          @apply w-full m-0 p-0 flex flex-col md:flex-row content-between justify-end items-center text-center;
         }
 
-        & a {
-            @apply flex flex-row items-center;
-            
-            & img {
-                @apply mx-2;
-            }
-            
-        }
+        & li {
+          @apply p-4 w-full;
+          &:hover:not(.avatar) {
+            @apply bg-white-mystic;
+          }
+          &.is-selected {
+            @apply font-bold;
+          }
 
-        .navbar {
-            @apply md:w-3/4;
+          &.submenu {
+            @apply md:relative;
+            &:hover {
+              & > ul {
+                @apply block;
+              }
+            }
+            &.avatar {
+              @apply hidden md:block cursor-pointer relative;
+              &:hover {
+                &::after {
+                  @apply w-10 h-10 absolute top-4 rounded-full left-4 cursor-pointer;
+                }
+              }
+            }
+            & > a {
+              @apply inline-block;
+            }
 
             & ul {
+              @apply md:absolute top-full rounded-b-lg w-full md:w-max md:z-50;
 
-                &.menu {
-                    @apply w-full m-0 p-0 flex flex-col md:flex-row content-between justify-end items-center text-center;
+              & li {
+                @apply py-4 w-auto;
+                & span {
+                  @apply text-gray-ish font-bold;
                 }
 
-                & li {
-                    @apply p-4 w-auto;
-
-                    &.submenu {
-                        @apply md:relative;
-
-                        &>a {
-                            @apply inline-block;
-                        }
-
-                        & ul {
-                            @apply block left-0 md:absolute top-full rounded-b-lg w-full md:w-max md:z-50;
-
-                            & li {
-                                @apply py-4 w-auto;
-                            }
-                        }
-                    }
+                &:hover {
+                  @apply bg-dark;
+                  & span {
+                    @apply text-white;
+                  }
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
 }

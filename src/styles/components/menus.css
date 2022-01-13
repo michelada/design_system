@@ -1,66 +1,69 @@
 @layer components {
-    .menu {
-        @apply bg-dark flex justify-center relative flex-wrap w-24 h-full;
-        @screen md {
-            @apply w-72;
-        }
-        & .logo {
-            @apply inline-block cursor-pointer h-4 mt-7;
-            @screen md {
-                @apply h-6 mt-4
-            }
-        }
-        & li {
-            @apply flex flex-row justify-center items-center text-gray-light cursor-pointer font-sans not-italic font-semibold h-24 text-base leading-6;
-            @screen md {
-                @apply justify-start;
-            }
-            & svg {
-                @apply ml-0 inline;
-                @screen md {
-                    @apply ml-8;
-                }
-            }
-            & span {
-                @apply hidden;
-                @screen md {
-                    @apply ml-4 inline;
-                }
-            }
-        }
-        & li.active {
-            @apply bg-blue-dark;
-            & svg {
-                @apply text-white;
-            }
-
-        }
-        & li:hover {
-            @apply text-white bg-blue-dark;;
-        }
-        .toggle-menu {
-            @apply flex flex-row flex-1 justify-center text-gray-lighter;
-            @screen md {
-                @apply justify-end;
-            }
-            & svg {
-                @apply cursor-pointer mb-5;
-                @screen md {
-                    @apply mr-5;
-                }
-            }
-            & .compress {
-                @apply hidden;
-                @screen md {
-                    @apply inline;
-                }
-            }
-            & .expand {
-                @apply inline;
-                @screen md {
-                    @apply hidden;
-                }
-            }
-        }
+  .menu.sidebar {
+    @apply bg-dark hidden md:flex flex-shrink-0 justify-center relative items-center flex-col w-72 h-full;
+    & .logo {
+      @apply inline-block cursor-pointer h-6 mt-4;
     }
+    & li {
+      @apply flex flex-row justify-start items-center text-gray-light cursor-pointer font-sans not-italic font-semibold h-24 text-base leading-6;
+
+      & img {
+        @apply ml-8 inline;
+      }
+      & span {
+        @apply ml-4 inline;
+      }
+    }
+    & li.active {
+      @apply bg-blue-dark;
+      & img {
+        @apply text-white;
+      }
+    }
+    & li:hover {
+      @apply text-white bg-blue-dark;
+    }
+    .toggle-menu {
+      @apply flex flex-row flex-1 justify-end text-gray-lighter self-end items-end;
+      & svg {
+        @apply cursor-pointer mb-5 mr-5;
+      }
+      & .compress {
+        @apply inline;
+      }
+      & .expand {
+        @apply hidden;
+      }
+    }
+  }
+  .menu.sidebar.compress {
+    @apply w-24;
+
+    & .logo {
+      @apply h-4 mt-7;
+    }
+    & li {
+      @apply justify-center;
+
+      & img {
+        @apply ml-0;
+      }
+      & span {
+        @apply hidden;
+      }
+    }
+    .toggle-menu {
+      @apply w-full justify-center self-end items-end;
+
+      & svg {
+        @apply mr-0;
+      }
+      & .compress {
+        @apply hidden;
+      }
+      & .expand {
+        @apply inline;
+      }
+    }
+  }
 }
