@@ -4,7 +4,7 @@ module.exports = {
   mode: 'production', 
   entry: './src/js/app.js', 
   output: { 
-    path: path.resolve(__dirname, 'dist'), 
+    path: path.resolve(__dirname, 'site'), 
     filename: 'bundle.js', 
   }, 
   module: {
@@ -30,6 +30,6 @@ module.exports = {
     }]
   }, 
   devServer: {
-    static: 'dist',
+    static: 'site',
   },
 };
