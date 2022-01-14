@@ -1,11 +1,7 @@
 @layer components {
   header {
     &.page-header {
-      @apply bg-white w-full min-w-min pt-6 pb-4 px-4 flex flex-col lg:flex-row;
-      
-      @screen lg {
-        @apply pt-10 pb-8 px-28;
-      }
+      @apply bg-white w-full min-w-min pt-6 pb-10 px-4 flex flex-col md:pt-14 md:pb-8;
     }
 
     & section {
@@ -13,7 +9,7 @@
     }
 
     & aside {
-      @apply lg:w-2/5 min-w-min px-0 lg:px-4 py-4 flex justify-end lg:justify-end space-x-6;
+      @apply md:w-2/5 min-w-min px-0 md:px-4 py-4 flex justify-end md:justify-end space-x-6;
     }
   }
 }

@@ -1,0 +1,37 @@
+.profile-container {
+    @apply grid grid-cols-1 bg-white-ish gap-y-8 lg:grid-cols-4;
+  
+    .aside {
+      @apply h-full flex flex-col row-span-6 col-span-3 items-center flex-1 lg:col-auto lg:items-start;
+  
+      .overlay {
+        @apply rounded-full mb-6;
+  
+        &:hover {
+          &::after {
+            @apply w-20 h-20 lg:w-[7.5rem] lg:h-[7.5rem] absolute bg-dark opacity-60 top-0 rounded-full left-0 cursor-pointer;
+            content: '';
+          }
+          & > .overlay-img {
+            @apply absolute top-6 left-6 lg:top-11 lg:left-11 cursor-pointer transition z-20;
+            display: block;
+          }
+        }
+        .overlay-input-file {
+          @apply absolute cursor-pointer w-full h-full opacity-0 inset-0	rounded-full z-30;
+        }
+      }
+      .rounded-img {
+        @apply rounded-full w-20 h-20 lg:w-[7.5rem] lg:h-[7.5rem] object-cover;
+      }
+  
+      input[type='file' i]::-webkit-file-upload-button {
+        @apply hidden;
+      }
+  
+      form {
+        @apply h-20 mb-4 lg:h-[7.5rem];
+      }
+    }
+  }
+  

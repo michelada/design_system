@@ -20,4 +20,30 @@
       }
     }
   }
+  
+  .tabs {
+    @apply flex gap-5 mt-10 col-span-4 lg:mb-0;
+  }
+
+  .tab-list {
+    @apply px-4 lg:px-0;
+  }
+
+  .tab.item {
+    @apply px-8 w-full lg:w-auto !important;
+
+    &.active {
+      svg path {
+        fill: white;
+      }
+    }
+
+    &:hover {
+      @apply bg-blue-dark text-white !important;
+
+      svg path {
+        fill: white;
+      }
+    }
+  }
 }

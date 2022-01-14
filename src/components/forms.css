@@ -79,5 +79,109 @@
         font-size: 20px;
       }
     }
+    /* migrated css from ctrl --- below */
+    form {
+      .field {
+        @apply pb-4
+      }
+  
+      .actions {
+        direction: rtl;
+        @apply text-center lg:text-right;
+  
+        .btn {
+          @apply lg:ml-8
+        }
+      }
+  
+      label {
+        color: rgba(128, 140, 147, 1);
+        @apply font-normal
+      }
+  
+      input {
+        @apply w-full custom-font-color;
+      }
+  
+      select {
+        @apply custom-border-color custom-font-color;
+      }
+  
+      input[type=text], select {
+        @apply border-gray-lightest
+      }
+  
+      input[type=date], input[type=tel] {
+          @apply rounded-lg custom-border-color;
+  
+          &:hover {
+              @apply border-blue;
+          }
+  
+          &:active,
+          &:focus {
+              @apply custom-border-color ring-0 text-dark-charcoal;
+          }
+  
+          &[disabled] {
+              @apply bg-white-antiflash text-gray-light;
+          }
+      }
+  
+      input[type="date"] {
+        &::-webkit-inner-spin-button {
+          display: none;
+        }
+  
+        &::-webkit-calendar-picker-indicator {
+          background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 24 24"><path fill="%233264FA" d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"/></svg>');
+        }
+      }
+  
+      input[type="submit"] {
+        @apply mb-4 lg:mb-0
+      }
+  
+      input[type="text"] {
+        @apply custom-border-color;
+  
+        &::placeholder {
+          @apply custom-placeholder-color;
+        }
+      }
+  
+      textarea {
+        @apply rounded-lg custom-border-color placeholder-blue-wind resize-none w-full h-24;
+  
+        &:hover {
+          @apply border-blue;
+        }
+        
+        &::placeholder {
+          @apply custom-placeholder-color;
+        }
+  
+        &:active,
+        &:focus {
+          @apply custom-border-color ring-0 text-dark-charcoal;
+        }
+  
+        &[disabled] {
+          @apply bg-white-antiflash;
+        }
+      }
+    }
+  
+    .custom-border-color {
+      border-color: rgba(230, 237, 240, 1);
+    }
+  
+    .custom-font-color {
+      color: rgba(21, 22, 47, 1);
+    }
+  
+    .custom-placeholder-color {
+      color: rgba(165, 177, 184, 1);
+    }
   }
 }

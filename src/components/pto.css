@@ -1,0 +1,46 @@
+@layer components {
+    .pto-container {
+        @apply bg-white-ish px-4 pt-4 lg:pt-12 xl:px-8 lg:max-w-screen-md lg:mx-auto;
+    }
+    .pto-actions {
+        @apply flex justify-between items-center py-6 md:pt-8 flex-col;
+    }
+
+    .pto-btn  {
+        @apply  rounded-2xl px-9 py-2 font-bold font-avant text-btn ;
+    
+        &[disabled] {
+          @apply cursor-not-allowed;
+        }
+        &.secondary-pto {
+            @apply w-full lg:w-1/2 border-2 border-blue flex justify-center items-center text-white bg-blue;
+      
+            &:hover {
+              @apply  cursor-pointer;
+            }
+      
+            &[disabled] {
+              @apply border-gray-lighter text-gray-lighter w-auto;
+            }
+        }
+        &.cancel {
+            @apply w-full lg:w-1/2 text-blue px-4 flex justify-center items-center mt-2 !important;
+            &:hover {
+                @apply  text-blue-dark;
+            }
+    
+            &[disabled] {
+                @apply text-gray-lighter;
+            }
+        }
+    }
+
+    .prevent-cursor {
+        @apply no-allow !important;
+    }
+    
+    .no-allow {
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}   
