@@ -1,10 +1,9 @@
+// postcss.config.js
 module.exports = {
   plugins: [
     require('postcss-import'),
     require('tailwindcss/nesting'),
-    require('tailwindcss')("tailwind.config.js"),
-    require('postcss-assets')({
-      loadPaths: ['**'],
-    })
+    require('tailwindcss'),
+    require('autoprefixer'),
   ]
 }

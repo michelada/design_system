@@ -3,29 +3,42 @@
   "author": "michelada.io",
   "name": "@micheladaio/sips-and-bits.css",
   "scripts": {
-    "dev": "browser-sync start --server --files \"dist/index.css\", \"*.html\" ",
-    "build:dev": "TAILWIND_MODE=watch postcss ./src/index.css --dir dist/ --watch --verbose",
-    "start": "run-p dev build:dev",
-    "build": "postcss ./src/index.css --dir dist/",
-    "build:cleancss": "cleancss -o ./dist/index.min.css ./dist/*.css",
-    "build:cleandist": "rimraf ./dist/*.css",
-    "prepare": "run-s build:cleandist build build:cleancss"
+    "start": "webpack serve --mode=development --open",
+    "build": "export NODE_ENV=production && webpack",
+    "publish": "postcss ./src/styles/index.css --dir dist/"
   },
   "dependencies": {
-    "@tailwindcss/forms": "^0.3.3",
-    "fullcalendar": "^5.10.1"
+    "@fullcalendar/core": "^5.10.1",
+    "@fullcalendar/daygrid": "^5.10.1",
+    "@fullcalendar/list": "^5.10.1",
+    "@fullcalendar/timegrid": "^5.10.1",
+    "@tailwindcss/forms": "^0.4.0",
+    "core-js": "^3.20.2",
+    "fullcalendar": "^5.10.1",
+    "regenerator-runtime": "^0.13.9"
   },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "babel-loader": "^8.2.3",
     "browser-sync": "^2.27.4",
     "clean-css-cli": "^5.3.3",
+    "css-loader": "^6.5.1",
     "nodemon": "^2.0.12",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.3.5",
+    "postcss": "^8.4.5",
     "postcss-assets": "^6.0.0",
     "postcss-cli": "^8.3.1",
     "postcss-import": "^14.0.2",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.2.3",
+    "prismjs": "^1.26.0",
     "rimraf": "^3.0.2",
-    "tailwindcss": "^2.2.4"
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.0.13",
+    "webpack": "^5.66.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.3"
   },
   "repository": {
     "type": "git",

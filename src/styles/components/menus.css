@@ -1,0 +1,69 @@
+@layer components {
+  .menu.sidebar {
+    @apply bg-dark hidden md:flex flex-shrink-0 justify-center relative items-center flex-col w-72 h-full;
+    & .logo {
+      @apply inline-block cursor-pointer h-6 mt-4;
+    }
+    & li {
+      @apply flex flex-row justify-start items-center text-gray-light cursor-pointer font-sans not-italic font-semibold h-24 text-base leading-6;
+
+      & img {
+        @apply ml-8 inline;
+      }
+      & span {
+        @apply ml-4 inline;
+      }
+    }
+    & li.active {
+      @apply bg-blue-dark;
+      & img {
+        @apply text-white;
+      }
+    }
+    & li:hover {
+      @apply text-white bg-blue-dark;
+    }
+    .toggle-menu {
+      @apply flex flex-row flex-1 justify-end text-gray-lighter self-end items-end;
+      & svg {
+        @apply cursor-pointer mb-5 mr-5;
+      }
+      & .compress {
+        @apply inline;
+      }
+      & .expand {
+        @apply hidden;
+      }
+    }
+  }
+  .menu.sidebar.compress {
+    @apply w-24;
+
+    & .logo {
+      @apply h-4 mt-7;
+    }
+    & li {
+      @apply justify-center;
+
+      & img {
+        @apply ml-0;
+      }
+      & span {
+        @apply hidden;
+      }
+    }
+    .toggle-menu {
+      @apply w-full justify-center self-end items-end;
+
+      & svg {
+        @apply mr-0;
+      }
+      & .compress {
+        @apply hidden;
+      }
+      & .expand {
+        @apply inline;
+      }
+    }
+  }
+}

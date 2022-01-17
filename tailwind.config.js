@@ -1,7 +1,7 @@
 module.exports = {
   mode: 'jit',
   purge: [
-    './**/*.html',
+    './site/*.html',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -37,6 +37,7 @@ module.exports = {
           light: '#828F96',
           lighter: '#A5B1B8',
           lightest: '#E6EDF0',
+          ish: '#808C93'
         },
         blue: {
           dark: '#292C52',

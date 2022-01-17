@@ -100,11 +100,11 @@
       }
   
       input {
-        @apply w-full custom-font-color;
+        @apply w-full text-dark;
       }
   
       select {
-        @apply custom-border-color custom-font-color;
+        @apply border-gray-lightest text-dark;
       }
   
       input[type=text], select {
@@ -112,7 +112,7 @@
       }
   
       input[type=date], input[type=tel] {
-          @apply rounded-lg custom-border-color;
+          @apply rounded-lg border-x-gray-lightest;
   
           &:hover {
               @apply border-blue;
@@ -120,7 +120,7 @@
   
           &:active,
           &:focus {
-              @apply custom-border-color ring-0 text-dark-charcoal;
+              @apply border-gray-light ring-0 text-dark-charcoal;
           }
   
           &[disabled] {
@@ -143,45 +143,33 @@
       }
   
       input[type="text"] {
-        @apply custom-border-color;
+        @apply border-gray-lightest;
   
         &::placeholder {
-          @apply custom-placeholder-color;
+          @apply text-gray-lighter;
         }
       }
   
       textarea {
-        @apply rounded-lg custom-border-color placeholder-blue-wind resize-none w-full h-24;
+        @apply rounded-lg border-gray-lightest placeholder-blue-wind resize-none w-full h-24;
   
         &:hover {
           @apply border-blue;
         }
         
         &::placeholder {
-          @apply custom-placeholder-color;
+          @apply text-gray-lighter;
         }
   
         &:active,
         &:focus {
-          @apply custom-border-color ring-0 text-dark-charcoal;
+          @apply border-gray-lightest ring-0 text-dark-charcoal;
         }
   
         &[disabled] {
           @apply bg-white-antiflash;
         }
       }
-    }
-  
-    .custom-border-color {
-      border-color: rgba(230, 237, 240, 1);
-    }
-  
-    .custom-font-color {
-      color: rgba(21, 22, 47, 1);
-    }
-  
-    .custom-placeholder-color {
-      color: rgba(165, 177, 184, 1);
     }
   }
 }
