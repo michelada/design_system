@@ -9,6 +9,40 @@ module.exports = {
       sans: ['Noto Sans'],
       avant: ['AvantGarde']
     },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      black: '#000',
+      gray: {
+        DEFAULT: '#575F65',
+        light: '#828F96',
+        lighter: '#A5B1B8',
+        lightest: '#E6EDF0',
+        ish: '#808C93'
+      },
+      blue: {
+        dark: '#292C52',
+        DEFAULT: '#3264FA',
+        picton: '#43B7E9',
+        wind: '#9CAFC8',
+      },
+      white: {
+        DEFAULT: '#FFFFFF',
+        ish: '#F5F8FA',
+        antiflash: "#EAF1F9",
+        mystic: '#E6EDF0'
+      },
+      dark: {
+        DEFAULT: '#15162F',
+        charcoal: '#333333',
+      },
+      yellow: {
+        DEFAULT: '#F9D026',
+        darker: '#FFC800'
+      },
+      red: '#EA3434',
+      green: '#00B5AF',
+    },
     extend: {
       boxShadow: {
         'card': '4px 4px 8px rgba(0, 0, 0, 0.08)',
@@ -31,38 +65,6 @@ module.exports = {
         '8xl': '7.451rem',
         '9xl': '9.313rem',
       },
-      colors: {
-        gray: {
-          DEFAULT: '#575F65',
-          light: '#828F96',
-          lighter: '#A5B1B8',
-          lightest: '#E6EDF0',
-          ish: '#808C93'
-        },
-        blue: {
-          dark: '#292C52',
-          DEFAULT: '#3264FA',
-          picton: '#43B7E9',
-          wind: '#9CAFC8',
-        },
-        white: {
-          DEFAULT: '#FFFFFF',
-          ish: '#F5F8FA',
-          antiflash: "#EAF1F9",
-          mystic: '#E6EDF0'
-        },
-        dark: {
-          DEFAULT: '#15162F',
-          charcoal: '#333333',
-        },
-        yellow: {
-          DEFAULT: '#F9D026',
-          darker: '#FFC800'
-        },
-        red: '#EA3434',
-        green: '#00B5AF',
-
-      }
     },
   },
   variants: {

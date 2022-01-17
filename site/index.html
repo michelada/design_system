@@ -20,27 +20,42 @@
       <p>Noto Sand Regular 16px</p>
       <p class='font-bold'>Noto Sand Regular 16px</p>
       <p class='text-gray-lighter'>Noto Sand Regular 16px</p>
-      <p class='text-sm'>notes</p>
+      <p class='text-sm'>notes 12.8px</p>
       <small>more notes in small</small>
       <div>
         <a href='http://www.michelada.io'>This is a link</a>
       </div>
-      <pre><code class="language-markup">
+      <pre class="language-markup rounded-xl"><code>
 &lt;h1>H1 ITC Avant Garde Gothic - Bold 39px&lt;/h1>
 &lt;h2>H2 ITC Avant Garde Gothic - Bold 31px&lt;/h2>
+&lt;h3>H3 ITC Avant Garde Gothic - Bold 25px&lt;/h2>
+&lt;h4>H4 ITC Avant Garde Gothic - Bold 20px&lt;/h2>
+&lt;p>Nodo Sans Regular 16px&lt;/p>
+&lt;p class="font-bold">Nodo Sans Regular 16px&lt;/p>
+&lt;p class="text-gray-lighter">Nodo Sans Regular 16px&lt;/p>
+&lt;p class="text-sm">notes 12.8px&lt;/p>
+&lt;small>notes in small&lt;/small>
+&lt;a href="#">This is a link&lt;/a>
       </code></pre>
       <article class="my-5">
         <h2>Lists</h2>
         <div class="my-2">
-          <pre class="bg-white-ish p-2">simple list</pre>
+          <h4 class="text-red">Simple list</h3>
           <ul>
             <li>List item 1</li>
             <li>List item 2</li>
             <li>List item 3</li>
           </ul>
+          <pre class="language-markup rounded-xl"><code>
+&lt;ul>
+  &lt;li>List item 1&lt;/li>
+  &lt;li>List item 2&lt;/li>
+  &lt;li>List item 3&lt;/li>
+&lt;/ul>
+          </code></pre>
         </div>
         <div class="my-2">
-          <pre class="bg-white-ish p-2">with title / subtitle</pre>
+          <h4 class="text-red">with title / subtitle</h4>
           <ul>
             <li class="title">Title01</li>
             <li class="subtitle">subtitle</li>
@@ -48,6 +63,15 @@
             <li>content02</li>
             <li>content03</li>
           </ul>
+          <pre class="language-markup rounded-xl"><code>
+&lt;ul>
+  &lt;li class="title">title&lt;/li>
+  &lt;li class="subtitle">subtitle&lt;/li>
+  &lt;li>content01&lt;/li>
+  &lt;li>content02&lt;/li>
+  &lt;li>content03&lt;/li>
+&lt;/ul>
+          </code></pre>
         </div>
       </article>
     </section>
@@ -55,7 +79,7 @@
       <header>
         <h1 class='text-red'>Color palette</h1>
       </header>
-      <table class="table-auto">
+      <table class="table-auto mb-10">
         <tbody>
           <tr>
             <td class="text-right font-bold text-gray-500">
@@ -165,6 +189,20 @@
           </tr>
         </tbody>
       </table>
+      <pre class="language-markup rounded-xl"><code>
+You can use the color palette to colorize your texts. 
+  i.e &lt;span class="text-red">text in red&lt;/span> will produce an span in #EA3434 color.
+additionally can use the palette as background colors. 
+  i.e &lt;div class="bg-red">text in red&lt;/div> will produce an div in #EA3434 color.
+Controll the opacity of the colors by using the slash modifier. 
+  i.e &lt;span class="text-red/50">text in red&lt;/span> will produce an span in #EA3434 color with 50% opacity."
+          </code></pre>
+      </code></pre>
+      <div class="text-sm leading-tight"> 
+        For more information about how to use the color palette, please refer to the <a href="https://tailwindcss.com/docs/customizing-colors">customizing colors</a> section of the Tailwind documentation.
+        <br/>
+        Also please check out the <a href="https://tailwindcss.com/docs/text-color">text color</a>  and <a href="https://tailwindcss.com/docs/background-color">background color</a> sections of the Tailwind documentation.
+      </div>
     </section>
     
     <section class="mt-10">
@@ -173,6 +211,7 @@
       </header>
       <div id="calendar"></div>
     </section>
+
     <section class='mt-10'>
       <header>
         <h1 class="text-red">Menus</h1>
@@ -181,6 +220,7 @@
       <html-import src="menus.html">
       </html-import>
     </section>
+
     <section class="mt-10">
       <header>
         <h1 class="text-red">Tabs</h1>
