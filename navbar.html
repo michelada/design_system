@@ -1,0 +1,43 @@
+<nav class="w-full bg-dark">
+    <div class="navbar-container h-14 md:h-20">
+        <div class="navbar-logo-container">
+            <a class="block h-full" href="/">
+            <img class="navbar-logo" src="./src/assets/img/logo-ctrl.svg">
+            </a>
+        </div>
+      <div class="navbar-links-section" data-controller="navbar">
+        <div data-navbar-target="linksContainer" class="navbar-links-container bg-dark hidden flex md:flex">
+            <a class="navbar-link" href="/">
+                La Barra
+            </a>
+            <a class="navbar-link" href="/">
+                Team directory
+            </a>       
+            <a class="navbar-link" href="/">
+                PTOs
+            </a>
+        </div>
+        <div class="user-picture flex items-center justify-center" data-action="click->navbar#dropdownToggle">
+          <img alt="Moises Benjamin Lezama" class="navbar-user-icon mx-3" src="https://lh3.googleusercontent.com/a/AATXAJzLOQMMjzDpc_twXpxAdPnzfZ46QBEipasMeHR5=s96-c">
+          <div data-navbar-target="dropdownTrigger" class="navbar-close-dropdown hidden flex">
+            <img class="scale-100" src="/assets/icon-close-5cfafe7d2bd68790e97fbc21382e2f449c8d9a0a4014bb127a5d3d14b5ee08a5.svg">
+          </div>
+        </div>
+        <div data-navbar-target="dropdownElement" class="navbar-dropdown hidden flex">
+            <a class="navbar-dropdown-link" href="/">
+                <img class="navbar-user-icon ml-0 md:hidden" src="/assets/icon-michelada-a09f466fab1358f68b7dac67f56a2fd8b8f5d2874468565517aa44b4e447bf40.svg">
+                <img class="navbar-dropdown-icon hidden md:block" src="/assets/icon-user-5f45727b3b97d73be6c5defa1aa3bb96a4bc7158df3fe14d8455d6b5656d0625.svg">
+                My Profile
+            </a>
+            <a class="navbar-dropdown-link" href="/">
+              <img class="navbar-dropdown-icon" src="/assets/icon-toggle-0775221ae959ca01f20ae100debec3c1a4269d8d6a606e6740d8b02f04fcdc2e.svg">
+              Admin
+            </a>
+            <a data-turbo="false" class="navbar-dropdown-link" rel="nofollow" data-method="delete" href="/">
+                <img class="navbar-dropdown-icon" src="/assets/icon-power-off-4ef033d9aa94c8cf5405e3b3606f603ed49e51350d134166a4c5f5c224b32b26.svg">
+                Sign Out
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
