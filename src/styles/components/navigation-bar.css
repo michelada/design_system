@@ -69,9 +69,6 @@
               &:hover {
                 &::after {
                   @apply w-10 h-10 absolute top-4 rounded-full left-4 cursor-pointer;
-                  content: '';
-                  background: rgba(21, 22, 47, 0.6) url(./assets/icon-close.svg)
-                    no-repeat 50% 50%;
                 }
               }
             }
