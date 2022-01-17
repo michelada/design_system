@@ -2,6 +2,7 @@ import "core-js/stable";
 import "regenerator-runtime/runtime";
 
 import '../styles/index.css';
+import Prism from 'prismjs';
 
 require('./html-import.min.js');
 
