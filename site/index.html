@@ -224,8 +224,45 @@ Please refer to the fullcalendar documentation for the specifics of the implemen
         <h1 class="text-red">Menus</h1>
       </header>
 
-      <html-import src="menus.html">
-      </html-import>
+      <div class="flex">
+        <html-import src="menus.html" class="mr-5"></html-import>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;div class="menu sidebar">
+  &lt;div class="mb-10">
+    &lt;img class="logo" src="..." alt="logo michelada">
+  &lt;/div>
+
+  &lt;div class="w-full mb-10">
+    &lt;ul>
+      &lt;li class="active">
+        &lt;svg ...> &lt;/svg> &lt;span>link01&lt;/span>
+      &lt;/li>
+      &lt;li>
+        &lt;svg ...> &lt;/svg> &lt;span>link con nombre largo&lt;/span>
+      &lt;/li>
+      ...
+      &lt;li>
+        &lt;svg ...> &lt;/svg> &lt;span>link04&lt;/span>
+      &lt;/li>
+    &lt;/ul>
+  &lt;/div>
+
+  &lt;div class="toggle-menu">
+    &lt;svg class="expand" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      &lt;path
+        d="M9.49491 12.6479L5.35714 16.7857L6.82688 18.1709C7.50188 18.8459 7.02384 20 6.06929 20H1.06929C0.477545 20 0 19.5203 0 18.9286V13.9286C0 12.974 1.15192 12.496 1.82688 13.1709L3.21429 14.6429L7.35205 10.5051C7.63098 10.2262 8.08326 10.2262 8.36219 10.5051L9.49491 11.6378C9.77388 11.9167 9.77388 12.369 9.49491 12.6479V12.6479ZM10.5051 7.35205L14.6429 3.21429L13.1731 1.82906C12.4981 1.15406 12.9762 0 13.9307 0H18.9307C19.5225 0 20 0.479688 20 1.07143V6.07143C20 7.02598 18.8481 7.50402 18.1731 6.82906L16.7857 5.35714L12.6479 9.49491C12.369 9.77384 11.9167 9.77384 11.6378 9.49491L10.5051 8.36219C10.2261 8.08326 10.2261 7.63103 10.5051 7.35205V7.35205Z"
+        fill="currentColor" />
+    &lt;/svg>
+    &lt;svg class="compress" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+      &lt;path
+        d="M0.209196 17.6479L4.64286 13.2143L3.17313 11.8291C2.49813 11.1541 2.97616 10 3.93071 10H8.93071C9.52246 10 10 10.4797 10 11.0714V16.0714C10 17.026 8.84808 17.504 8.17313 16.8291L6.78571 15.3571L2.35205 19.7908C2.07313 20.0697 1.62085 20.0697 1.34192 19.7908L0.209196 18.6581C-0.0697322 18.3792 -0.0697322 17.9269 0.209196 17.6479V17.6479ZM19.7908 2.35205L15.3571 6.78571L16.8269 8.17094C17.5019 8.84594 17.0238 10 16.0693 10H11.0693C10.4775 10 10 9.52031 10 8.92857V3.92857C10 2.97402 11.1519 2.49598 11.8269 3.17094L13.2143 4.64286L17.6479 0.209196C17.9269 -0.0697322 18.3792 -0.0697322 18.6581 0.209196L19.7908 1.34192C20.0697 1.62085 20.0697 2.07312 19.7908 2.35205V2.35205Z"
+        fill="currentColor" />
+    &lt;/svg>
+  &lt;/div>
+&lt;/div>
+
+</code></pre>
+      </div>
     </section>
 
     <section class="mt-10">
@@ -312,21 +349,74 @@ Please refer to the fullcalendar documentation for the specifics of the implemen
 
         </div>
       </div>
+      <div class="my-10"></div>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;div class="flex flex-row justify-center md:w-1/2 w-full mt-10">
+  &lt;div class="w-52 py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg flex justify-center">
+    &lt;svg ...>&lt;/svg> &lt;span> Focus &lt;/span>
+  &lt;/div>
+  &lt;div class=" w-52 py-3 bg-gray-lighter text-dark  text-center font-bold flex justify-center">
+    &lt;svg ...>&lt;/svg> &lt;span> Hover &lt;/span>
+  &lt;/div>
+  &lt;div
+    class=" w-52 py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg focus:bg-blue-dark focus:text-white hover:bg-gray-lighter hover:text-dark flex justify-center">
+    &lt;svg ...>&lt;/svg> &lt;span> Normal &lt;/span>
+  &lt;/div>
+&lt;/div>
+</code></pre> 
     </section>
 
     <section class="mt-10">
       <div class="w-full h-auto overflow-y-hidden">
         <h1 class="text-red">Sidebar - mobile</h1>
         <div class="flex">
-          <html-import title="sidebar" width="380px" seamless height="700px" src="./sidebar-mobile.html"></html-import>
-          <html-import title="code" seamless width="900px" scroll="auto" height="700"
-            src="./sidebar-mobile.html?hideSidebar=true"></html-import>
+          <html-import title="sidebar" class="mr-10" style="width:375px" src="./sidebar-mobile.html"></html-import>
+<pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div class="relative bg-white h-full">
+    &lt;div class="sidebar-mobile block">
+      &lt;div class="flex items-center justify-between pt-5 px-5">
+        &lt;div>
+          &lt;img class="h-8 w-auto" src="assets/img/logo-mobile.svg" alt="ctrl^">
+        &lt;/div>
+        &lt;div class="flex">
+          &lt;div class="mr-4">
+            &lt;button type="button" class="btn-sb-header">
+              &lt;span class="text-white">(0)&lt;/span>
+              &lt;img class="ml-2" src="assets/img/bell.svg" alt="Notificaciones">
+            &lt;/button>
+          &lt;/div>
+          &lt;div class="-mr-2 self-center">
+            &lt;button type="button" class="btn-sb-header">
+              &lt;span class="sr-only">Close menu&lt;/span>
+              &lt;img class="" src="assets/img/x-gray.svg" alt="Cerrar">
+            &lt;/button>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+      &lt;div data-section="1" class="menu-items">
+        &lt;nav class="items">
+          &lt;a href="#" class="item slide-next is-selected">
+            &lt;img class="selected-icon" src="assets/img/icon-heart.svg" alt="link01">
+            &lt;span class="ml-3 text-base">
+              link01
+            &lt;/span>
+          &lt;/a>
+          &lt;a href="#" class="item">
+            &lt;img class="" src="assets/img/icon-users.svg" alt="link02">
+            &lt;span class="ml-3 text-base">
+              link02
+            &lt;/span>
+          &lt;/a>
+          ...
+
+        &lt;/nav>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>  
+</code></pre>
         </div>
       </div>
     </section>
-
-
-    
 
     <section class="mt-10">
       <header>
@@ -342,6 +432,14 @@ Please refer to the fullcalendar documentation for the specifics of the implemen
             </section>
           </header>
         </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;header class="page-header">
+  &lt;section>
+    &lt;h1>Header title example&lt;/h1>
+    &lt;p>Header description example&lt;/p>
+  &lt;/section>
+&lt;/header>
+</code></pre>
         <h4>Header with buttons</h4>
         <article class="border mb-6">
           <header class="page-header">
@@ -369,6 +467,22 @@ Please refer to the fullcalendar documentation for the specifics of the implemen
             </aside>
           </header>
         </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;header class="page-header">
+  &lt;section>
+    &lt;h1>Header title example&lt;/h1>
+    &lt;p>Header description example&lt;/p>
+  &lt;/section>
+&lt;/header>
+&lt;aside>
+  &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  ...
+  &lt;/svg>
+  &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  ...
+  &lt;/svg>
+&lt;/aside>
+</code></pre>
         <h4>Header with search bar</h4>
         <article class="border mb-6">
           <header class="page-header">
@@ -388,6 +502,24 @@ Please refer to the fullcalendar documentation for the specifics of the implemen
             </aside>
           </header>
         </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;header class="page-header">
+  &lt;section>
+    &lt;h1>Header title example&lt;/h1>
+    &lt;p>Header description example&lt;/p>
+  &lt;/section>
+&lt;/header>
+&lt;aside>
+  &lt;div class="input-icon">
+    &lt;input type='text' id='full-name' placeholder="Search your name" />
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    &lt;/svg>
+  &lt;/div>
+&lt;/aside>
+</code></pre>
       </div>
     </section>
 
@@ -750,8 +882,6 @@ Please refer to the fullcalendar documentation for the specifics of the implemen
               <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05</th>
             </tr>
           </thead>
-
-
 
           <tr class="border-b-2 border-light-gray">
             <td class="pl-4 py-4 font-bold">
