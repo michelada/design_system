@@ -7,7 +7,8 @@
     & li {
       @apply flex flex-row justify-start items-center text-gray-light cursor-pointer font-sans not-italic font-semibold h-24 text-base leading-6;
 
-      & img {
+      & img,
+      & svg { 
         @apply ml-8 inline;
       }
       & span {
