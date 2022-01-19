@@ -4,29 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MicheCSS</title>
+    <style>
+      #navbar-spy a.active {
+        color: #EA3434;
+      }
+    </style>
   </head>
   
-  <body class="container mx-auto px-5 pt-10 grid grid-cols-12 gap-5">
+  <body class="container mx-auto px-5 grid grid-cols-12 gap-5">
     <aside class="col-span-3">
-      <nav class="sticky top-5">
+      <nav class="sticky top-5" id="navbar-spy">
         <ul class="bg-white-ish w-full p-5 rounded-xl shadow-sm">
           <li class="title">Sips and Bits</li>
-          <li><a href="#typography" class="text-blue-dark hover:text-red font-bold">Typography</a></li>
-          <li><a href="#color-palette" class="text-blue-dark hover:text-red font-bold">Color Palette</a></li>
-          <li><a href="#calendar" class="text-blue-dark hover:text-red font-bold">Calendar</a></li>
-          <li><a href="#menus" class="text-blue-dark hover:text-red font-bold">Menus</a></li>
-          <li><a href="#tabs" class="text-blue-dark hover:text-red font-bold">Tabs</a></li>
-          <li><a href="#sidebar-mobile" class="text-blue-dark hover:text-red font-bold">Sidebar mobile</a></li>
-          <li><a href="#headers" class="text-blue-dark hover:text-red font-bold">Headers</a></li>
-          <li><a href="#buttons" class="text-blue-dark hover:text-red font-bold">Buttons</a></li>
-          <li><a href="#forms" class="text-blue-dark hover:text-red font-bold">Forms</a></li>
-          <li><a href="#alerts" class="text-blue-dark hover:text-red font-bold">Alerts</a></li>
-          <li><a href="#tables" class="text-blue-dark hover:text-red font-bold">Tables</a></li>
+          <li><a href="#typography" class="text-gray hover:text-blue-dark font-bold">Typography</a></li>
+          <li><a href="#color-palette" class="text-gray hover:text-blue-dark font-bold">Color Palette</a></li>
+          <li><a href="#calendar" class="text-gray hover:text-blue-dark font-bold">Calendar</a></li>
+          <li><a href="#menus" class="text-gray hover:text-blue-dark font-bold">Menus</a></li>
+          <li><a href="#tabs" class="text-gray hover:text-blue-dark font-bold">Tabs</a></li>
+          <li><a href="#sidebar-mobile" class="text-gray hover:text-blue-dark font-bold">Sidebar mobile</a></li>
+          <li><a href="#headers" class="text-gray hover:text-blue-dark font-bold">Headers</a></li>
+          <li><a href="#buttons" class="text-gray hover:text-blue-dark font-bold">Buttons</a></li>
+          <li><a href="#forms" class="text-gray hover:text-blue-dark font-bold">Forms</a></li>
+          <li><a href="#alerts" class="text-gray hover:text-blue-dark font-bold">Alerts</a></li>
+          <li><a href="#tables" class="text-gray hover:text-blue-dark font-bold">Tables</a></li>
         </ul>
       </nav>
     </aside>
     <main class="col-span-9">
-      <section id="typography">
+      <section id="typography" class="py-5">
         <header>
           <h1 class='text-red'>Typography</h1>
         </header>
@@ -226,7 +231,7 @@
         <header>
           <h1 class='text-red'>Calendar</h1>
         </header>
-        <div id="calendar"></div>
+        <div id="calendarWidget"></div>
   <pre class="language-markup rounded-xl"><code>
   Sips and Bits offers a fullcalendar customized theme.
   Please refer to the fullcalendar documentation for the specifics of the implementation.

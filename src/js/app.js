@@ -11,8 +11,10 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
 
+import VanillaScrollspy from 'vanillajs-scrollspy';
+
 document.addEventListener('DOMContentLoaded', function () {
-    var calendarEl = document.getElementById('calendar');
+    var calendarEl = document.getElementById('calendarWidget');
     var calendar = new Calendar(calendarEl, {
     plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ],
     initialView: 'dayGridMonth',
@@ -29,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
     });
     calendar.render();
+    
+    const navbar = document.querySelector('#navbar-spy');
+    const scrollspy = VanillaScrollspy(navbar, 1000);
+    scrollspy.init();
 });
-
-//require('./sidebar-mobile.js');
