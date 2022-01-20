@@ -3,35 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MicheCSS</title>
     <style>
       #navbar-spy a.active {
-        color: #EA3434;
+        background-color: #292C52;
       }
     </style>
   </head>
-  
-  <body class="container mx-auto px-5 grid grid-cols-12 gap-5">
-    <aside class="col-span-3">
-      <nav class="sticky top-5" id="navbar-spy">
-        <ul class="bg-white-ish w-full p-5 rounded-xl shadow-sm">
-          <li class="title">Sips and Bits</li>
-          <li><a href="#typography" class="text-gray hover:text-blue-dark font-bold">Typography</a></li>
-          <li><a href="#color-palette" class="text-gray hover:text-blue-dark font-bold">Color Palette</a></li>
-          <li><a href="#calendar" class="text-gray hover:text-blue-dark font-bold">Calendar</a></li>
-          <li><a href="#menus" class="text-gray hover:text-blue-dark font-bold">Menus</a></li>
-          <li><a href="#tabs" class="text-gray hover:text-blue-dark font-bold">Tabs</a></li>
-          <li><a href="#sidebar-mobile" class="text-gray hover:text-blue-dark font-bold">Sidebar mobile</a></li>
-          <li><a href="#headers" class="text-gray hover:text-blue-dark font-bold">Headers</a></li>
-          <li><a href="#buttons" class="text-gray hover:text-blue-dark font-bold">Buttons</a></li>
-          <li><a href="#forms" class="text-gray hover:text-blue-dark font-bold">Forms</a></li>
-          <li><a href="#alerts" class="text-gray hover:text-blue-dark font-bold">Alerts</a></li>
-          <li><a href="#tables" class="text-gray hover:text-blue-dark font-bold">Tables</a></li>
-        </ul>
+  <body class="flex">
+    <aside class="bg-dark h-[100vh] sticky top-0 min-w-fit">
+      <header class="p-5">
+        <img class="block mx-auto" src="assets/img/logo-placeholder.png">
+      </header>
+      <nav class="flex flex-col items-start" id="navbar-spy">
+        <a href="#typography" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
+          </svg>
+          <span class="ml-5">Typography</span>
+        </a>
+
+        <a href="#color-palette" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Color palette</span>
+        </a>
+        
+        <a href="#calendar" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Calendar</span>
+        </a>
+        
+        <a href="#menus" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Menu</span>
+        </a>
+        
+        <a href="#tabs" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
+          </svg>
+          <span class="ml-5">Tabs</span>
+        </a>
+        
+        <a href="#sidebar-mobile" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Sidebar mobile</span>
+        </a>
+
+        <a href="#headers" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Headers</span>
+        </a>
+
+        <a href="#buttons" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Buttons</span>
+        </a>
+
+        <a href="#forms" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Forms</span>
+        </a>
+
+        <a href="#alerts" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+          </svg>
+          <span class="ml-5">Alerts</span>
+        </a>
+
+        <a href="#tables" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Tables</span>
+        </a>
       </nav>
+      <footer class="absolute bottom-0 right-0">
+        <a href="#" class="text-white block p-5" id="sb-sidebar-toggle">
+          <svg data-role="open" class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.49491 12.6479L5.35714 16.7857L6.82688 18.1709C7.50188 18.8459 7.02384 20 6.06929 20H1.06929C0.477545 20 0 19.5203 0 18.9286V13.9286C0 12.974 1.15192 12.496 1.82688 13.1709L3.21429 14.6429L7.35205 10.5051C7.63098 10.2262 8.08326 10.2262 8.36219 10.5051L9.49491 11.6378C9.77388 11.9167 9.77388 12.369 9.49491 12.6479V12.6479ZM10.5051 7.35205L14.6429 3.21429L13.1731 1.82906C12.4981 1.15406 12.9762 0 13.9307 0H18.9307C19.5225 0 20 0.479688 20 1.07143V6.07143C20 7.02598 18.8481 7.50402 18.1731 6.82906L16.7857 5.35714L12.6479 9.49491C12.369 9.77384 11.9167 9.77384 11.6378 9.49491L10.5051 8.36219C10.2261 8.08326 10.2261 7.63103 10.5051 7.35205V7.35205Z"
+              fill="currentColor" />
+          </svg>
+          <svg data-role="close" class="close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.209196 17.6479L4.64286 13.2143L3.17313 11.8291C2.49813 11.1541 2.97616 10 3.93071 10H8.93071C9.52246 10 10 10.4797 10 11.0714V16.0714C10 17.026 8.84808 17.504 8.17313 16.8291L6.78571 15.3571L2.35205 19.7908C2.07313 20.0697 1.62085 20.0697 1.34192 19.7908L0.209196 18.6581C-0.0697322 18.3792 -0.0697322 17.9269 0.209196 17.6479V17.6479ZM19.7908 2.35205L15.3571 6.78571L16.8269 8.17094C17.5019 8.84594 17.0238 10 16.0693 10H11.0693C10.4775 10 10 9.52031 10 8.92857V3.92857C10 2.97402 11.1519 2.49598 11.8269 3.17094L13.2143 4.64286L17.6479 0.209196C17.9269 -0.0697322 18.3792 -0.0697322 18.6581 0.209196L19.7908 1.34192C20.0697 1.62085 20.0697 2.07312 19.7908 2.35205V2.35205Z"
+              fill="currentColor" />
+          </svg>
+        </a>
+      </footer>
     </aside>
-    <main class="col-span-9">
-      <section id="typography" class="py-5">
+    <main class="p-10 max-w-6xl">
+      <section id="typography" class="pb-5">
         <header>
           <h1 class='text-red'>Typography</h1>
         </header>
@@ -1230,7 +1307,6 @@
   </code></pre>
         </section>
     </main>
-    
     <script src="bundle.js"></script>
   </body>
 </html>

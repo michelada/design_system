@@ -13,6 +13,7 @@
 @import 'components/headers';
 @import 'components/menus';
 @import 'components/tabs';
+@import 'components/sidebar';
 @import 'components/sidebar-mobile';
 @import 'components/tbl-collapsable-mobile';
 @import 'components/cards';
