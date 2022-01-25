@@ -13,11 +13,11 @@
 @import 'components/headers';
 @import 'components/menus';
 @import 'components/tabs';
+@import 'components/sidebar';
 @import 'components/sidebar-mobile';
 @import 'components/tbl-collapsable-mobile';
 @import 'components/cards';
 
-@import 'vendor/fullcalendar';
 @import 'components/brand';
 @import 'components/description_container.css';
 @import 'components/footer.css';
@@ -25,4 +25,6 @@
 @import 'components/navigation-bar.css';
 @import 'components/pto.css';
 @import 'components/table.css';
-@import 'prismjs';
+
+@import 'vendor/prism';
+@import 'vendor/fullcalendar';

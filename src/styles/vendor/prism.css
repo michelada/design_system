@@ -1,0 +1,24 @@
+@import 'prismjs/themes/prism-tomorrow.css';
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  @apply bg-dark;
+}
+
+.token.tag,
+.token.namespace,
+.token.deleted {
+  @apply text-red;
+}
+
+.token.attr-name {
+  @apply text-yellow;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  @apply text-green;
+}

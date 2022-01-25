@@ -15,7 +15,8 @@
     "@tailwindcss/forms": "^0.4.0",
     "core-js": "^3.20.2",
     "fullcalendar": "^5.10.1",
-    "regenerator-runtime": "^0.13.9"
+    "regenerator-runtime": "^0.13.9",
+    "vanillajs-scrollspy": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",

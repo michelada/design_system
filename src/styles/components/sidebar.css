@@ -1,0 +1,19 @@
+body.collapsed {
+  > aside {
+    header {
+      @apply px-0;
+      
+      img {
+        @apply w-12 px-1;
+      }
+    }
+
+    nav a {
+      @apply px-5;
+      
+      span {
+        @apply hidden;
+      }
+    }
+  }
+}

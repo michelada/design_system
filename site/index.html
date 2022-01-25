@@ -1,749 +1,1252 @@
 <!doctype html>
 <html>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MicheCSS</title>
-</head>
-
-<body>
-  <main class="container mx-auto py-5 mb-32">
-    <section>
-      <header>
-        <h1 class='text-red'>Typography</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      #navbar-spy a.active {
+        background-color: #292C52;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <aside class="bg-dark h-[100vh] sticky top-0 min-w-fit">
+      <header class="p-5">
+        <img class="block mx-auto" src="assets/img/logo-placeholder.png">
       </header>
-      <h1>H1 ITC Avant Garde Gothic - Bold 39px</h1>
-      <h2>H2 ITC Avant Garde Gothic - Bold 31px</h2>
-      <h3>H3 ITC Avant Garde Gothic - Bold 25px</h3>
-      <h4>H4 ITC Avant Garde Gothic - Bold 20px </h4>
-      <p>Noto Sand Regular 16px</p>
-      <p class='font-bold'>Noto Sand Regular 16px</p>
-      <p class='text-gray-lighter'>Noto Sand Regular 16px</p>
-      <p class='text-sm'>notes</p>
-      <small>more notes in small</small>
-      <div>
-        <a href='http://www.michelada.io'>This is a link</a>
-      </div>
-      <pre><code class="language-markup">
-&lt;h1>H1 ITC Avant Garde Gothic - Bold 39px&lt;/h1>
-&lt;h2>H2 ITC Avant Garde Gothic - Bold 31px&lt;/h2>
-      </code></pre>
-      <article class="my-5">
-        <h2>Lists</h2>
-        <div class="my-2">
-          <pre class="bg-white-ish p-2">simple list</pre>
-          <ul>
-            <li>List item 1</li>
-            <li>List item 2</li>
-            <li>List item 3</li>
-          </ul>
-        </div>
-        <div class="my-2">
-          <pre class="bg-white-ish p-2">with title / subtitle</pre>
-          <ul>
-            <li class="title">Title01</li>
-            <li class="subtitle">subtitle</li>
-            <li>content01</li>
-            <li>content02</li>
-            <li>content03</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-    <section class="mt-10">
-      <header>
-        <h1 class='text-red'>Color palette</h1>
-      </header>
-      <table class="table-auto">
-        <tbody>
-          <tr>
-            <td class="text-right font-bold text-gray-500">
-              main palette
-            </td>
-            <td>
-              <div class="ml-5 grid grid-cols-5 gap-7">
-                <div class="text-center">
-                  <div class="bg-dark w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#15162F</div>
-                  <div class="w-full font-bold ">dark</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-blue-dark w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#292C52</div>
-                  <div class="w-full font-bold">blue-dark</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-red w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#EA3434</div>
-                  <div class="w-full font-bold">red</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-yellow w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#F9D026</div>
-                  <div class="w-full font-bold">yellow</div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-right font-bold text-gray-500">
-              secondary palette
-            </td>
-            <td>
-              <div class="ml-5 grid grid-cols-5 gap-7">
-                <div class="text-center">
-                  <div class="bg-green w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#00B5AF</div>
-                  <div class="w-full font-bold ">green</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-blue-picton w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#43B7E9</div>
-                  <div class="w-full font-bold">blue-picton</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-blue w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#3264FA</div>
-                  <div class="w-full font-bold">blue</div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-right font-bold text-gray-500">
-              gray scale
-            </td>
-            <td>
-              <div class="ml-5 grid grid-cols-5 gap-7">
-                <div class="text-center">
-                  <div class="bg-gray w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#15162F</div>
-                  <div class="w-full font-bold ">gray</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-gray-light w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#828F96</div>
-                  <div class="w-full font-bold">gray-light</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-gray-lighter w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#A5B1B8</div>
-                  <div class="w-full font-bold">gray-lighter</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-gray-lightest w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#E6EDF0</div>
-                  <div class="w-full font-bold">gray-lightest</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-white-ish w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#F5F8FA</div>
-                  <div class="w-full font-bold">white-ish</div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td class="text-right font-bold text-gray-500">
-              other colors
-            </td>
-            <td>
-              <div class="ml-5 grid grid-cols-5 gap-7">
-                <div class="text-center">
-                  <div class="bg-dark-charcoal w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#333333</div>
-                  <div class="w-full font-bold ">dark-charcoal</div>
-                </div>
-                <div class="text-center">
-                  <div class="bg-blue-wind w-10 h-10 rounded-full mx-auto"></div>
-                  <div class="w-full">#9CAFC8</div>
-                  <div class="w-full font-bold ">blue-wind</div>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    
-    <section class="mt-10">
-      <header>
-        <h1 class='text-red'>Calendar</h1>
-      </header>
-      <div id="calendar"></div>
-    </section>
-    <section class='mt-10'>
-      <header>
-        <h1 class="text-red">Menus</h1>
-      </header>
-
-      <html-import src="menus.html">
-      </html-import>
-    </section>
-    <section class="mt-10">
-      <header>
-        <h1 class="text-red">Tabs</h1>
-      </header>
-      <div class="flex flex-row justify-center md:w-1/2 w-full">
-        <div class="sm:w-52 w-1/3  py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg">
-          Focus
-        </div>
-        <div class=" sm:w-52 w-1/3  py-3 bg-gray-lighter text-dark  text-center font-bold">
-          Hover
-        </div>
-        <div
-          class=" sm:w-52 w-1/3  py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg  focus:bg-blue-dark focus:text-white  hover:bg-gray-lighter hover:text-dark">
-          Normal
-        </div>
-      </div>
-
-      <div class="flex flex-row justify-center md:w-1/2 w-full mt-10">
-        <div class="w-52 py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg flex justify-center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M2.32575 10.7789C2.27576 11.1789 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2487 16.9922 20.3765C16.879 19.5561 17.0988 18.8625 17.6387 18.2562L19.3619 16.5403C20.3005 15.6012 20.3005 14.0689 19.3619 13.1298C18.4233 12.1907 16.8962 12.1907 15.9506 13.1298L13.0857 15.9896C13.0783 15.9971 13.0703 16.0051 13.0619 16.0136C12.6518 16.4286 11.1186 17.9796 9.46429 16.5403C8.52566 15.6012 8.55368 14.0266 9.49931 13.0804L13.583 8.99193C14.5217 8.05279 14.5217 6.52051 13.583 5.58137C13.2118 5.2495 12.8405 5.02354 12.3362 4.91762C12.2554 4.91762 12.1788 4.91723 12.1059 4.91687C11.2443 4.91252 10.9016 4.91079 10.1718 5.58137L5.47863 10.27C5.31052 10.4395 4.96729 10.7784 4.96729 10.7784C4.16471 11.3037 3.12656 11.3024 2.32575 10.7789ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4059 8.97781C16.4059 7.78447 17.3796 6.81002 18.5774 6.81002C19.7752 6.81002 20.7488 7.7774 20.7488 8.97781C20.7488 10.1712 19.7752 11.1456 18.5774 11.1456C17.3796 11.1456 16.4059 10.1782 16.4059 8.97781Z"
-              fill="white" />
+      <nav class="flex flex-col items-start" id="navbar-spy">
+        <a href="#typography" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
           </svg>
-          <span>
-            Focus
-          </span>
-        </div>
-        <div class=" w-52 py-3 bg-gray-lighter text-dark  text-center font-bold flex justify-center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
-              fill="#15162F" />
-          </svg>
+          <span class="ml-5">Typography</span>
+        </a>
 
-          <span>
-            Hover
-          </span>
-        </div>
-        <div
-          class=" w-52 py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg  focus:bg-blue-dark        focus:text-white  hover:bg-gray-lighter hover:text-dark flex justify-center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
-            class="mr-4">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
-              fill="#3264FA" />
+        <a href="#color-palette" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd" />
           </svg>
-
-          <span>
-            Normal
-          </span>
-        </div>
-      </div>
-      <div class="flex flex-row justify-start md:w-1/2 w-full mt-10 sm:mt-10 ml-0 sm:ml-20">
-        <div class="w-32 py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg flex justify-center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-            class="">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M2.32575 10.7789C2.27576 11.1789 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2487 16.9922 20.3765C16.879 19.5561 17.0988 18.8625 17.6387 18.2562L19.3619 16.5403C20.3005 15.6012 20.3005 14.0689 19.3619 13.1298C18.4233 12.1907 16.8962 12.1907 15.9506 13.1298L13.0857 15.9896C13.0783 15.9971 13.0703 16.0051 13.0619 16.0136C12.6518 16.4286 11.1186 17.9796 9.46429 16.5403C8.52566 15.6012 8.55368 14.0266 9.49931 13.0804L13.583 8.99193C14.5217 8.05279 14.5217 6.52051 13.583 5.58137C13.2118 5.2495 12.8405 5.02354 12.3362 4.91762C12.2554 4.91762 12.1788 4.91723 12.1059 4.91687C11.2443 4.91252 10.9016 4.91079 10.1718 5.58137L5.47863 10.27C5.31052 10.4395 4.96729 10.7784 4.96729 10.7784C4.16471 11.3037 3.12656 11.3024 2.32575 10.7789ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4059 8.97781C16.4059 7.78447 17.3796 6.81002 18.5774 6.81002C19.7752 6.81002 20.7488 7.7774 20.7488 8.97781C20.7488 10.1712 19.7752 11.1456 18.5774 11.1456C17.3796 11.1456 16.4059 10.1782 16.4059 8.97781Z"
-              fill="white" />
+          <span class="ml-5">Color palette</span>
+        </a>
+        
+        <a href="#calendar" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
           </svg>
-        </div>
-        <div class=" w-32 py-3 bg-gray-lighter text-dark  text-center font-bold flex justify-center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
-            class="">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
-              fill="#15162F" />
+          <span class="ml-5">Calendar</span>
+        </a>
+        
+        <a href="#menus" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
           </svg>
-
-        </div>
-        <div
-          class=" w-32 py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg  focus:bg-blue-dark        focus:text-white  hover:bg-gray-lighter hover:text-dark flex justify-center">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
-            class="">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
-              fill="#3264FA" />
+          <span class="ml-5">Menu</span>
+        </a>
+        
+        <a href="#tabs" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
           </svg>
+          <span class="ml-5">Tabs</span>
+        </a>
+        
+        <a href="#sidebar-mobile" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Sidebar mobile</span>
+        </a>
 
+        <a href="#headers" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Headers</span>
+        </a>
+
+        <a href="#buttons" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Buttons</span>
+        </a>
+
+        <a href="#forms" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Forms</span>
+        </a>
+
+        <a href="#alerts" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
+          </svg>
+          <span class="ml-5">Alerts</span>
+        </a>
+
+        <a href="#tables" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Tables</span>
+        </a>
+      </nav>
+      <footer class="absolute bottom-0 right-0">
+        <a href="#" class="text-white block p-5" id="sb-sidebar-toggle">
+          <svg data-role="open" class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M9.49491 12.6479L5.35714 16.7857L6.82688 18.1709C7.50188 18.8459 7.02384 20 6.06929 20H1.06929C0.477545 20 0 19.5203 0 18.9286V13.9286C0 12.974 1.15192 12.496 1.82688 13.1709L3.21429 14.6429L7.35205 10.5051C7.63098 10.2262 8.08326 10.2262 8.36219 10.5051L9.49491 11.6378C9.77388 11.9167 9.77388 12.369 9.49491 12.6479V12.6479ZM10.5051 7.35205L14.6429 3.21429L13.1731 1.82906C12.4981 1.15406 12.9762 0 13.9307 0H18.9307C19.5225 0 20 0.479688 20 1.07143V6.07143C20 7.02598 18.8481 7.50402 18.1731 6.82906L16.7857 5.35714L12.6479 9.49491C12.369 9.77384 11.9167 9.77384 11.6378 9.49491L10.5051 8.36219C10.2261 8.08326 10.2261 7.63103 10.5051 7.35205V7.35205Z"
+              fill="currentColor" />
+          </svg>
+          <svg data-role="close" class="close" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0.209196 17.6479L4.64286 13.2143L3.17313 11.8291C2.49813 11.1541 2.97616 10 3.93071 10H8.93071C9.52246 10 10 10.4797 10 11.0714V16.0714C10 17.026 8.84808 17.504 8.17313 16.8291L6.78571 15.3571L2.35205 19.7908C2.07313 20.0697 1.62085 20.0697 1.34192 19.7908L0.209196 18.6581C-0.0697322 18.3792 -0.0697322 17.9269 0.209196 17.6479V17.6479ZM19.7908 2.35205L15.3571 6.78571L16.8269 8.17094C17.5019 8.84594 17.0238 10 16.0693 10H11.0693C10.4775 10 10 9.52031 10 8.92857V3.92857C10 2.97402 11.1519 2.49598 11.8269 3.17094L13.2143 4.64286L17.6479 0.209196C17.9269 -0.0697322 18.3792 -0.0697322 18.6581 0.209196L19.7908 1.34192C20.0697 1.62085 20.0697 2.07312 19.7908 2.35205V2.35205Z"
+              fill="currentColor" />
+          </svg>
+        </a>
+      </footer>
+    </aside>
+    <main class="p-10 max-w-6xl">
+      <section id="typography" class="pb-5">
+        <header>
+          <h1 class='text-red'>Typography</h1>
+        </header>
+        <h1>H1 ITC Avant Garde Gothic - Bold 39px</h1>
+        <h2>H2 ITC Avant Garde Gothic - Bold 31px</h2>
+        <h3>H3 ITC Avant Garde Gothic - Bold 25px</h3>
+        <h4>H4 ITC Avant Garde Gothic - Bold 20px </h4>
+        <p>Noto Sand Regular 16px</p>
+        <p class='font-bold'>Noto Sand Regular 16px</p>
+        <p class='text-gray-lighter'>Noto Sand Regular 16px</p>
+        <p class='text-sm'>notes 12.8px</p>
+        <small>more notes in small</small>
+        <div>
+          <a href='http://www.michelada.io'>This is a link</a>
         </div>
-      </div>
-    </section>
-
-    <section class="mt-10">
-      <div class="w-full h-auto overflow-y-hidden">
-        <h1 class="text-red">Sidebar - mobile</h1>
+        <pre class="language-markup rounded-xl"><code>
+  &lt;h1>H1 ITC Avant Garde Gothic - Bold 39px&lt;/h1>
+  &lt;h2>H2 ITC Avant Garde Gothic - Bold 31px&lt;/h2>
+  &lt;h3>H3 ITC Avant Garde Gothic - Bold 25px&lt;/h2>
+  &lt;h4>H4 ITC Avant Garde Gothic - Bold 20px&lt;/h2>
+  &lt;p>Nodo Sans Regular 16px&lt;/p>
+  &lt;p class="font-bold">Nodo Sans Regular 16px&lt;/p>
+  &lt;p class="text-gray-lighter">Nodo Sans Regular 16px&lt;/p>
+  &lt;p class="text-sm">notes 12.8px&lt;/p>
+  &lt;small>notes in small&lt;/small>
+  &lt;a href="#">This is a link&lt;/a>
+        </code></pre>
+        <article class="my-5">
+          <h2>Lists</h2>
+          <div class="my-2">
+            <h4 class="text-red">Simple list</h3>
+            <ul>
+              <li>List item 1</li>
+              <li>List item 2</li>
+              <li>List item 3</li>
+            </ul>
+            <pre class="language-markup rounded-xl"><code>
+  &lt;ul>
+    &lt;li>List item 1&lt;/li>
+    &lt;li>List item 2&lt;/li>
+    &lt;li>List item 3&lt;/li>
+  &lt;/ul>
+            </code></pre>
+          </div>
+          <div class="my-2">
+            <h4 class="text-red">with title / subtitle</h4>
+            <ul>
+              <li class="title">Title01</li>
+              <li class="subtitle">subtitle</li>
+              <li>content01</li>
+              <li>content02</li>
+              <li>content03</li>
+            </ul>
+            <pre class="language-markup rounded-xl"><code>
+  &lt;ul>
+    &lt;li class="title">title&lt;/li>
+    &lt;li class="subtitle">subtitle&lt;/li>
+    &lt;li>content01&lt;/li>
+    &lt;li>content02&lt;/li>
+    &lt;li>content03&lt;/li>
+  &lt;/ul>
+            </code></pre>
+          </div>
+        </article>
+      </section>
+      <section class="mt-10" id="color-palette">
+        <header>
+          <h1 class='text-red'>Color palette</h1>
+        </header>
+        <table class="table-auto mb-10">
+          <tbody>
+            <tr>
+              <td class="text-right font-bold text-gray-500">
+                main palette
+              </td>
+              <td>
+                <div class="ml-5 grid grid-cols-5 gap-7">
+                  <div class="text-center">
+                    <div class="bg-dark w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#15162F</div>
+                    <div class="w-full font-bold ">dark</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-blue-dark w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#292C52</div>
+                    <div class="w-full font-bold">blue-dark</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-red w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#EA3434</div>
+                    <div class="w-full font-bold">red</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-yellow w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#F9D026</div>
+                    <div class="w-full font-bold">yellow</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-right font-bold text-gray-500">
+                secondary palette
+              </td>
+              <td>
+                <div class="ml-5 grid grid-cols-5 gap-7">
+                  <div class="text-center">
+                    <div class="bg-green w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#00B5AF</div>
+                    <div class="w-full font-bold ">green</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-blue-picton w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#43B7E9</div>
+                    <div class="w-full font-bold">blue-picton</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-blue w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#3264FA</div>
+                    <div class="w-full font-bold">blue</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-right font-bold text-gray-500">
+                gray scale
+              </td>
+              <td>
+                <div class="ml-5 grid grid-cols-5 gap-7">
+                  <div class="text-center">
+                    <div class="bg-gray w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#15162F</div>
+                    <div class="w-full font-bold ">gray</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-gray-light w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#828F96</div>
+                    <div class="w-full font-bold">gray-light</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-gray-lighter w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#A5B1B8</div>
+                    <div class="w-full font-bold">gray-lighter</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-gray-lightest w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#E6EDF0</div>
+                    <div class="w-full font-bold">gray-lightest</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-white-ish w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#F5F8FA</div>
+                    <div class="w-full font-bold">white-ish</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-right font-bold text-gray-500">
+                other colors
+              </td>
+              <td>
+                <div class="ml-5 grid grid-cols-5 gap-7">
+                  <div class="text-center">
+                    <div class="bg-dark-charcoal w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#333333</div>
+                    <div class="w-full font-bold ">dark-charcoal</div>
+                  </div>
+                  <div class="text-center">
+                    <div class="bg-blue-wind w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#9CAFC8</div>
+                    <div class="w-full font-bold ">blue-wind</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <pre class="language-markup rounded-xl"><code>
+  You can use the color palette to colorize your texts. 
+    i.e &lt;span class="text-red">text in red&lt;/span> will produce an span in #EA3434 color.
+  additionally can use the palette as background colors. 
+    i.e &lt;div class="bg-red">text in red&lt;/div> will produce an div in #EA3434 color.
+  Controll the opacity of the colors by using the slash modifier. 
+    i.e &lt;span class="text-red/50">text in red&lt;/span> will produce an span in #EA3434 color with 50% opacity."
+            </code></pre>
+        </code></pre>
+        <div class="text-sm leading-tight"> 
+          For more information about how to use the color palette, please refer to the <a href="https://tailwindcss.com/docs/customizing-colors">customizing colors</a> section of the Tailwind documentation.
+          <br/>
+          Also please check out the <a href="https://tailwindcss.com/docs/text-color">text color</a>  and <a href="https://tailwindcss.com/docs/background-color">background color</a> sections of the Tailwind documentation.
+        </div>
+      </section>
+      
+      <section class="mt-10" id="calendar">
+        <header>
+          <h1 class='text-red'>Calendar</h1>
+        </header>
+        <div id="calendarWidget"></div>
+  <pre class="language-markup rounded-xl"><code>
+  Sips and Bits offers a fullcalendar customized theme.
+  Please refer to the fullcalendar documentation for the specifics of the implementation.
+  </code></pre>
+  <div class="text-sm leading-tight"> 
+    For more information about how to use the calendar, please refer to the <a href="https://fullcalendar.io/docs/month-view">fullcalendar</a> documentation. 
+  </div>
+      </section>
+  
+      <section class='mt-10' id="menus">
+        <header>
+          <h1 class="text-red">Menus</h1>
+        </header>
+  
         <div class="flex">
-          <html-import title="sidebar" width="380px" seamless height="700px" src="./sidebar-mobile.html"></html-import>
-          <html-import title="code" seamless width="900px" scroll="auto" height="700"
-            src="./sidebar-mobile.html?hideSidebar=true"></html-import>
+          <html-import src="menus.html" class="mr-5"></html-import>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div class="menu sidebar">
+    &lt;div class="mb-10">
+      &lt;img class="logo" src="..." alt="logo michelada">
+    &lt;/div>
+  
+    &lt;div class="w-full mb-10">
+      &lt;ul>
+        &lt;li class="active">
+          &lt;svg ...> &lt;/svg> &lt;span>link01&lt;/span>
+        &lt;/li>
+        &lt;li>
+          &lt;svg ...> &lt;/svg> &lt;span>link con nombre largo&lt;/span>
+        &lt;/li>
+        ...
+        &lt;li>
+          &lt;svg ...> &lt;/svg> &lt;span>link04&lt;/span>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  
+    &lt;div class="toggle-menu">
+      &lt;svg class="expand" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        &lt;path
+          d="M9.49491 12.6479L5.35714 16.7857L6.82688 18.1709C7.50188 18.8459 7.02384 20 6.06929 20H1.06929C0.477545 20 0 19.5203 0 18.9286V13.9286C0 12.974 1.15192 12.496 1.82688 13.1709L3.21429 14.6429L7.35205 10.5051C7.63098 10.2262 8.08326 10.2262 8.36219 10.5051L9.49491 11.6378C9.77388 11.9167 9.77388 12.369 9.49491 12.6479V12.6479ZM10.5051 7.35205L14.6429 3.21429L13.1731 1.82906C12.4981 1.15406 12.9762 0 13.9307 0H18.9307C19.5225 0 20 0.479688 20 1.07143V6.07143C20 7.02598 18.8481 7.50402 18.1731 6.82906L16.7857 5.35714L12.6479 9.49491C12.369 9.77384 11.9167 9.77384 11.6378 9.49491L10.5051 8.36219C10.2261 8.08326 10.2261 7.63103 10.5051 7.35205V7.35205Z"
+          fill="currentColor" />
+      &lt;/svg>
+      &lt;svg class="compress" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        &lt;path
+          d="M0.209196 17.6479L4.64286 13.2143L3.17313 11.8291C2.49813 11.1541 2.97616 10 3.93071 10H8.93071C9.52246 10 10 10.4797 10 11.0714V16.0714C10 17.026 8.84808 17.504 8.17313 16.8291L6.78571 15.3571L2.35205 19.7908C2.07313 20.0697 1.62085 20.0697 1.34192 19.7908L0.209196 18.6581C-0.0697322 18.3792 -0.0697322 17.9269 0.209196 17.6479V17.6479ZM19.7908 2.35205L15.3571 6.78571L16.8269 8.17094C17.5019 8.84594 17.0238 10 16.0693 10H11.0693C10.4775 10 10 9.52031 10 8.92857V3.92857C10 2.97402 11.1519 2.49598 11.8269 3.17094L13.2143 4.64286L17.6479 0.209196C17.9269 -0.0697322 18.3792 -0.0697322 18.6581 0.209196L19.7908 1.34192C20.0697 1.62085 20.0697 2.07312 19.7908 2.35205V2.35205Z"
+          fill="currentColor" />
+      &lt;/svg>
+    &lt;/div>
+  &lt;/div>
+  
+  </code></pre>
         </div>
-      </div>
-    </section>
-
-
-    
-
-    <section class="mt-10">
-      <header>
-        <h1 class="text-red">Headers</h1>
-      </header>
-      <div>
-        <h4>Basic Header</h4>
-        <article class="border mb-6">
-          <header class="page-header">
-            <section>
-              <h1>Header title example</h1>
-              <p>Header description example</p>
-            </section>
-          </header>
-        </article>
-        <h4>Header with buttons</h4>
-        <article class="border mb-6">
-          <header class="page-header">
-            <section>
-              <h1>Header title example</h1>
-              <p>Header description example</p>
-            </section>
-            <aside>
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
-                  fill="#E6EDF0" />
-                <path
-                  d="M27 15.9999H13C11.34 15.9999 10 17.3399 10 18.9999V24.9999H14V28.9999H26V24.9999H30V18.9999C30 17.3399 28.66 15.9999 27 15.9999ZM24 26.9999H16V21.9999H24V26.9999ZM27 19.9999C26.45 19.9999 26 19.5499 26 18.9999C26 18.4499 26.45 17.9999 27 17.9999C27.55 17.9999 28 18.4499 28 18.9999C28 19.5499 27.55 19.9999 27 19.9999ZM26 10.9999H14V14.9999H26V10.9999Z"
-                  fill="#3264FA" />
+      </section>
+  
+      <section class="mt-10" id="tabs">
+        <header>
+          <h1 class="text-red">Tabs</h1>
+        </header>
+        <div class="flex flex-row justify-center md:w-1/2 w-full">
+          <div class="sm:w-52 w-1/3  py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg">
+            Focus
+          </div>
+          <div class=" sm:w-52 w-1/3  py-3 bg-gray-lighter text-dark  text-center font-bold">
+            Hover
+          </div>
+          <div
+            class=" sm:w-52 w-1/3  py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg  focus:bg-blue-dark focus:text-white  hover:bg-gray-lighter hover:text-dark">
+            Normal
+          </div>
+        </div>
+  
+        <div class="flex flex-row justify-center md:w-1/2 w-full mt-10">
+          <div class="w-52 py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg flex justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.32575 10.7789C2.27576 11.1789 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2487 16.9922 20.3765C16.879 19.5561 17.0988 18.8625 17.6387 18.2562L19.3619 16.5403C20.3005 15.6012 20.3005 14.0689 19.3619 13.1298C18.4233 12.1907 16.8962 12.1907 15.9506 13.1298L13.0857 15.9896C13.0783 15.9971 13.0703 16.0051 13.0619 16.0136C12.6518 16.4286 11.1186 17.9796 9.46429 16.5403C8.52566 15.6012 8.55368 14.0266 9.49931 13.0804L13.583 8.99193C14.5217 8.05279 14.5217 6.52051 13.583 5.58137C13.2118 5.2495 12.8405 5.02354 12.3362 4.91762C12.2554 4.91762 12.1788 4.91723 12.1059 4.91687C11.2443 4.91252 10.9016 4.91079 10.1718 5.58137L5.47863 10.27C5.31052 10.4395 4.96729 10.7784 4.96729 10.7784C4.16471 11.3037 3.12656 11.3024 2.32575 10.7789ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4059 8.97781C16.4059 7.78447 17.3796 6.81002 18.5774 6.81002C19.7752 6.81002 20.7488 7.7774 20.7488 8.97781C20.7488 10.1712 19.7752 11.1456 18.5774 11.1456C17.3796 11.1456 16.4059 10.1782 16.4059 8.97781Z"
+                fill="white" />
+            </svg>
+            <span>
+              Focus
+            </span>
+          </div>
+          <div class=" w-52 py-3 bg-gray-lighter text-dark  text-center font-bold flex justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
+                fill="#15162F" />
+            </svg>
+  
+            <span>
+              Hover
+            </span>
+          </div>
+          <div
+            class=" w-52 py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg  focus:bg-blue-dark        focus:text-white  hover:bg-gray-lighter hover:text-dark flex justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
+              class="mr-4">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
+                fill="#3264FA" />
+            </svg>
+  
+            <span>
+              Normal
+            </span>
+          </div>
+        </div>
+        <div class="flex flex-row justify-start md:w-1/2 w-full mt-10 sm:mt-10 ml-0 sm:ml-20">
+          <div class="w-32 py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg flex justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"
+              class="">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.32575 10.7789C2.27576 11.1789 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2487 16.9922 20.3765C16.879 19.5561 17.0988 18.8625 17.6387 18.2562L19.3619 16.5403C20.3005 15.6012 20.3005 14.0689 19.3619 13.1298C18.4233 12.1907 16.8962 12.1907 15.9506 13.1298L13.0857 15.9896C13.0783 15.9971 13.0703 16.0051 13.0619 16.0136C12.6518 16.4286 11.1186 17.9796 9.46429 16.5403C8.52566 15.6012 8.55368 14.0266 9.49931 13.0804L13.583 8.99193C14.5217 8.05279 14.5217 6.52051 13.583 5.58137C13.2118 5.2495 12.8405 5.02354 12.3362 4.91762C12.2554 4.91762 12.1788 4.91723 12.1059 4.91687C11.2443 4.91252 10.9016 4.91079 10.1718 5.58137L5.47863 10.27C5.31052 10.4395 4.96729 10.7784 4.96729 10.7784C4.16471 11.3037 3.12656 11.3024 2.32575 10.7789ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4059 8.97781C16.4059 7.78447 17.3796 6.81002 18.5774 6.81002C19.7752 6.81002 20.7488 7.7774 20.7488 8.97781C20.7488 10.1712 19.7752 11.1456 18.5774 11.1456C17.3796 11.1456 16.4059 10.1782 16.4059 8.97781Z"
+                fill="white" />
+            </svg>
+          </div>
+          <div class=" w-32 py-3 bg-gray-lighter text-dark  text-center font-bold flex justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
+              class="">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
+                fill="#15162F" />
+            </svg>
+  
+          </div>
+          <div
+            class=" w-32 py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg  focus:bg-blue-dark        focus:text-white  hover:bg-gray-lighter hover:text-dark flex justify-center">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currenColor" xmlns="http://www.w3.org/2000/svg"
+              class="">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.32574 10.779C2.27575 11.179 2.25 11.5865 2.25 12C2.25 17.3899 6.61414 21.75 12 21.75C13.8246 21.75 15.532 21.2488 16.9921 20.3766C16.8789 19.5562 17.0987 18.8625 17.6386 18.2562L19.3618 16.5403C20.3004 15.6012 20.3004 14.0689 19.3618 13.1298C18.4231 12.1907 16.8961 12.1907 15.9505 13.1298L13.0856 15.9896C13.0781 15.9971 13.0702 16.0051 13.0618 16.0136C12.6516 16.4286 11.1184 17.9796 9.46417 16.5403C8.52554 15.6012 8.55356 14.0266 9.49919 13.0804L13.5829 8.99193C14.5215 8.05279 14.5215 6.52051 13.5829 5.58137C13.2117 5.2495 12.8404 5.02354 12.3361 4.91762C12.2552 4.91762 12.1787 4.91723 12.1058 4.91687C11.2442 4.91252 10.9014 4.91079 10.1716 5.58137L5.47851 10.27C5.3104 10.4395 4.96717 10.7784 4.96717 10.7784C4.16463 11.3037 3.12653 11.3024 2.32574 10.779ZM12 0.75C5.7858 0.75 0.75 5.78867 0.75 12C0.75 18.2187 5.78613 23.25 12 23.25C18.2142 23.25 23.25 18.2113 23.25 12C23.25 5.78867 18.2142 0.75 12 0.75ZM16.4058 8.97781C16.4058 7.78447 17.3794 6.81002 18.5772 6.81002C19.775 6.81002 20.7487 7.7774 20.7487 8.97781C20.7487 10.1712 19.775 11.1456 18.5772 11.1456C17.3794 11.1456 16.4058 10.1782 16.4058 8.97781Z"
+                fill="#3264FA" />
+            </svg>
+  
+          </div>
+        </div>
+        <div class="my-10"></div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div class="flex flex-row justify-center md:w-1/2 w-full mt-10">
+    &lt;div class="w-52 py-3  bg-blue-dark text-white  text-center font-bold rounded-l-lg flex justify-center">
+      &lt;svg ...>&lt;/svg> &lt;span> Focus &lt;/span>
+    &lt;/div>
+    &lt;div class=" w-52 py-3 bg-gray-lighter text-dark  text-center font-bold flex justify-center">
+      &lt;svg ...>&lt;/svg> &lt;span> Hover &lt;/span>
+    &lt;/div>
+    &lt;div
+      class=" w-52 py-3 bg-gray-lightest text-blue  text-center font-bold rounded-r-lg focus:bg-blue-dark focus:text-white hover:bg-gray-lighter hover:text-dark flex justify-center">
+      &lt;svg ...>&lt;/svg> &lt;span> Normal &lt;/span>
+    &lt;/div>
+  &lt;/div>
+  </code></pre> 
+      </section>
+  
+      <section class="mt-10" id="sidebar-mobile">
+        <div class="w-full h-auto overflow-y-hidden">
+          <h1 class="text-red">Sidebar - mobile</h1>
+          <div class="flex">
+            <html-import title="sidebar" class="mr-10" style="width:375px" src="./sidebar-mobile.html"></html-import>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+    &lt;div class="relative bg-white h-full">
+      &lt;div class="sidebar-mobile block">
+        &lt;div class="flex items-center justify-between pt-5 px-5">
+          &lt;div>
+            &lt;img class="h-8 w-auto" src="assets/img/logo-mobile.svg" alt="ctrl^">
+          &lt;/div>
+          &lt;div class="flex">
+            &lt;div class="mr-4">
+              &lt;button type="button" class="btn-sb-header">
+                &lt;span class="text-white">(0)&lt;/span>
+                &lt;img class="ml-2" src="assets/img/bell.svg" alt="Notificaciones">
+              &lt;/button>
+            &lt;/div>
+            &lt;div class="-mr-2 self-center">
+              &lt;button type="button" class="btn-sb-header">
+                &lt;span class="sr-only">Close menu&lt;/span>
+                &lt;img class="" src="assets/img/x-gray.svg" alt="Cerrar">
+              &lt;/button>
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;div data-section="1" class="menu-items">
+          &lt;nav class="items">
+            &lt;a href="#" class="item slide-next is-selected">
+              &lt;img class="selected-icon" src="assets/img/icon-heart.svg" alt="link01">
+              &lt;span class="ml-3 text-base">
+                link01
+              &lt;/span>
+            &lt;/a>
+            &lt;a href="#" class="item">
+              &lt;img class="" src="assets/img/icon-users.svg" alt="link02">
+              &lt;span class="ml-3 text-base">
+                link02
+              &lt;/span>
+            &lt;/a>
+            ...
+  
+          &lt;/nav>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>  
+  </code></pre>
+          </div>
+        </div>
+      </section>
+  
+      <section class="mt-10" id="headers">
+        <header>
+          <h1 class="text-red">Headers</h1>
+        </header>
+        <div>
+          <h4>Basic Header</h4>
+          <article class="border mb-6">
+            <header class="page-header">
+              <section>
+                <h1>Header title example</h1>
+                <p>Header description example</p>
+              </section>
+            </header>
+          </article>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;header class="page-header">
+    &lt;section>
+      &lt;h1>Header title example&lt;/h1>
+      &lt;p>Header description example&lt;/p>
+    &lt;/section>
+  &lt;/header>
+  </code></pre>
+          <h4>Header with buttons</h4>
+          <article class="border mb-6">
+            <header class="page-header">
+              <section>
+                <h1>Header title example</h1>
+                <p>Header description example</p>
+              </section>
+              <aside>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
+                    fill="#E6EDF0" />
+                  <path
+                    d="M27 15.9999H13C11.34 15.9999 10 17.3399 10 18.9999V24.9999H14V28.9999H26V24.9999H30V18.9999C30 17.3399 28.66 15.9999 27 15.9999ZM24 26.9999H16V21.9999H24V26.9999ZM27 19.9999C26.45 19.9999 26 19.5499 26 18.9999C26 18.4499 26.45 17.9999 27 17.9999C27.55 17.9999 28 18.4499 28 18.9999C28 19.5499 27.55 19.9999 27 19.9999ZM26 10.9999H14V14.9999H26V10.9999Z"
+                    fill="#3264FA" />
+                </svg>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
+                    fill="#E6EDF0" />
+                  <path
+                    d="M26 24.0799C25.24 24.0799 24.56 24.3799 24.04 24.8499L16.91 20.6999C16.96 20.4699 17 20.2399 17 19.9999C17 19.7599 16.96 19.5299 16.91 19.2999L23.96 15.1899C24.5 15.6899 25.21 15.9999 26 15.9999C27.66 15.9999 29 14.6599 29 12.9999C29 11.3399 27.66 9.99988 26 9.99988C24.34 9.99988 23 11.3399 23 12.9999C23 13.2399 23.04 13.4699 23.09 13.6999L16.04 17.8099C15.5 17.3099 14.79 16.9999 14 16.9999C12.34 16.9999 11 18.3399 11 19.9999C11 21.6599 12.34 22.9999 14 22.9999C14.79 22.9999 15.5 22.6899 16.04 22.1899L23.16 26.3499C23.11 26.5599 23.08 26.7799 23.08 26.9999C23.08 28.6099 24.39 29.9199 26 29.9199C27.61 29.9199 28.92 28.6099 28.92 26.9999C28.92 25.3899 27.61 24.0799 26 24.0799Z"
+                    fill="#3264FA" />
+                </svg>
+              </aside>
+            </header>
+          </article>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;header class="page-header">
+    &lt;section>
+      &lt;h1>Header title example&lt;/h1>
+      &lt;p>Header description example&lt;/p>
+    &lt;/section>
+  &lt;/header>
+  &lt;aside>
+    &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    ...
+    &lt;/svg>
+    &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    ...
+    &lt;/svg>
+  &lt;/aside>
+  </code></pre>
+          <h4>Header with search bar</h4>
+          <article class="border mb-6">
+            <header class="page-header">
+              <section>
+                <h1>Header title example</h1>
+                <p>Header description example</p>
+              </section>
+              <aside>
+                <div class="input-icon">
+                  <input type='text' id='full-name' placeholder="Search your name" />
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+              </aside>
+            </header>
+          </article>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;header class="page-header">
+    &lt;section>
+      &lt;h1>Header title example&lt;/h1>
+      &lt;p>Header description example&lt;/p>
+    &lt;/section>
+  &lt;/header>
+  &lt;aside>
+    &lt;div class="input-icon">
+      &lt;input type='text' id='full-name' placeholder="Search your name" />
+      &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+      &lt;/svg>
+    &lt;/div>
+  &lt;/aside>
+  </code></pre>
+        </div>
+      </section>
+  
+      <section class="mt-10" id="buttons">
+        <header>
+          <h1 class="text-red">Buttons</h1>
+        </header>
+        <div>
+          <article>
+            <h4>Primary</h4>
+            <div class="flex gap-5">
+              <button class='btn primary'>Text Sample</button>
+              <button class='btn primary' disabled>Text</button>
+            </div>
+          </article>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;button class='btn primary'>Text Sample&lt;/button>
+  &lt;button class='btn primary' disabled>Text&lt;/button>
+  </code></pre>
+          <article>
+            <h4>Secondary</h4>
+            <div class="flex gap-5">
+              <button class='btn secondary'>Text Sample</button>
+              <button class='btn secondary' disabled>Text</button>
+            </div>
+          </article>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;button class='btn secondary'>Text Sample&lt;/button>
+  &lt;button class='btn secondary' disabled>Text&lt;/button>
+  </code></pre>
+        </div>
+      </section>
+      <section class='mt-10' id="forms">
+        <header>
+          <h1 class='text-red'>Forms</h1>
+        </header>
+        <div class='flex flex-col lg:w-1/4'>
+          <label for='full-name'>Full Name</label>
+          <input type='text' id='full-name' placeholder="Enter your name" />
+        </div>
+        <div class='flex flex-col lg:w-1/4 mt-4'>
+          <label for='full-name'>Disabled field</label>
+          <input type='text' id='full-name' placeholder="Enter your name" disabled value="Disabled value" />
+        </div>
+        <div class='flex flex-col lg:w-1/4 mt-4'>
+          <label for='full-name'>Valid field</label>
+          <input type='text' id='full-name' class="valid" placeholder="Enter your name" value="Valid value" />
+        </div>
+        <div class='flex flex-col lg:w-1/4 mt-4'>
+          <label for='full-name'>Invalid field</label>
+          <input type='text' id='full-name' class="invalid" placeholder="Enter your name" />
+        </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div>
+    &lt;label for='full-name'>Full Name&lt;/label>
+    &lt;input type='text' id='full-name' placeholder="Enter your name" />
+  &lt;/div>
+  &lt;div>
+    &lt;label for='full-name'>Disabled field&lt;/label>
+    &lt;input type='text' id='full-name' placeholder="Enter your name" disabled value="Disabled value" />
+  &lt;/div>
+  &lt;div>
+    &lt;label for='full-name'>Valid field&lt;/label>
+    &lt;input type='text' id='full-name' class="valid" placeholder="Enter your name" value="Valid value" />
+  &lt;/div>
+  &lt;div>
+    &lt;label for='full-name'>Invalid field&lt;/label>
+    &lt;input type='text' id='full-name' class="invalid" placeholder="Enter your name" />
+  &lt;/div>
+  </code></pre> 
+        <div class='flex flex-col lg:w-1/4 mt-4'>
+          <label for='full-name'>Field with icon</label>
+          <div class="input-icon">
+            <input type='text' id='full-name' placeholder="Search your name" />
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div class="input-icon">
+    &lt;input type='text' id='full-name' placeholder="Search your name" />
+    &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+      stroke="currentColor">
+      &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    &lt;/svg>
+  &lt;/div>
+  </code></pre>
+        <div class='flex flex-col lg:w-1/4 mt-4'>
+          <label for=''>Select</label>
+          <select>
+            <option>Corporate event</option>
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Other</option>
+          </select>
+        </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div>
+    &lt;label for=''>Select&lt;/label>
+    &lt;select>
+      &lt;option>Corporate event&lt;/option>
+      &lt;option>Wedding&lt;/option>
+      &lt;option>Birthday&lt;/option>
+      &lt;option>Other&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  </code></pre>
+        <div class="block mt-4">
+          <span class="text-gray-700">Checkboxes</span>
+          <div class="mt-2">
+            <div>
+              <label class="inline-flex items-center font-normal">
+                <input type="checkbox" checked="">
+                <span class="ml-2">Option 1</span>
+              </label>
+            </div>
+            <div>
+              <label class="inline-flex items-center font-normal">
+                <input type="checkbox">
+                <span class="ml-2">Option 2</span>
+              </label>
+            </div>
+            <div>
+              <label class="inline-flex items-center font-normal">
+                <input type="checkbox">
+                <span class="ml-2">Option 3</span>
+              </label>
+            </div>
+          </div>
+        </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div>
+    &lt;label class="inline-flex items-center font-normal">
+      &lt;input type="checkbox" checked="">
+      &lt;span class="ml-2">Option 1&lt;/span>
+    &lt;/label>
+  &lt;/div>
+  &lt;div>
+    &lt;label class="inline-flex items-center font-normal">
+      &lt;input type="checkbox">
+      &lt;span class="ml-2">Option 2&lt;/span>
+    &lt;/label>
+  &lt;/div>
+  &lt;div>
+    &lt;label class="inline-flex items-center font-normal">
+      &lt;input type="checkbox">
+      &lt;span class="ml-2">Option 3&lt;/span>
+    &lt;/label>
+  &lt;/div>
+  </code></pre>
+        <div class="block mt-4">
+          <span class="text-gray-700">Radio Buttons</span>
+          <div class="mt-2">
+            <div>
+              <label class="inline-flex items-center font-normal">
+                <input type="radio" checked="" name="radio-direct" value="1">
+                <span class="ml-2">Option 1</span>
+              </label>
+            </div>
+            <div>
+              <label class="inline-flex items-center font-normal">
+                <input type="radio" name="radio-direct" value="2">
+                <span class="ml-2">Option 2</span>
+              </label>
+            </div>
+            <div>
+              <label class="inline-flex items-center font-normal">
+                <input type="radio" name="radio-direct" value="3">
+                <span class="ml-2">Option 3</span>
+              </label>
+            </div>
+          </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div>
+    &lt;label class="inline-flex items-center font-normal">
+      &lt;input type="radio" checked="" name="radio-direct" value="1">
+      &lt;span class="ml-2">Option 1&lt;/span>
+    &lt;/label>
+  &lt;/div>
+  &lt;div>
+    &lt;label class="inline-flex items-center font-normal">
+      &lt;input type="radio" name="radio-direct" value="2">
+      &lt;span class="ml-2">Option 2&lt;/span>
+    &lt;/label>
+  &lt;/div>
+  &lt;div>
+    &lt;label class="inline-flex items-center font-normal">
+      &lt;input type="radio" name="radio-direct" value="3">
+      &lt;span class="ml-2">Option 3&lt;/span>
+    &lt;/label>
+  &lt;/div>
+  </code></pre>
+        </div>
+      </section>
+      <section class='mt-10' id="alerts">
+        <header>
+          <h1 class='text-red'>Alerts</h1>
+        </header>
+  
+        <div class="block mt-4 ">
+          <div class="alert info">
+            <span class="message">Message info ipsum dolor sit amet</span>
+            <button class="btn-close">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
               </svg>
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
-                  fill="#E6EDF0" />
-                <path
-                  d="M26 24.0799C25.24 24.0799 24.56 24.3799 24.04 24.8499L16.91 20.6999C16.96 20.4699 17 20.2399 17 19.9999C17 19.7599 16.96 19.5299 16.91 19.2999L23.96 15.1899C24.5 15.6899 25.21 15.9999 26 15.9999C27.66 15.9999 29 14.6599 29 12.9999C29 11.3399 27.66 9.99988 26 9.99988C24.34 9.99988 23 11.3399 23 12.9999C23 13.2399 23.04 13.4699 23.09 13.6999L16.04 17.8099C15.5 17.3099 14.79 16.9999 14 16.9999C12.34 16.9999 11 18.3399 11 19.9999C11 21.6599 12.34 22.9999 14 22.9999C14.79 22.9999 15.5 22.6899 16.04 22.1899L23.16 26.3499C23.11 26.5599 23.08 26.7799 23.08 26.9999C23.08 28.6099 24.39 29.9199 26 29.9199C27.61 29.9199 28.92 28.6099 28.92 26.9999C28.92 25.3899 27.61 24.0799 26 24.0799Z"
-                  fill="#3264FA" />
-              </svg>
-            </aside>
-          </header>
-        </article>
-        <h4>Header with search bar</h4>
-        <article class="border mb-6">
-          <header class="page-header">
-            <section>
-              <h1>Header title example</h1>
-              <p>Header description example</p>
-            </section>
-            <aside>
-              <div class="input-icon">
-                <input type='text' id='full-name' placeholder="Search your name" />
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+            </button>
+          </div>
+        </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;div class="block mt-4 ">
+    &lt;div class="alert info">
+      &lt;span class="message">Message info ipsum dolor sit amet&lt;/span>
+      &lt;button class="btn-close">
+        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        &lt;/svg>
+      &lt;/button>
+    &lt;/div>
+  &lt;/div>
+  </code></pre>
+        <div class="block mt-4">
+          <div class="mt-2 relative h-14 w-1/3">
+            <div class="alert error">
+              <span class="left-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                 </svg>
-              </div>
-            </aside>
+              </span>
+              <span class="message">Message error ipsum dolor sit amet</span>
+              <button class="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-2 relative h-14 w-1/3">
+            <div class="alert success">
+              <span class="left-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span class="message">Message success ipsum dolor sit amet</span>
+              <button class="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-2 relative h-14 w-1/3">
+            <div class="alert warning">
+              <span class="left-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+              <span class="message">Message warning ipsum dolor sit amet</span>
+              <button class="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  error | success | warning
+  
+  &lt;div class="alert warning">
+    &lt;span class="left-icon">
+      &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        &lt;path fill-rule="evenodd"
+          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+          clip-rule="evenodd" />
+      &lt;/svg>
+    &lt;/span>
+    &lt;span class="message">Message warning ipsum dolor sit amet&lt;/span>
+    &lt;button class="btn-close">
+      &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      &lt;/svg>
+    &lt;/button>
+  &lt;/div>
+  </code></pre>
+        <div class="block mt-4 ">
+          <div class="mt-2 relative ">
+            <div class="alert error">
+              <span class="message">Large error message ipsum dolor sit amet, consectetur </span>
+              <button class="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-2 relative">
+            <div class="alert success">
+              <span class="message">Short success msg</span>
+              <button class="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="mt-2 relative ">
+            <div class="alert warning">
+              <span class="message">Super large warning message ipsum dolor sit amet, consectetur adipiscing elit ipsum
+                dolor sit amet, consectetur adipiscing elit</span>
+              <button class="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  error | success | warning
+  
+  &lt;div class="alert warning">
+    &lt;span class="message">Super large warning message ipsum dolor sit amet, consectetur adipiscing elit ipsum
+      dolor sit amet, consectetur adipiscing elit&lt;/span>
+    &lt;button class="btn-close">
+      &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      &lt;/svg>
+    &lt;/button>
+  &lt;/div>
+  </code></pre>
+        <div class="block mt-6 ">
+          <div class="mt-4">
+            <div class="alert info">
+              <div class="image"><img src="assets/img/img-none.png" alt="Blank image" /></div>
+              <span class="message">Message info w/ image ipsum dolor sit amet</span>
+              <button class="btn-close">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+  
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  error | success | warning
+  
+  &lt;div class="alert info">
+    &lt;div class="image">&lt;img src="assets/img/img-none.png" alt="Blank image" />&lt;/div>
+    &lt;span class="message">Message info w/ image ipsum dolor sit amet&lt;/span>
+    &lt;button class="btn-close">
+      &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      &lt;/svg>
+    &lt;/button>
+  &lt;/div>
+  </code></pre>
+        <section id="tables">
+          <header>
+            <h1 class='text-red'>Tables</h1>
           </header>
-        </article>
-      </div>
-    </section>
-
-    <section class="mt-10">
-      <header>
-        <h1 class="text-red">Buttons</h1>
-      </header>
-      <div>
-        <article>
-          <h4>Primary</h4>
-          <div class="flex gap-5">
-            <button class='btn primary'>Text Sample</button>
-            <button class='btn primary' disabled>Text</button>
-          </div>
-        </article>
-        <article>
-          <h4>Secondary</h4>
-          <div class="flex gap-5">
-            <button class='btn secondary'>Text Sample</button>
-            <button class='btn secondary' disabled>Text</button>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class='mt-10'>
-      <header>
-        <h1 class='text-red'>Forms</h1>
-      </header>
-      <div class='flex flex-col lg:w-1/4'>
-        <label for='full-name'>Full Name</label>
-        <input type='text' id='full-name' placeholder="Enter your name" />
-      </div>
-      <div class='flex flex-col lg:w-1/4 mt-4'>
-        <label for='full-name'>Disabled field</label>
-        <input type='text' id='full-name' placeholder="Enter your name" disabled value="Disabled value" />
-      </div>
-      <div class='flex flex-col lg:w-1/4 mt-4'>
-        <label for='full-name'>Valid field</label>
-        <input type='text' id='full-name' class="valid" placeholder="Enter your name" value="Valid value" />
-      </div>
-      <div class='flex flex-col lg:w-1/4 mt-4'>
-        <label for='full-name'>Invalid field</label>
-        <input type='text' id='full-name' class="invalid" placeholder="Enter your name" />
-      </div>
-      <div class='flex flex-col lg:w-1/4 mt-4'>
-        <label for='full-name'>Field with icon</label>
-        <div class="input-icon">
-          <input type='text' id='full-name' placeholder="Search your name" />
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-          </svg>
-        </div>
-      </div>
-      <div class='flex flex-col lg:w-1/4 mt-4'>
-        <label for=''>Select</label>
-        <select>
-          <option>Corporate event</option>
-          <option>Wedding</option>
-          <option>Birthday</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="block mt-4">
-        <span class="text-gray-700">Checkboxes</span>
-        <div class="mt-2">
-          <div>
-            <label class="inline-flex items-center font-normal">
-              <input type="checkbox" checked="">
-              <span class="ml-2">Option 1</span>
-            </label>
-          </div>
-          <div>
-            <label class="inline-flex items-center font-normal">
-              <input type="checkbox">
-              <span class="ml-2">Option 2</span>
-            </label>
-          </div>
-          <div>
-            <label class="inline-flex items-center font-normal">
-              <input type="checkbox">
-              <span class="ml-2">Option 3</span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="block mt-4">
-        <span class="text-gray-700">Radio Buttons</span>
-        <div class="mt-2">
-          <div>
-            <label class="inline-flex items-center font-normal">
-              <input type="radio" checked="" name="radio-direct" value="1">
-              <span class="ml-2">Option 1</span>
-            </label>
-          </div>
-          <div>
-            <label class="inline-flex items-center font-normal">
-              <input type="radio" name="radio-direct" value="2">
-              <span class="ml-2">Option 2</span>
-            </label>
-          </div>
-          <div>
-            <label class="inline-flex items-center font-normal">
-              <input type="radio" name="radio-direct" value="3">
-              <span class="ml-2">Option 3</span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class='mt-10'>
-      <header>
-        <h1 class='text-red'>Alerts</h1>
-      </header>
-
-      <div class="block mt-4 ">
-        <div class="alert info">
-          <span class="message">Message info ipsum dolor sit amet</span>
-          <button class="btn-close">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div class="block mt-4">
-        <div class="mt-2 relative h-14 w-1/3">
-          <div class="alert error">
-            <span class="left-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-              </svg>
-            </span>
-            <span class="message">Message error ipsum dolor sit amet</span>
-            <button class="btn-close">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mt-2 relative h-14 w-1/3">
-          <div class="alert success">
-            <span class="left-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                  clip-rule="evenodd" />
-              </svg>
-            </span>
-            <span class="message">Message success ipsum dolor sit amet</span>
-            <button class="btn-close">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mt-2 relative h-14 w-1/3">
-          <div class="alert warning">
-            <span class="left-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                  clip-rule="evenodd" />
-              </svg>
-            </span>
-            <span class="message">Message warning ipsum dolor sit amet</span>
-            <button class="btn-close">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="block mt-4 ">
-        <div class="mt-2 relative ">
-          <div class="alert error">
-            <span class="message">Large error message ipsum dolor sit amet, consectetur </span>
-            <button class="btn-close">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mt-2 relative">
-          <div class="alert success">
-            <span class="message">Short success msg</span>
-            <button class="btn-close">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mt-2 relative ">
-          <div class="alert warning">
-            <span class="message">Super large warning message ipsum dolor sit amet, consectetur adipiscing elit ipsum
-              dolor sit amet, consectetur adipiscing elit</span>
-            <button class="btn-close">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="block mt-6 ">
-        <div class="mt-4">
-          <div class="alert info">
-            <div class="image"><img src="assets/img/img-none.png" alt="Blank image" /></div>
-            <span class="message">Message info w/ image ipsum dolor sit amet</span>
-            <button class="btn-close">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-
-
-      <header>
-        <h1 class='text-red'>Tables</h1>
-      </header>
-      <section>
-        <table class="w-full table-fixed">
-          <thead>
-            <tr>
-              <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01</th>
-              <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 02</th>
-              <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 03</th>
-              <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 04</th>
-              <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05</th>
+          <table class="w-full table-fixed">
+            <thead>
+              <tr>
+                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01</th>
+                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 02</th>
+                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 03</th>
+                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 04</th>
+                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05</th>
+              </tr>
+            </thead>
+            <tr class="w-full bg-blue-dark text-white ">
+              <td colspan="4" class="text-white py-4 pl-4">
+                Sección colapsable focus
+              </td>
+              <td class="flex justify-end items-center h-14">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                </svg>
+              </td>
             </tr>
-          </thead>
-          <tr class="w-full bg-blue-dark text-white ">
-            <td colspan="4" class="text-white py-4 pl-4">
-              Sección colapsable focus
-            </td>
-            <td class="flex justify-end items-center h-14">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
-              </svg>
-            </td>
-          </tr>
-          <tr class="border-b-2 border-light-gray">
-            <td class="font-bold pl-4 py-4 flex flex-col">
-              <span class="w-full">
+            <tr class="border-b-2 border-light-gray">
+              <td class="font-bold pl-4 py-4 flex flex-col">
+                <span class="w-full">
+                  Info 01_1
+                </span>
+                <span class="font-normal w-full">
+                  Info 01_2
+                </span>
+              </td>
+              <td class="pl-4 py-4 font-bold">Info 02</td>
+              <td class="pl-4 py-4">
+                <a href='http://www.michelada.io' class="underline">Info 03</a>
+              </td>
+              <td class="pl-4 py-4 italic">Info 04</td>
+              <td class="pl-4 py-4 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+                </svg>
+                123456789
+              </td>
+            </tr>
+            <tr class="bg-white-ish border-b-2 border-light-gray">
+              <td class="pl-4 py-4 font-bold flex flex-col">
+                Info 01_hover
+                <span class="font-normal">
+                  Info 01_2
+                </span>
+              </td>
+              <td class="pl-4 py-4 font-bold">Info 02</td>
+              <td class="pl-4 py-4">
+                <a href='http://www.michelada.io' class="underline">Info 03</a>
+              </td>
+              <td class="pl-4 py-4 italic">Info 04</td>
+              <td class="pl-4 py-4 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+                </svg>
+                123456789
+              </td>
+            </tr>
+            <tr class="border-b-2 border-light-gray">
+              <td class="pl-4 py-4 font-bold flex flex-col">
                 Info 01_1
-              </span>
-              <span class="font-normal w-full">
-                Info 01_2
-              </span>
-            </td>
-            <td class="pl-4 py-4 font-bold">Info 02</td>
-            <td class="pl-4 py-4">
-              <a href='http://www.michelada.io' class="underline">Info 03</a>
-            </td>
-            <td class="pl-4 py-4 italic">Info 04</td>
-            <td class="pl-4 py-4 ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd" />
-              </svg>
-              123456789
-            </td>
-          </tr>
-          <tr class="bg-white-ish border-b-2 border-light-gray">
-            <td class="pl-4 py-4 font-bold flex flex-col">
-              Info 01_hover
-              <span class="font-normal">
-                Info 01_2
-              </span>
-            </td>
-            <td class="pl-4 py-4 font-bold">Info 02</td>
-            <td class="pl-4 py-4">
-              <a href='http://www.michelada.io' class="underline">Info 03</a>
-            </td>
-            <td class="pl-4 py-4 italic">Info 04</td>
-            <td class="pl-4 py-4 ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd" />
-              </svg>
-              123456789
-            </td>
-          </tr>
-          <tr class="border-b-2 border-light-gray">
-            <td class="pl-4 py-4 font-bold flex flex-col">
-              Info 01_1
-              <span class="font-normal">
-                Info 01_2
-              </span>
-            </td>
-            <td class="pl-4 py-4 font-bold">Info 02</td>
-            <td class="pl-4 py-4">
-              <a href='http://www.michelada.io' class="underline">Info 03</a>
-            </td>
-            <td class="pl-4 py-4 italic">Info 04</td>
-            <td class="pl-4 py-4 ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd" />
-              </svg>
-              123456789
-            </td>
-          </tr>
-          <tr class=" border-b-2 border-light-gray  w-full py-4">
-            <td colspan="4" class=" pl-4 py-6 w-full text-white font-bold text-blue">
-              Sección colapsable 02
-            </td>
-            <td class=" flex justify-end items-center h-14">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue mr-4" fill="currentColor"
-                viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-              </svg>
-            </td>
-          </tr>
-          <tr class=" border-b-2 border-light-gray  w-full py-4">
-            <td colspan="4" class=" pl-4 py-6 w-full text-white font-bold text-blue">
-              Sección colapsable 03
-            </td>
-            <td class="flex justify-end items-center h-14">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue mr-4" fill="currentColor"
-                viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
-              </svg>
-            </td>
-          </tr>
-        </table>
-
-        <table class="w-full table-fixed mt-10">
-          <thead>
-            <tr>
-              <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01</th>
-              <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 02</th>
-              <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 03</th>
-              <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 04</th>
-              <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05</th>
+                <span class="font-normal">
+                  Info 01_2
+                </span>
+              </td>
+              <td class="pl-4 py-4 font-bold">Info 02</td>
+              <td class="pl-4 py-4">
+                <a href='http://www.michelada.io' class="underline">Info 03</a>
+              </td>
+              <td class="pl-4 py-4 italic">Info 04</td>
+              <td class="pl-4 py-4 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+                </svg>
+                123456789
+              </td>
             </tr>
-          </thead>
-
-
-
-          <tr class="border-b-2 border-light-gray">
-            <td class="pl-4 py-4 font-bold">
-              <div class=" flex items-center">
-                <img class="mtd_img w-10 rounded-3xl mr-4" alt="staff at michelada"
-                  src="https://ca.slack-edge.com/T04JVG8N6-U02L4KYN2TT-93697421d231-512" />
-                <div class="flex flex-col">
-                  Info con foto_1
-                  <span class="font-normal">
-                    Info con foto_2
-                  </span>
+            <tr class=" border-b-2 border-light-gray  w-full py-4">
+              <td colspan="4" class=" pl-4 py-6 w-full text-white font-bold text-blue">
+                Sección colapsable 02
+              </td>
+              <td class=" flex justify-end items-center h-14">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue mr-4" fill="currentColor"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </td>
+            </tr>
+            <tr class=" border-b-2 border-light-gray  w-full py-4">
+              <td colspan="4" class=" pl-4 py-6 w-full text-white font-bold text-blue">
+                Sección colapsable 03
+              </td>
+              <td class="flex justify-end items-center h-14">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue mr-4" fill="currentColor"
+                  viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+                </svg>
+              </td>
+            </tr>
+          </table>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;table class="w-full table-fixed">
+    &lt;thead>
+      &lt;tr>
+        &lt;th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01&lt;/th>
+        ...
+        &lt;th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05&lt;/th>
+      &lt;/tr>
+    &lt;/thead>
+    &lt;tr class="w-full bg-blue-dark text-white ">
+      &lt;td colspan="4" class="text-white py-4 pl-4">
+        Sección colapsable focus
+      &lt;/td>
+      &lt;td class="flex justify-end items-center h-14">
+        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+        &lt;/svg>
+      &lt;/td>
+    &lt;/tr>
+    &lt;tr class="border-b-2 border-light-gray">
+      &lt;td class="font-bold pl-4 py-4 flex flex-col">
+        &lt;span class="w-full">
+          Info 01_1
+        &lt;/span>
+        &lt;span class="font-normal w-full">
+          Info 01_2
+        &lt;/span>
+      &lt;/td>
+      &lt;td class="pl-4 py-4 font-bold">Info 02&lt;/td>
+      &lt;td class="pl-4 py-4">
+        &lt;a href='http://www.michelada.io' class="underline">Info 03&lt;/a>
+      &lt;/td>
+      &lt;td class="pl-4 py-4 italic">Info 04&lt;/td>
+      &lt;td class="pl-4 py-4 ">
+        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
+          fill="currentColor">
+          &lt;path fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd" />
+        &lt;/svg>
+        123456789
+      &lt;/td>
+    &lt;/tr>
+    &lt;tr class="bg-white-ish border-b-2 border-light-gray">
+      &lt;td class="pl-4 py-4 font-bold flex flex-col">
+        Info 01_hover
+        &lt;span class="font-normal">
+          Info 01_2
+        &lt;/span>
+      &lt;/td>
+      &lt;td class="pl-4 py-4 font-bold">Info 02&lt;/td>
+      &lt;td class="pl-4 py-4">
+        &lt;a href='http://www.michelada.io' class="underline">Info 03&lt;/a>
+      &lt;/td>
+      &lt;td class="pl-4 py-4 italic">Info 04&lt;/td>
+      &lt;td class="pl-4 py-4 ">
+        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
+          fill="currentColor">
+          &lt;path fill-rule="evenodd"
+            d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+            clip-rule="evenodd" />
+        &lt;/svg>
+        123456789
+      &lt;/td>
+    &lt;/tr>
+    &lt;tr class=" border-b-2 border-light-gray  w-full py-4">
+      &lt;td colspan="4" class=" pl-4 py-6 w-full text-white font-bold text-blue">
+        Sección colapsable 02
+      &lt;/td>
+      &lt;td class=" flex justify-end items-center h-14">
+        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue mr-4" fill="currentColor"
+          viewBox="0 0 24 24" stroke="currentColor">
+          &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+        &lt;/svg>
+      &lt;/td>
+    &lt;/tr>
+  &lt;/table>
+  </code></pre>
+  
+          <table class="w-full table-fixed mt-10">
+            <thead>
+              <tr>
+                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01</th>
+                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 02</th>
+                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 03</th>
+                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 04</th>
+                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05</th>
+              </tr>
+            </thead>
+  
+            <tr class="border-b-2 border-light-gray">
+              <td class="pl-4 py-4 font-bold">
+                <div class=" flex items-center">
+                  <img class="mtd_img w-10 rounded-3xl mr-4" alt="staff at michelada"
+                    src="https://ca.slack-edge.com/T04JVG8N6-U02L4KYN2TT-93697421d231-512" />
+                  <div class="flex flex-col">
+                    Info con foto_1
+                    <span class="font-normal">
+                      Info con foto_2
+                    </span>
+                  </div>
                 </div>
-              </div>
-            </td>
-            <td class="pl-4 py-4 font-bold">Info 02</td>
-            <td class="pl-4 py-4">
-              <a href='http://www.michelada.io' class="underline">Info 03</a>
-            </td>
-            <td class="pl-4 py-4 italic">Info 04</td>
-            <td class="pl-4 py-4 ">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
-                fill="currentColor">
-                <path fill-rule="evenodd"
-                  d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                  clip-rule="evenodd" />
-              </svg>
-              123456789
-            </td>
-          </tr>
-          <tr class="border-b-2 border-light-gray">
-            <td class="pl-4 py-4 font-bold">
-              <div class=" flex items-center">
-                <img class="mtd_img w-10 rounded-3xl mr-4" alt="staff at michelada"
-                  src="https://ca.slack-edge.com/T04JVG8N6-U02L4KYN2TT-93697421d231-512" />
-                <div class="flex flex-col">
-                  Info con foto_1
-                  <span class="font-normal">
-                    Info con foto_2
-                  </span>
+              </td>
+              <td class="pl-4 py-4 font-bold">Info 02</td>
+              <td class="pl-4 py-4">
+                <a href='http://www.michelada.io' class="underline">Info 03</a>
+              </td>
+              <td class="pl-4 py-4 italic">Info 04</td>
+              <td class="pl-4 py-4 ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd" />
+                </svg>
+                123456789
+              </td>
+            </tr>
+            <tr class="border-b-2 border-light-gray">
+              <td class="pl-4 py-4 font-bold">
+                <div class=" flex items-center">
+                  <img class="mtd_img w-10 rounded-3xl mr-4" alt="staff at michelada"
+                    src="https://ca.slack-edge.com/T04JVG8N6-U02L4KYN2TT-93697421d231-512" />
+                  <div class="flex flex-col">
+                    Info con foto_1
+                    <span class="font-normal">
+                      Info con foto_2
+                    </span>
+                  </div>
                 </div>
               </div>
             </td>
@@ -763,10 +1266,47 @@
             </td>
           </tr>
         </table>
-
-
-        <!--  -->
-      </section>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+    &lt;table class="w-full table-fixed mt-10">
+      &lt;thead>
+        &lt;tr>
+          &lt;th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01&lt;/th>
+          ...
+          &lt;th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05&lt;/th>
+        &lt;/tr>
+      &lt;/thead>
+  
+      &lt;tr class="border-b-2 border-light-gray">
+        &lt;td class="pl-4 py-4 font-bold">
+          &lt;div class=" flex items-center">
+            &lt;img class="mtd_img w-10 rounded-3xl mr-4" alt="staff at michelada" src="..." />
+            &lt;div class="flex flex-col">
+              Info con foto_1
+              &lt;span class="font-normal">
+                Info con foto_2
+              &lt;/span>
+            &lt;/div>
+          &lt;/div>
+        &lt;/td>
+        &lt;td class="pl-4 py-4 font-bold">Info 02&lt;/td>
+        &lt;td class="pl-4 py-4">
+          &lt;a href='http://www.michelada.io' class="underline">Info 03&lt;/a>
+        &lt;/td>
+        &lt;td class="pl-4 py-4 italic">Info 04&lt;/td>
+        &lt;td class="pl-4 py-4 ">
+          &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" viewBox="0 0 20 20"
+            fill="currentColor">
+            &lt;path fill-rule="evenodd"
+              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+              clip-rule="evenodd" />
+          &lt;/svg>
+          123456789
+        &lt;/td>
+      &lt;/tr>
+      ...
+    &lt;/table>
+  </code></pre>
+        </section>
       <section class="mt-10">
         <header>
           <h1 class="text-red">Tabs</h1>
@@ -894,17 +1434,24 @@
 
           </article>
         </div>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+    &lt;div class='tab container'>
+      &lt;div class='tab item active'>
+        &lt;svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">...&lt;/svg>
+        Focus
+      &lt;/div>
+      &lt;div class='tab item'>
+        &lt;svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">...&lt;/svg>
+        Hover
+      &lt;/div>
+      &lt;div class='tab item'>
+        &lt;svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">...&lt;/svg>
+        Normal
+      &lt;/div>
+    &lt;/div>
+  </code></pre>
       </section>
-      <section class="mt-10">
-        <div class="w-full h-auto overflow-y-hidden">
-          <h1 class="text-red">Sidebar - mobile</h1>
-          <div class="flex">
-            <iframe title="sidebar" width="380px" seamless height="700px" src="./sidebar-mobile.html"></iframe>
-            <iframe title="code" seamless width="900px" scroll="auto" height="700"
-              src="./sidebar-mobile.html?hideSidebar=true"></iframe>
-          </div>
-        </div>
-      </section>
+      
       <section class="mt-10">
         <header>
           <h1 class="text-red">Cards</h1>
@@ -912,6 +1459,11 @@
 
         <html-import src="cards.html">
         </html-import>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+    &lt;div class="card">
+      ...
+    &lt;/div>
+  </code></pre>
       </section>
       <section class="mt-10">
         <header>
@@ -919,21 +1471,84 @@
         </header>
         <html-import src="notifications.html">
         </html-import>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+   &lt;dialog  class="relative card flex-col justify-around items-center w-full h-72 mt-10  md:mt-0  md:w-80 p-3 ">
+        &lt;figure class="">&lt;img class="w-30" src="assets/img/img-none.png" alt="image"/>&lt;/figure>
+        &lt;figure class="flex flex-col justify-around items-center h-20 self-center">
+            &lt;figcaption class='font-bold mt-8'>Title ipsum dolor&lt;/figcaption>
+            &lt;figcaption class='w-56 text-center py-3'>Message info w/ image ipsum dolor sit amet&lt;/figcaption>
+        &lt;/figure>
+        &lt;button class="text-blue top-0">
+            &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 absolute top-3 right-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            &lt;/svg>
+        &lt;/button>
+    &lt;/dialog> 
+  </code></pre>
       </section>
       
       <section class='mt-10 flex flex-wrap'>
         <header class="w-full">
           <h1 class="text-red">Table Collapsable Mobile</h1>
         </header>
-        <iframe id="frame-tbl-c-mobile" title="sidebar" width="380px" seamless height="700px"
-          src="./tbl-collapse-mobile.html"></iframe>
-        <div class="pt-6 w-7/12 ml-4">
-          <div class="h-5/6">
-            <pre class="code">
-            <code id="code-tbl-c-mobile" class="language-markup"></code>
-          </pre>
-          </div>
-        </div>
+        <html-import src="tbl-collapse-mobile.html"></html-import>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+    &lt;div id="tbl-collapse-mobile" class="h-full bg-white-ish">
+    &lt;table class="tbl-collapsable-mbl">
+      &lt;tr class="container-expand isSelected" data-toggle="collapse">
+        &lt;td>
+          &lt;p class="font-bold ">La Barra
+            &lt;span>6 personas&lt;/span>
+          &lt;/p>
+          &lt;input id="collapsible" checked type="checkbox">
+          &lt;img alt="open" class="icon-see-less" src="assets/img/tbl-collapse-mbl/icon-less.svg" />
+        &lt;/td>
+      &lt;/tr>
+      &lt;tr class="expandable" data-container="barra">
+        &lt;td class="pt-0">
+          &lt;ul>
+            &lt;li class="user-profile">
+              &lt;img class="img-user" alt="user" src="assets/img/tbl-collapse-mbl/icon-user.svg" />
+              &lt;div>
+                &lt;p class="font-bold">Lilia Bustillos &lt;/p>
+                &lt;p>Directora de Recursos Humanos&lt;/p>
+              &lt;/div>
+              &lt;img alt="next" class="icon-chevron-left" src="assets/img/tbl-collapse-mbl/icon-chevron-r.svg" />
+            &lt;/li>
+            &lt;li>
+              &lt;img alt="slack" src="assets/img/tbl-collapse-mbl/icon-slack.svg" />
+              @amado
+            &lt;/li>
+            &lt;li>
+              &lt;img alt="email" src="assets/img/tbl-collapse-mbl/icon-email.svg" />
+              &lt;a href='mailto:lilia.bustillos@michelada.io'>lilia.bustillos@michelada.io&lt;/a>
+            &lt;/li>
+            &lt;li>
+              &lt;img alt="phone" src="assets/img/tbl-collapse-mbl/icon-phone.svg" />
+              &lt;a href='tel:312 123 1234'>312 123 1234&lt;/a>
+            &lt;/li>
+            &lt;li>
+              &lt;img alt="location" src="assets/img/tbl-collapse-mbl/icon-location.svg" />
+              Gdl.
+            &lt;/li>
+          &lt;/ul>
+        &lt;/td>
+
+      &lt;/tr>
+      ...
+
+      &lt;tr class="container-expand" data-toggle="collapse">
+        &lt;td>
+          &lt;p class="font-bold text-blue">Development
+            &lt;span>50 personas&lt;/span>
+          &lt;/p>
+          &lt;input id="collapsible" checked class="toggle" type="checkbox">
+          &lt;img alt="open" class="icon-plus" src="assets/img/tbl-collapse-mbl/icon-plus.svg" />
+        &lt;/td>
+      &lt;/tr>
+    &lt;/table>
+  &lt;/div>
+  </code></pre>
       </section>
       <section class="mt-10">
         <header>
@@ -941,11 +1556,54 @@
         </header>
         <html-import src="navbar.html">
         </html-import>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+    
+    &lt;nav class="w-full bg-dark">
+      &lt;div class="navbar-container h-14 md:h-20">
+          &lt;div class="navbar-logo-container">
+              &lt;a class="block h-full" href="/">
+              &lt;img class="navbar-logo" src="assets/img/logo.svg">
+              &lt;/a>
+          &lt;/div>
+        &lt;div class="navbar-links-section" data-controller="navbar">
+          &lt;div data-navbar-target="linksContainer" class="navbar-links-container bg-dark hidden flex md:flex">
+              &lt;a class="navbar-link" href="/">
+                  La Barra
+              &lt;/a>
+              &lt;a class="navbar-link" href="/">
+                  Team directory
+              &lt;/a>       
+              &lt;a class="navbar-link" href="/">
+                  PTOs
+              &lt;/a>
+          &lt;/div>
+          &lt;div class="user-picture flex items-center justify-center" data-action="click->navbar#dropdownToggle">
+            &lt;img alt="Moises Benjamin Lezama" class="navbar-user-icon mx-3" src="https://lh3.googleusercontent.com/a/AATXAJzLOQMMjzDpc_twXpxAdPnzfZ46QBEipasMeHR5=s96-c">
+            &lt;div data-navbar-target="dropdownTrigger" class="navbar-close-dropdown hidden flex">
+              &lt;img class="scale-100" src="assets/icon-close-5cfafe7d2bd68790e97fbc21382e2f449c8d9a0a4014bb127a5d3d14b5ee08a5.svg">
+            &lt;/div>
+          &lt;/div>
+          &lt;div data-navbar-target="dropdownElement" class="navbar-dropdown hidden flex">
+              &lt;a class="navbar-dropdown-link" href="/">
+                  &lt;img class="navbar-user-icon ml-0 md:hidden" src="/assets/icon-michelada-a09f466fab1358f68b7dac67f56a2fd8b8f5d2874468565517aa44b4e447bf40.svg">
+                  &lt;img class="navbar-dropdown-icon hidden md:block" src="/assets/icon-user.svg">
+                  My Profile
+              &lt;/a>
+              &lt;a class="navbar-dropdown-link" href="/">
+                &lt;img class="navbar-dropdown-icon" src="/assets/icon-toggle-0775221ae959ca01f20ae100debec3c1a4269d8d6a606e6740d8b02f04fcdc2e.svg">
+                Admin
+              &lt;/a>
+              &lt;a data-turbo="false" class="navbar-dropdown-link" rel="nofollow" data-method="delete" href="/">
+                  &lt;img class="navbar-dropdown-icon" src="/assets/icon-power-off-4ef033d9aa94c8cf5405e3b3606f603ed49e51350d134166a4c5f5c224b32b26.svg">
+                  Sign Out
+              &lt;/a>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/nav>      
+  </code></pre>
       </section>
-  </main>
-  <footer class='bg-dark text-center text-white p-3'>
-    michelada
-  </footer>
-  <script src="bundle.js"></script>
+    </main>
+    <script src="bundle.js"></script>
   </body>
 </html>

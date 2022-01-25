@@ -1,6 +1,6 @@
 @layer components {
   .alert {
-    @apply rounded-lg relative flex items-center px-4 py-4 z-50 top-0 md:pl-32;
+    @apply rounded-lg relative flex items-center px-4 py-4 z-50 top-0;
     width: 400px;
     min-height: 53px;
     max-height: none;
