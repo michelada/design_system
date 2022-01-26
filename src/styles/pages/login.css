@@ -1,0 +1,14 @@
+.login {
+    &-container {
+      @apply flex flex-col justify-center items-center max-w-md m-auto;
+    }
+  
+    &-header {
+      @apply w-full bg-white md:bg-transparent mb-5 md:mb-0 py-10 md:py-0;
+    }
+}
+  
+.reset-password {
+    @apply text-center w-full px-0 my-3 text-base md:text-lg;
+}
+  

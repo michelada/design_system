@@ -1,0 +1,45 @@
+@layer components {
+    .table {
+      @apply w-full;
+  
+      .thead {
+        @apply w-full flex justify-between p-4;
+  
+        &.blue {
+          @apply bg-blue-dark text-white border border-gray;
+        }
+  
+        &.white {
+          @apply bg-white;
+        }
+      }
+  
+      .tr {
+        @apply p-4 border-b-2;
+  
+        &.even {
+          @apply bg-gray-light;
+        }
+      }
+  
+      .td {
+        @apply flex items-center;
+      }
+  
+    }
+    .image-profile {
+      @apply flex justify-start !important;
+      img{
+        @apply rounded-full !important;
+        max-width: 80px !important;
+        min-width: 80px !important;
+        max-height: 80px !important;
+        min-height: 80px !important;
+        object-fit: cover !important;
+      }
+    }
+    .table-border-spacing {
+      border-spacing: theme("spacing.4");
+    }
+  }
+  

@@ -1,5 +1,5 @@
 @layer components {
     .card {
-        @apply flex flex-col p-10 bg-white shadow-card rounded-lg sm:w-full md:w-120;
+        @apply flex flex-col px-5 py-6 bg-white shadow-card rounded-lg w-full !important;
     }
 }

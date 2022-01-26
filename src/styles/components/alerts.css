@@ -44,8 +44,8 @@
       height: 18px;
     }
 
-    & .btn-close {
-      @apply  absolute mr-4 right-0 top-0 mt-5;
+    &.btn-close {
+      @apply  absolute right-0 top-0 mr-4 mt-3.5 md:mr-16 md:mt-4 ;
       max-width: 14px;
       max-height: 14px;
 
@@ -79,6 +79,15 @@
 
     &.warning& .btn-close .icon {
       /*  background-image: inline('x-black.svg');*/
+    }
+    &.turbo-notification {
+      @apply rounded-lg pl-6 pr-8;
+  
+      .btn-close {
+        position: inherit;
+        margin: inherit;
+        @apply mb-2;
+      }
     }
   }
 }
