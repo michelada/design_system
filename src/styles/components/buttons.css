@@ -1,10 +1,6 @@
 @layer components {
-  .font-bold {
-    @apply text-blue-dark;
-  }
-
   .btn {
-    @apply border rounded-2xl px-9 py-2 font-bold font-avant text-btn w-full;
+    @apply border rounded-[20px] px-9 py-2 font-bold font-avant text-btn w-full;
 
     @screen lg {
       @apply w-auto;
@@ -22,11 +18,31 @@
       }
     }
 
-    &.secondary {
+    &.outline-primary {
       @apply border-2 border-blue text-blue;
 
       &:hover {
         @apply border-blue-dark text-blue-dark;
+      }
+
+      &[disabled] {
+        @apply border-gray-lighter text-gray-lighter;
+      }
+    }
+
+    &.secondary {
+      @apply bg-blue-dark text-white hover:bg-dark-charcoal;
+
+      &[disabled] {
+        @apply bg-gray-lighter text-gray-lightest;
+      }
+    }
+
+    &.outline-secondary {
+      @apply border-2 border-blue-dark text-blue-dark;
+
+      &:hover {
+        @apply border-dark-charcoal text-dark-charcoal;
       }
 
       &[disabled] {

@@ -88,4 +88,8 @@
       @apply font-bold;
     }
   }
+  
+  .font-bold {
+    @apply text-blue-dark;
+  }
 }

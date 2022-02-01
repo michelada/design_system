@@ -107,7 +107,7 @@
         </a>
       </footer>
     </aside>
-    <main class="p-10 max-w-6xl">
+    <main class="p-10 container">
       <section id="typography" class="pb-5">
         <header>
           <h1 class='text-red'>Typography</h1>
@@ -629,7 +629,7 @@
         <div>
           <article>
             <h4>Primary</h4>
-            <div class="flex gap-5">
+            <div class="md:flex gap-5">
               <button class='btn primary'>Text Sample</button>
               <button class='btn primary' disabled>Text</button>
             </div>
@@ -638,17 +638,42 @@
   &lt;button class='btn primary'>Text Sample&lt;/button>
   &lt;button class='btn primary' disabled>Text&lt;/button>
   </code></pre>
-          <article>
+          <article class="mt-5">
+            <h4>Primary outline</h4>
+            <div class="md:flex gap-5">
+              <button class='btn outline-primary'>Text Sample</button>
+              <button class='btn outline-primary' disabled>Text</button>
+            </div>
+          </article>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;button class='btn outline-primary'>Text Sample&lt;/button>
+  &lt;button class='btn outline-primary' disabled>Text&lt;/button>
+  </code></pre>
+          <article class="mt-10">
             <h4>Secondary</h4>
-            <div class="flex gap-5">
+            <div class="md:flex gap-5">
               <button class='btn secondary'>Text Sample</button>
               <button class='btn secondary' disabled>Text</button>
             </div>
           </article>
-  <pre class="language-markup rounded-xl flex-grow"><code>
-  &lt;button class='btn secondary'>Text Sample&lt;/button>
-  &lt;button class='btn secondary' disabled>Text&lt;/button>
-  </code></pre>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn secondary'>Text Sample&lt;/button>
+&lt;button class='btn secondary' disabled>Text&lt;/button>
+</code></pre>
+          <article class="mt-10">
+            <h4>Secondary outline</h4>
+            <div class="md:flex gap-5">
+              <button class='btn outline-secondary'>Text Sample</button>
+              <button class='btn outline-secondary' disabled>Text</button>
+            </div>
+          </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn outline-secondary'>Text Sample&lt;/button>
+&lt;button class='btn outline-secondary' disabled>Text&lt;/button>
+</code></pre>
+        </div>
+        <div class="bg-white-ish p-6 rounded-lg mt-10">
+          <b class="text-blue-dark">Note:</b> Buttons are full-width on mobile & tablet.
         </div>
       </section>
       <section class='mt-10' id="forms">
