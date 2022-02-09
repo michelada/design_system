@@ -1,11 +1,12 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.1",
   "author": "michelada.io",
   "name": "@micheladaio/sips-and-bits.css",
   "scripts": {
     "start": "webpack serve --mode=development --open",
     "build": "export NODE_ENV=production && webpack",
-    "publish": "postcss ./src/styles/index.css --dir dist/"
+    "publish": "postcss ./src/styles/index.css --dir dist/",
+    "upload": "npm publish --access public"
   },
   "dependencies": {
     "@fullcalendar/core": "^5.10.1",

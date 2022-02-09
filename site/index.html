@@ -12,7 +12,7 @@
   <body class="flex">
     <aside class="bg-dark h-[100vh] sticky top-0 min-w-fit">
       <header class="p-5">
-        <img class="block mx-auto" src="assets/img/logo-placeholder.png">
+        <img class="block mx-auto" src="assets/img/sips-bits-logo-white.svg">
       </header>
       <nav class="flex flex-col items-start" id="navbar-spy">
         <a href="#typography" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
@@ -107,7 +107,7 @@
         </a>
       </footer>
     </aside>
-    <main class="p-10 max-w-6xl">
+    <main class="p-10 container">
       <section id="typography" class="pb-5">
         <header>
           <h1 class='text-red'>Typography</h1>
@@ -629,8 +629,9 @@
         <div>
           <article>
             <h4>Primary</h4>
-            <div class="flex gap-5">
+            <div class="md:flex gap-5 bg-blue-dark p-10">
               <button class='btn primary'>Text Sample</button>
+              <a class='btn primary'>Text Sample</a>
               <button class='btn primary' disabled>Text</button>
             </div>
           </article>
@@ -638,17 +639,54 @@
   &lt;button class='btn primary'>Text Sample&lt;/button>
   &lt;button class='btn primary' disabled>Text&lt;/button>
   </code></pre>
-          <article>
+          <article class="mt-5">
+            <h4>Primary outline</h4>
+            <div class="md:flex gap-5">
+              <button class='btn outline-primary'>Text Sample</button>
+              <button class='btn outline-primary' disabled>Text</button>
+            </div>
+          </article>
+  <pre class="language-markup rounded-xl flex-grow"><code>
+  &lt;button class='btn outline-primary'>Text Sample&lt;/button>
+  &lt;button class='btn outline-primary' disabled>Text&lt;/button>
+  </code></pre>
+          <article class="mt-10">
             <h4>Secondary</h4>
-            <div class="flex gap-5">
+            <div class="md:flex gap-5">
               <button class='btn secondary'>Text Sample</button>
               <button class='btn secondary' disabled>Text</button>
             </div>
           </article>
-  <pre class="language-markup rounded-xl flex-grow"><code>
-  &lt;button class='btn secondary'>Text Sample&lt;/button>
-  &lt;button class='btn secondary' disabled>Text&lt;/button>
-  </code></pre>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn secondary'>Text Sample&lt;/button>
+&lt;button class='btn secondary' disabled>Text&lt;/button>
+</code></pre>
+          <article class="mt-10">
+            <h4>Secondary outline</h4>
+            <div class="md:flex gap-5">
+              <button class='btn outline-secondary'>Text Sample</button>
+              <button class='btn outline-secondary' disabled>Text</button>
+            </div>
+          </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn outline-secondary'>Text Sample&lt;/button>
+&lt;button class='btn outline-secondary' disabled>Text&lt;/button>
+</code></pre>
+
+          <article class="mt-10">
+            <h4>Text buttons</h4>
+            <div class="md:flex gap-5">
+              <button class='btn text'>Text Button</button>
+              <button class='btn text' disabled>Text</button>
+            </div>
+          </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn text'>Text Button&lt;/button>
+&lt;button class='btn text' disabled>Text&lt;/button>
+</code></pre>
+        </div>
+        <div class="bg-white-ish p-6 rounded-lg mt-10">
+          <b class="text-blue-dark">Note:</b> Buttons are full-width on mobile & tablet.
         </div>
       </section>
       <section class='mt-10' id="forms">
@@ -847,7 +885,7 @@
   &lt;/div>
   </code></pre>
         <div class="block mt-4">
-          <div class="mt-2 relative h-14 w-1/3">
+          <div class="mt-2 relative h-14">
             <div class="alert error">
               <span class="left-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -865,7 +903,7 @@
               </button>
             </div>
           </div>
-          <div class="mt-2 relative h-14 w-1/3">
+          <div class="mt-2 relative h-14">
             <div class="alert success">
               <span class="left-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -883,7 +921,7 @@
               </button>
             </div>
           </div>
-          <div class="mt-2 relative h-14 w-1/3">
+          <div class="mt-2 relative h-14">
             <div class="alert warning">
               <span class="left-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -892,7 +930,7 @@
                     clip-rule="evenodd" />
                 </svg>
               </span>
-              <span class="message">Message warning ipsum dolor sit amet</span>
+              <span class="message">Message warning iipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit amipsum dolor sit ampsum dolor sit amet</span>
               <button class="btn-close">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor">

@@ -1,9 +1,8 @@
 @layer components {
   .alert {
-    @apply rounded-lg relative flex items-center px-4 py-4 z-50 top-0;
-    width: 400px;
-    min-height: 53px;
-    max-height: none;
+    @apply rounded-lg px-4 py-4 z-50 top-0 w-full;
+    @apply flex justify-between items-start;
+    @apply container mx-auto;
 
     &.info {
       @apply bg-blue bg-opacity-10 border border-blue border-opacity-50 text-blue-dark font-bold text-base;
@@ -23,10 +22,11 @@
       }
     }
 
+
     &.error .left-icon,
     &.success .left-icon,
     &.warning .left-icon {
-      @apply pr-8;
+      @apply pr-8 self-center;
       width: 18px;
       height: 18px;
 
@@ -44,14 +44,8 @@
       height: 18px;
     }
 
-    &.btn-close {
-      @apply  absolute right-0 top-0 mr-4 mt-3.5 md:mr-16 md:mt-4 ;
-      max-width: 14px;
-      max-height: 14px;
-
-      &:hover {
-        cursor: pointer;
-      }
+    .btn-close {
+      @apply ml-auto;
     }
 
     &.error,
@@ -72,14 +66,6 @@
       @apply bg-yellow-darker text-black;
     }
 
-    &.error& .btn-close .icon,
-    &.success& .btn-close .icon {
-      /*background-image: inline('x-white.svg');*/
-    }
-
-    &.warning& .btn-close .icon {
-      /*  background-image: inline('x-black.svg');*/
-    }
     &.turbo-notification {
       @apply rounded-lg pl-6 pr-8;
   

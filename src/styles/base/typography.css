@@ -68,11 +68,7 @@
   }
 
   h4 {
-    @apply text-btn;
-    
-    @screen lg {
-      @apply text-lg;
-    }  
+    @apply text-lg;
   }
 
   a {
@@ -87,5 +83,9 @@
     &.subtitle {
       @apply font-bold;
     }
+  }
+  
+  .font-bold {
+    @apply text-blue-dark;
   }
 }

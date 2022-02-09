@@ -23,6 +23,7 @@ module.exports = {
       blue: {
         dark: '#292C52',
         DEFAULT: '#3264FA',
+        crayola: '#245AF9',
         picton: '#43B7E9',
         wind: '#9CAFC8',
       },
@@ -53,7 +54,6 @@ module.exports = {
       fontSize: { // https://type-scale.com/ using major third type scale
         'sm': '.8rem',
         'md': '.875rem',
-        'btn': '1.125rem',
         'lg': '1.25rem',
         'xl': '1.563rem',
         '2xl': '1.953rem',
