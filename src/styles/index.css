@@ -4,6 +4,7 @@
 @import 'tailwindcss/utilities';
 
 /* Custom styles */
+@import 'base/base';
 @import 'base/typography';
 
 @import 'components/buttons';

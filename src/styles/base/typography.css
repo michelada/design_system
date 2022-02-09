@@ -68,11 +68,7 @@
   }
 
   h4 {
-    @apply text-btn;
-    
-    @screen lg {
-      @apply text-lg;
-    }  
+    @apply text-lg;
   }
 
   a {

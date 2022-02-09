@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply border rounded-[20px] px-9 py-2 font-bold font-avant text-btn w-full;
+    @apply border rounded-[20px] px-9 py-2 font-bold font-avant text-lg w-full cursor-pointer;
 
     @screen lg {
       @apply w-auto;
@@ -9,9 +9,20 @@
     &[disabled] {
       @apply cursor-not-allowed;
     }
+   
+    &.text {
+      @apply text-blue;
+      @apply hover:text-blue-dark;
+
+      &[disabled] {
+        @apply text-gray-lighter;
+      }
+
+    }
 
     &.primary {
-      @apply bg-blue text-white hover:bg-blue-dark;
+      @apply bg-blue text-white;
+      @apply hover:bg-blue-crayola;
 
       &[disabled] {
         @apply bg-gray-lighter text-gray-lightest;
@@ -49,5 +60,6 @@
         @apply border-gray-lighter text-gray-lighter;
       }
     }
+
   }
 }

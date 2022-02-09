@@ -1,0 +1,6 @@
+@layer base {
+  button,
+  a {
+    @apply border-transparent;
+  }
+}
