@@ -1,15 +1,18 @@
 @layer components {
-  header {
-    &.page-header {
-      @apply bg-white w-full min-w-min pt-6 pb-10 px-4 flex flex-col md:pt-14 md:pb-8;
-    }
+  .page-header {
+    @apply bg-white w-full min-w-min pt-6 pb-10 px-4 md:pt-14 md:pb-8;
 
-    & section {
-      @apply w-full min-w-min;
-    }
-
-    & aside {
-      @apply md:w-2/5 min-w-min px-0 md:px-4 py-4 flex justify-end md:justify-end space-x-6;
+    .content-wrapper {
+      @apply flex flex-col md:flex-row;
+      @apply container mx-auto;
+      
+      .content {
+        @apply w-full min-w-min;
+      }
+    
+      aside {
+        @apply md:w-2/5 min-w-min px-0 md:px-4 mt-2 flex justify-end md:justify-end space-x-4;
+      }
     }
   }
 }
