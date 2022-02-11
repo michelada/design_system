@@ -1,49 +1,36 @@
 @layer components {
-  .tab {
-    &.container {
-      @apply w-full lg:w-auto max-w-full flex flex-row;
-    }
-
-    &.item {
-      @apply bg-gray-lightest mx-px py-2 lg:px-16 flex justify-center items-center first:rounded-l-lg last:rounded-r-lg font-thin text-blue w-full;
-
-      &.active {
-        @apply bg-blue-dark text-white;
-      }
-
-      &:hover {
-        @apply bg-blue-wind text-blue-dark cursor-pointer;
-      }
-
-      & svg {
-        @apply h-5 w-5 mr-2 fill-current
-      }
-    }
-  }
-  
-  .tabs {
-    @apply flex gap-5 mt-10 col-span-4 lg:mb-0;
+  .nav.nav-tabs {
+    @apply flex divide-x divide-white;
   }
 
-  .tab-list {
-    @apply px-4 lg:px-0;
-  }
-
-  .tab.item {
-    @apply px-8 w-full lg:w-auto !important;
+  .tab-contents .content {
+    @apply hidden;
 
     &.active {
-      svg path {
-        fill: white;
-      }
+      @apply block;
+    }
+  } 
+
+  .nav-item {
+    @apply bg-gray-lightest cursor-pointer font-bold py-3 md:px-12 text-blue;
+    @apply flex-1 lg:flex-initial justify-center;
+    @apply flex space-x-2;
+    @apply hover:bg-gray-lighter hover:text-blue-dark;
+   
+    * {
+      @apply pointer-events-none;
     }
 
-    &:hover {
+    &.active {
       @apply bg-blue-dark text-white !important;
+    }
+   
+    &:first-of-type {
+      @apply rounded-l-lg;
+    }
 
-      svg path {
-        fill: white;
-      }
+    &:last-of-type {
+      @apply rounded-r-lg;
     }
   }
 }
