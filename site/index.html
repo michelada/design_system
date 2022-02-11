@@ -497,102 +497,115 @@
           <h4>Basic Header</h4>
           <article class="border mb-6">
             <header class="page-header">
-              <section>
-                <h1>Header title example</h1>
-                <p>Header description example</p>
+              <section class="content-wrapper">
+                <section class="content">
+                  <h1>Header title example</h1>
+                  <p>Header description example</p>
+                </section>
               </section>
             </header>
           </article>
   <pre class="language-markup rounded-xl flex-grow"><code>
   &lt;header class="page-header">
-    &lt;section>
-      &lt;h1>Header title example&lt;/h1>
-      &lt;p>Header description example&lt;/p>
-    &lt;/section>
+    &lt;div class="content-wrapper">
+      &lt;section class="content">
+        &lt;h1>Header title example&lt;/h1>
+        &lt;p>Header description example&lt;/p>
+      &lt;/section>
+    &lt;/div>
   &lt;/header>
   </code></pre>
           <h4>Header with buttons</h4>
           <article class="border mb-6">
             <header class="page-header">
-              <section>
-                <h1>Header title example</h1>
-                <p>Header description example</p>
-              </section>
-              <aside>
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
-                    fill="#E6EDF0" />
-                  <path
-                    d="M27 15.9999H13C11.34 15.9999 10 17.3399 10 18.9999V24.9999H14V28.9999H26V24.9999H30V18.9999C30 17.3399 28.66 15.9999 27 15.9999ZM24 26.9999H16V21.9999H24V26.9999ZM27 19.9999C26.45 19.9999 26 19.5499 26 18.9999C26 18.4499 26.45 17.9999 27 17.9999C27.55 17.9999 28 18.4499 28 18.9999C28 19.5499 27.55 19.9999 27 19.9999ZM26 10.9999H14V14.9999H26V10.9999Z"
-                    fill="#3264FA" />
-                </svg>
-                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
-                    fill="#E6EDF0" />
-                  <path
-                    d="M26 24.0799C25.24 24.0799 24.56 24.3799 24.04 24.8499L16.91 20.6999C16.96 20.4699 17 20.2399 17 19.9999C17 19.7599 16.96 19.5299 16.91 19.2999L23.96 15.1899C24.5 15.6899 25.21 15.9999 26 15.9999C27.66 15.9999 29 14.6599 29 12.9999C29 11.3399 27.66 9.99988 26 9.99988C24.34 9.99988 23 11.3399 23 12.9999C23 13.2399 23.04 13.4699 23.09 13.6999L16.04 17.8099C15.5 17.3099 14.79 16.9999 14 16.9999C12.34 16.9999 11 18.3399 11 19.9999C11 21.6599 12.34 22.9999 14 22.9999C14.79 22.9999 15.5 22.6899 16.04 22.1899L23.16 26.3499C23.11 26.5599 23.08 26.7799 23.08 26.9999C23.08 28.6099 24.39 29.9199 26 29.9199C27.61 29.9199 28.92 28.6099 28.92 26.9999C28.92 25.3899 27.61 24.0799 26 24.0799Z"
-                    fill="#3264FA" />
-                </svg>
-              </aside>
+              <div class="content-wrapper">
+                <section class="content">
+                  <h1>Header title example</h1>
+                  <p>Header description example</p>
+                </section>
+                <aside>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
+                      fill="#E6EDF0" />
+                    <path
+                      d="M27 15.9999H13C11.34 15.9999 10 17.3399 10 18.9999V24.9999H14V28.9999H26V24.9999H30V18.9999C30 17.3399 28.66 15.9999 27 15.9999ZM24 26.9999H16V21.9999H24V26.9999ZM27 19.9999C26.45 19.9999 26 19.5499 26 18.9999C26 18.4499 26.45 17.9999 27 17.9999C27.55 17.9999 28 18.4499 28 18.9999C28 19.5499 27.55 19.9999 27 19.9999ZM26 10.9999H14V14.9999H26V10.9999Z"
+                      fill="#3264FA" />
+                  </svg>
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0 9.99988C0 4.47703 4.47715 -0.00012207 10 -0.00012207H30C35.5228 -0.00012207 40 4.47703 40 9.99988V29.9999C40 35.5227 35.5228 39.9999 30 39.9999H10C4.47715 39.9999 0 35.5227 0 29.9999V9.99988Z"
+                      fill="#E6EDF0" />
+                    <path
+                      d="M26 24.0799C25.24 24.0799 24.56 24.3799 24.04 24.8499L16.91 20.6999C16.96 20.4699 17 20.2399 17 19.9999C17 19.7599 16.96 19.5299 16.91 19.2999L23.96 15.1899C24.5 15.6899 25.21 15.9999 26 15.9999C27.66 15.9999 29 14.6599 29 12.9999C29 11.3399 27.66 9.99988 26 9.99988C24.34 9.99988 23 11.3399 23 12.9999C23 13.2399 23.04 13.4699 23.09 13.6999L16.04 17.8099C15.5 17.3099 14.79 16.9999 14 16.9999C12.34 16.9999 11 18.3399 11 19.9999C11 21.6599 12.34 22.9999 14 22.9999C14.79 22.9999 15.5 22.6899 16.04 22.1899L23.16 26.3499C23.11 26.5599 23.08 26.7799 23.08 26.9999C23.08 28.6099 24.39 29.9199 26 29.9199C27.61 29.9199 28.92 28.6099 28.92 26.9999C28.92 25.3899 27.61 24.0799 26 24.0799Z"
+                      fill="#3264FA" />
+                  </svg>
+                </aside>
+              </div>
             </header>
           </article>
   <pre class="language-markup rounded-xl flex-grow"><code>
   &lt;header class="page-header">
-    &lt;section>
-      &lt;h1>Header title example&lt;/h1>
-      &lt;p>Header description example&lt;/p>
-    &lt;/section>
-  &lt;/header>
-  &lt;aside>
-    &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    ...
-    &lt;/svg>
-    &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    ...
-    &lt;/svg>
-  &lt;/aside>
+    &lt;div class="content-wrapper">
+      &lt;section class="content">
+        &lt;h1>Header title example&lt;/h1>
+        &lt;p>Header description example&lt;/p>
+      &lt;/section>
+    &lt;/header>
+    &lt;aside>
+      &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      ...
+      &lt;/svg>
+      &lt;svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      ...
+      &lt;/svg>
+    &lt;/aside>
+  &lt;/div>
+&lt;/header>
   </code></pre>
           <h4>Header with search bar</h4>
           <article class="border mb-6">
             <header class="page-header">
-              <section>
-                <h1>Header title example</h1>
-                <p>Header description example</p>
-              </section>
-              <aside>
-                <div class="input-icon">
-                  <input type='text' id='full-name' placeholder="Search your name" />
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
-                </div>
-              </aside>
+              <div class="content-wrapper">
+                <section class="content">
+                  <h1>Header title example</h1>
+                  <p>Header description example</p>
+                </section>
+                <aside>
+                  <div class="input-icon">
+                    <input type='text' id='full-name' placeholder="Search your name" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                </aside>
+              </div>
             </header>
           </article>
   <pre class="language-markup rounded-xl flex-grow"><code>
-  &lt;header class="page-header">
-    &lt;section>
+&lt;header class="page-header">
+  &lt;div class="content-wrapper">
+    &lt;section class="content">
       &lt;h1>Header title example&lt;/h1>
       &lt;p>Header description example&lt;/p>
     &lt;/section>
-  &lt;/header>
-  &lt;aside>
-    &lt;div class="input-icon">
-      &lt;input type='text' id='full-name' placeholder="Search your name" />
-      &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor">
-        &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-      &lt;/svg>
-    &lt;/div>
-  &lt;/aside>
+    &lt;aside>
+      &lt;div class="input-icon">
+        &lt;input type='text' id='full-name' placeholder="Search your name" />
+        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        &lt;/svg>
+      &lt;/div>
+    &lt;/aside>
+  &lt;/div>
+&lt;/header>
   </code></pre>
         </div>
-      </section>
+      </section> 
   
       <section class="mt-10" id="buttons">
         <header>
