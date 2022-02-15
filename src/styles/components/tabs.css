@@ -16,13 +16,20 @@
     @apply flex-1 lg:flex-initial justify-center;
     @apply flex space-x-2;
     @apply hover:bg-gray-lighter hover:text-blue-dark;
+    @apply relative; /* for the stretech-link usage */
    
-    * {
-      @apply pointer-events-none;
+    &:hover {
+      a {
+        @apply bg-gray-lighter text-blue-dark !important;
+      }
     }
 
     &.active {
       @apply bg-blue-dark text-white !important;
+
+      a {
+        @apply bg-blue-dark text-white !important;
+      }
     }
    
     &:first-of-type {
@@ -31,6 +38,10 @@
 
     &:last-of-type {
       @apply rounded-r-lg;
+    }
+
+    > a {
+      @apply flex space-x-2 items-center;
     }
   }
 }
