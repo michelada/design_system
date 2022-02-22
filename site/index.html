@@ -1447,7 +1447,7 @@
           &lt;img alt="open" class="icon-plus" src="assets/img/tbl-collapse-mbl/icon-plus.svg" />
         &lt;/td>
       &lt;/tr>
-    &lt;/table>
+    &lt;/table  >
   &lt;/div>
   </code></pre>
       </section>
@@ -1455,8 +1455,66 @@
         <header>
           <h1 class="text-red">NavBar </h1>
         </header>
-        <html-import src="navbar.html">
-        </html-import>
+        <header class="bg-dark">
+          <nav class="container mx-auto flex justify-between items-center flex-wrap relative" data-controller="header">
+            <section class="brand">
+              <a href="#" class="p-6">
+                <img class="inline-block" src="assets/img/logo.svg">
+              </a>
+            </section>
+            <section class="close text-white cursor-pointer md:hidden" data-action="click->header#toggleMenu">
+              <div class="m-4 min-h-[40px] min-w-[40px] grid place-items-center">
+                <svg data-header-target="close" xmlns="http://www.w3.org/2000/svg" width="32" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+                <img data-header-target="avatar" src="assets/img/avatar.png" class="rounded-full w-10 h-10"/>
+              </div>
+            </section>
+            <section class="nav-links basis-full md:basis-auto bg-dark absolute md:static w-full md:w-auto top-[72px] hidden md:block" data-header-target="menu">
+              <ul class="md:flex items-center">
+                <li class="md:inline-block">
+                  <a href="#" class="flex space-x-6 text-white/80 p-6 hover:bg-blue-dark hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    </svg>
+                    <span>Configuration</span>
+                  </a>
+                </li>
+                <li class="md:inline-block">
+                  <a href="#" class="flex space-x-6 text-white/80 p-6 hover:bg-blue-dark hover:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                    <span>Experimental</span>
+                  </a>
+                </li>
+                <li class="md:inline-block bg-blue-dark relative">
+                  <a href="#" class="flex space-x-6 p-6 md:p-4 text-white/80 hover:bg-blue-dark hover:text-white" data-action="click->header#toggleSubmenu">
+                    <img src="assets/img/avatar.png" class="rounded-full w-6 h-6 md:w-10 md:h-10"/>
+                    <span class="md:hidden">My Profile</span>
+                  </a>
+                  <ul class="hidden bg-blue-dark md:absolute md:right-0" data-header-target="submenu">
+                    <li>
+                      <a href="#" class="flex space-x-6 p-6 text-white/80 hover:bg-blue-dark hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                        </svg> 
+                        <span>Link</span>
+                      </a>
+                    </li><li>
+                      <a href="#" class="flex space-x-6 p-6 text-white/80 hover:bg-blue-dark hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span>Link</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </header>
   <pre class="language-markup rounded-xl flex-grow"><code>
     
     &lt;nav class="w-full bg-dark">

@@ -1,6 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
-const SHOW_SIDEBAR = true;
+const SHOW_SIDEBAR = false;
 
 export default class extends Controller {
   static targets = [ "sidebar" ];

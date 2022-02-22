@@ -1,43 +1,75 @@
-<nav class="w-full bg-dark">
-    <div class="navbar-container h-14 md:h-20">
-        <div class="navbar-logo-container">
-            <a class="block h-full" href="/">
-            <img class="navbar-logo" src="assets/img/logo.svg">
-            </a>
-        </div>
-      <div class="navbar-links-section" data-controller="navbar">
-        <div data-navbar-target="linksContainer" class="navbar-links-container bg-dark hidden flex md:flex">
-            <a class="navbar-link" href="/">
-                La Barra
-            </a>
-            <a class="navbar-link" href="/">
-                Team directory
-            </a>       
-            <a class="navbar-link" href="/">
-                PTOs
-            </a>
-        </div>
-        <div class="user-picture flex items-center justify-center" data-action="click->navbar#dropdownToggle">
-          <img alt="Moises Benjamin Lezama" class="navbar-user-icon mx-3" src="https://lh3.googleusercontent.com/a/AATXAJzLOQMMjzDpc_twXpxAdPnzfZ46QBEipasMeHR5=s96-c">
-          <div data-navbar-target="dropdownTrigger" class="navbar-close-dropdown hidden flex">
-            <img class="scale-100" src="assets/icon-close-5cfafe7d2bd68790e97fbc21382e2f449c8d9a0a4014bb127a5d3d14b5ee08a5.svg">
-          </div>
-        </div>
-        <div data-navbar-target="dropdownElement" class="navbar-dropdown hidden flex">
-            <a class="navbar-dropdown-link" href="/">
-                <img class="navbar-user-icon ml-0 md:hidden" src="/assets/icon-michelada-a09f466fab1358f68b7dac67f56a2fd8b8f5d2874468565517aa44b4e447bf40.svg">
-                <img class="navbar-dropdown-icon hidden md:block" src="/assets/icon-user.svg">
-                My Profile
-            </a>
-            <a class="navbar-dropdown-link" href="/">
-              <img class="navbar-dropdown-icon" src="/assets/icon-toggle-0775221ae959ca01f20ae100debec3c1a4269d8d6a606e6740d8b02f04fcdc2e.svg">
-              Admin
-            </a>
-            <a data-turbo="false" class="navbar-dropdown-link" rel="nofollow" data-method="delete" href="/">
-                <img class="navbar-dropdown-icon" src="/assets/icon-power-off-4ef033d9aa94c8cf5405e3b3606f603ed49e51350d134166a4c5f5c224b32b26.svg">
-                Sign Out
-            </a>
-        </div>
-      </div>
-    </div>
+<header class="bg-dark" data-controller="header">
+  <nav class="container mx-auto flex justify-between items-center flex-wrap relative">
+    <section class="brand">
+      <a href="#" class="p-6">
+        <img class="inline-block" src="assets/img/logo.svg">
+      </a>
+    </section>
+    <section class="close text-white p-6 cursor-pointer md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </section>
+    <section class="nav-links basis-full md:basis-auto bg-dark absolute w-full top-[72px]">
+      <ul class="md:flex items-center">
+        <li class="md:inline-block">
+          <a href="#" class="flex space-x-6 text-white/80 p-6 hover:bg-blue-dark hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+            <span>Configuration</span>
+          </a>
+        </li>
+        <li class="md:inline-block">
+          <a href="#" class="flex space-x-6 text-white/80 p-6 hover:bg-blue-dark hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+            </svg>
+            <span>Experimental</span>
+          </a>
+        </li>
+        <li class="md:inline-block bg-blue-dark">
+          <a href="#" class="flex space-x-6 p-6 text-white/80 hover:bg-blue-dark hover:text-white">
+            <img src="assets/img/avatar.png" class="rounded-full w-6 h-6 md:w-10 md:h-10"/>
+            <span class="md:hidden">My Profile</span>
+          </a>
+          <ul>
+            <li>
+              <a href="#" class="flex space-x-6 p-6 text-white/80 hover:bg-blue-dark hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                </svg> 
+                <span>Link</span>
+              </a>
+            </li><li>
+              <a href="#" class="flex space-x-6 p-6 text-white/80 hover:bg-blue-dark hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span>Link</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
   </nav>
+</header>
+<main class="container mx-auto p-2">
+  <p>
+    Duis ea minim duis velit eiusmod enim minim consectetur elit excepteur ea dolore.
+    Officia excepteur aute proident dolor dolore sunt ea cillum consectetur.
+    Fugiat aute aliquip in nulla et nostrud consectetur.
+    Mollit minim cupidatat id cillum minim do nostrud consequat elit aliquip qui esse.
+    Consectetur proident labore irure fugiat mollit proident reprehenderit.
+    Cillum non velit incididunt nisi. Aliquip quis officia occaecat duis ex irure ad.
+  </p>
+  <p>
+    Duis ea minim duis velit eiusmod enim minim consectetur elit excepteur ea dolore.
+    Officia excepteur aute proident dolor dolore sunt ea cillum consectetur.
+    Fugiat aute aliquip in nulla et nostrud consectetur.
+    Mollit minim cupidatat id cillum minim do nostrud consequat elit aliquip qui esse.
+    Consectetur proident labore irure fugiat mollit proident reprehenderit.
+    Cillum non velit incididunt nisi. Aliquip quis officia occaecat duis ex irure ad.
+  </p>
+</main>
