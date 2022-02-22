@@ -27,16 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
         var calendar = new Calendar(calendarEl, {
         plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ],
         initialView: 'dayGridMonth',
-        dayHeaders: false,
+        dayHeaders: true,
         headerToolbar: {
             start: 'prev',
             center: 'title',
             end: 'next'
         },
         events: [
-            { id: 1, title: 'test event', start: '2021-11-09' },
-            { id: 1, title: 'second event', start: '2021-11-09' },
-            { id: 1, title: 'week event', start: '2021-11-15 11:00', end: '2021-11-19 23:00' },
+            { id: 1, title: 'test event', start: '2022-02-18' },
+            { id: 1, title: 'second event', start: '2022-02-19 11:00', end: '2022-02-24 23:00' },
+            { id: 1, title: 'week event', start: '2022-02-21 11:00', end: '2022-02-27 23:00' },
         ]
         });
         calendar.render();

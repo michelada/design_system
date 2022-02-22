@@ -4,3 +4,10 @@
     @apply border-transparent;
   }
 }
+
+:root {
+  --fullcalendar-event-1: #434884;
+  --fullcalendar-event-2: #5C62B2;
+  --fullcalendar-event-3: #6D73CB;
+  --fullcalendar-event-4: #848CF0;
+}
