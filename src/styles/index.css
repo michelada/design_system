@@ -22,8 +22,7 @@
 @import 'components/brand';
 @import 'components/description_container.css';
 @import 'components/footer.css';
-/*@import 'components/navbar.css';
-@import 'components/navigation-bar.css';*/
+@import 'components/header.css';
 @import 'components/pto.css';
 @import 'components/table.css';
 

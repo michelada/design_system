@@ -1,0 +1,56 @@
+.navbar {
+  @apply bg-dark;
+  @apply container mx-auto flex justify-between items-center flex-wrap relative;
+
+  .brand {
+    @apply p-6;
+
+    img {
+      @apply max-h-6 inline-block;
+    }
+  }
+
+  .close-toggle {
+    @apply text-white cursor-pointer md:hidden;
+
+    .action-wrapper {
+      @apply m-4 min-h-[40px] min-w-[40px] grid place-items-center;
+
+      .avatar {
+        @apply rounded-full w-10 h-10;
+      }
+    }
+  }
+
+  .nav-links {
+    @apply basis-full md:basis-auto bg-dark absolute md:static w-full md:w-auto top-[72px] hidden md:block;
+
+    > ul {
+      @apply md:flex items-center;
+
+      li {
+        @apply md:inline-block;
+
+        .nav-link {
+          @apply flex space-x-6 text-white/80 p-6 hover:bg-blue-dark hover:text-white;
+        }
+      }
+
+      li.my-profile {
+        @apply bg-blue-dark relative;
+
+        a {
+          @apply p-4;
+        }
+
+        .submenu {
+          @apply bg-blue-dark md:absolute md:right-0;
+
+          .nav-link {
+            @apply flex space-x-6 p-6 text-white/80 hover:bg-blue-dark hover:text-white; 
+          }
+        }
+      }
+    }
+  }
+}
