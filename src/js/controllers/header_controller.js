@@ -4,6 +4,7 @@ export default class extends Controller {
 
   connect () {
     if(window.innerWidth <= 768) {
+      this.menuTarget.classList.toggle("hidden");
       this.submenuTarget.classList.toggle("hidden");
     }
   }

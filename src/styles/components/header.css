@@ -23,7 +23,7 @@
   }
 
   .nav-links {
-    @apply basis-full md:basis-auto bg-dark absolute md:static w-full md:w-auto top-[72px] hidden md:block;
+    @apply basis-full md:basis-auto bg-dark absolute md:static w-full md:w-auto top-[72px] md:block;
 
     > ul {
       @apply md:flex items-center;
