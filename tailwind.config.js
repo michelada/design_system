@@ -17,8 +17,9 @@ module.exports = {
         DEFAULT: '#575F65',
         light: '#828F96',
         lighter: '#A5B1B8',
+        silver: '#D2D5DA',
         lightest: '#E6EDF0',
-        ish: '#808C93'
+        ish: '#808C93',
       },
       blue: {
         dark: '#292C52',
@@ -26,6 +27,7 @@ module.exports = {
         crayola: '#245AF9',
         picton: '#43B7E9',
         wind: '#9CAFC8',
+        lavender: '#C1DBFC'
       },
       white: {
         DEFAULT: '#FFFFFF',
@@ -43,6 +45,12 @@ module.exports = {
       },
       red: '#EA3434',
       green: '#00B5AF',
+      fullcalendar: {
+        "event-1": 'var(--fullcalendar-event-1)',
+        "event-2": 'var(--fullcalendar-event-2)',
+        "event-3": 'var(--fullcalendar-event-3)',
+        "event-4": 'var(--fullcalendar-event-4)',
+      }
     },
     extend: {
       boxShadow: {
