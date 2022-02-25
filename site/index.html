@@ -1504,7 +1504,7 @@
                 <svg data-header-target="close" xmlns="http://www.w3.org/2000/svg" width="32" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                 </svg>
-                <img data-header-target="avatar" src="assets/img/avatar.png" class="avatar"/>
+                <img data-header-target="avatar" src="assets/img/avatar.png" alt="E" class="avatar"/>
               </div>
             </section>
             <section class="nav-links" data-header-target="menu">
@@ -1527,7 +1527,7 @@
                 </li>
                 <li class="my-profile">
                   <a href="#" class="nav-link" data-action="click->header#toggleSubmenu">
-                    <img src="assets/img/avatar.png" class="rounded-full w-6 h-6 md:w-10 md:h-10"/>
+                    <img src="assets/img/avatar.png" alt="E" class="avatar"/>
                     <span class="md:hidden">My Profile</span>
                   </a>
                   <ul class="hidden submenu" data-header-target="submenu">
@@ -1536,7 +1536,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
                         </svg> 
-                        <span>Link</span>
+                        <span>Link Link Link</span>
                       </a>
                     </li>
                     <li>
@@ -1554,50 +1554,65 @@
           </nav>
         </header>
   <pre class="language-markup rounded-xl flex-grow"><code>
-    
-    &lt;nav class="w-full bg-dark">
-      &lt;div class="navbar-container h-14 md:h-20">
-          &lt;div class="navbar-logo-container">
-              &lt;a class="block h-full" href="/">
-              &lt;img class="navbar-logo" src="assets/img/logo.svg">
-              &lt;/a>
-          &lt;/div>
-        &lt;div class="navbar-links-section" data-controller="navbar">
-          &lt;div data-navbar-target="linksContainer" class="navbar-links-container bg-dark hidden flex md:flex">
-              &lt;a class="navbar-link" href="/">
-                  La Barra
-              &lt;/a>
-              &lt;a class="navbar-link" href="/">
-                  Team directory
-              &lt;/a>       
-              &lt;a class="navbar-link" href="/">
-                  PTOs
-              &lt;/a>
-          &lt;/div>
-          &lt;div class="user-picture flex items-center justify-center" data-action="click->navbar#dropdownToggle">
-            &lt;img alt="Moises Benjamin Lezama" class="navbar-user-icon mx-3" src="https://lh3.googleusercontent.com/a/AATXAJzLOQMMjzDpc_twXpxAdPnzfZ46QBEipasMeHR5=s96-c">
-            &lt;div data-navbar-target="dropdownTrigger" class="navbar-close-dropdown hidden flex">
-              &lt;img class="scale-100" src="assets/icon-close-5cfafe7d2bd68790e97fbc21382e2f449c8d9a0a4014bb127a5d3d14b5ee08a5.svg">
-            &lt;/div>
-          &lt;/div>
-          &lt;div data-navbar-target="dropdownElement" class="navbar-dropdown hidden flex">
-              &lt;a class="navbar-dropdown-link" href="/">
-                  &lt;img class="navbar-user-icon ml-0 md:hidden" src="/assets/icon-michelada-a09f466fab1358f68b7dac67f56a2fd8b8f5d2874468565517aa44b4e447bf40.svg">
-                  &lt;img class="navbar-dropdown-icon hidden md:block" src="/assets/icon-user.svg">
-                  My Profile
-              &lt;/a>
-              &lt;a class="navbar-dropdown-link" href="/">
-                &lt;img class="navbar-dropdown-icon" src="/assets/icon-toggle-0775221ae959ca01f20ae100debec3c1a4269d8d6a606e6740d8b02f04fcdc2e.svg">
-                Admin
-              &lt;/a>
-              &lt;a data-turbo="false" class="navbar-dropdown-link" rel="nofollow" data-method="delete" href="/">
-                  &lt;img class="navbar-dropdown-icon" src="/assets/icon-power-off-4ef033d9aa94c8cf5405e3b3606f603ed49e51350d134166a4c5f5c224b32b26.svg">
-                  Sign Out
-              &lt;/a>
-          &lt;/div>
-        &lt;/div>
-      &lt;/div>
-    &lt;/nav>      
+        &lt;header class="bg-dark">
+          &lt;nav class="navbar" data-controller="header">
+            &lt;a href="#" class="brand">
+              &lt;img src="assets/img/logo.svg">
+            &lt;/a>
+            &lt;section class="close-toggle" data-action="click->header#toggleMenu">
+              &lt;div class="action-wrapper">
+                &lt;svg data-header-target="close" xmlns="http://www.w3.org/2000/svg" width="32" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                &lt;/svg>
+                &lt;img data-header-target="avatar" src="assets/img/avatar.png" alt="E" class="avatar"/>
+              &lt;/div>
+            &lt;/section>
+            &lt;section class="nav-links" data-header-target="menu">
+              &lt;ul>
+                &lt;li>
+                  &lt;a href="#" class="nav-link">
+                    &lt;svg xmlns="http://www.w3.org/2000/svg" width="19" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                    &lt;/svg>
+                    &lt;span>Configuration&lt;/span>
+                  &lt;/a>
+                &lt;/li>
+                &lt;li >
+                  &lt;a href="#" class="nav-link">
+                    &lt;svg xmlns="http://www.w3.org/2000/svg" width="19" class="h-6 w-6 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    &lt;/svg>
+                    &lt;span>Experimental&lt;/span>
+                  &lt;/a>
+                &lt;/li>
+                &lt;li class="my-profile">
+                  &lt;a href="#" class="nav-link" data-action="click->header#toggleSubmenu">
+                    &lt;img src="assets/img/avatar.png" alt="E" class="avatar"/>
+                    &lt;span class="md:hidden">My Profile&lt;/span>
+                  &lt;/a>
+                  &lt;ul class="hidden submenu" data-header-target="submenu">
+                    &lt;li>
+                      &lt;a href="#" class="nav-link">
+                        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+                        &lt;/svg> 
+                        &lt;span>Link Link Link&lt;/span>
+                      &lt;/a>
+                    &lt;/li>
+                    &lt;li>
+                      &lt;a href="#" class="nav-link">
+                        &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        &lt;/svg>
+                        &lt;span>Link&lt;/span>
+                      &lt;/a>
+                    &lt;/li>
+                  &lt;/ul>
+                &lt;/li>
+              &lt;/ul>
+            &lt;/section>
+          &lt;/nav>
+        &lt;/header>
   </code></pre>
       </section>
     </main>

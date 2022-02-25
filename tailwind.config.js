@@ -1,9 +1,9 @@
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     './site/*.html',
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media',
   theme: {
     fontFamily: {
       sans: ['Noto Sans'],
