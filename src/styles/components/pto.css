@@ -7,7 +7,7 @@
     }
 
     .pto-btn  {
-        @apply  rounded-2xl px-9 py-2 font-bold font-avant text-lg ;
+        @apply  rounded-2xl px-9 py-2 font-extrabold font-raleway text-lg ;
     
         &[disabled] {
           @apply cursor-not-allowed;

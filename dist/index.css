@@ -28,7 +28,7 @@ html {
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: Noto Sans; /* 4 */
+  font-family: Poppins; /* 4 */
 }
 /*
 1. Remove the margin in all browsers.
@@ -460,45 +460,50 @@ button, a {
   border-color: transparent;
 }
 @font-face{
-    font-family: "AvantGarde";
-    src: url("fonts/AvantGarde.ttf");
-    font-weight: normal;
-  }
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Regular.ttf");
+  font-weight: normal;
+}
 @font-face{
-    font-family: "AvantGarde";
-    src: url("fonts/AvantGarde-Bold.ttf");
-    font-weight: bold;
-  }
+  font-family: "Raleway";
+  src: url("fonts/Raleway-ExtraBold.ttf");
+  font-weight: 800;
+}
 @font-face{
-    font-family: "Noto Sans";
-    src: url("fonts/NotoSans-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Black.ttf");
+  font-weight: 900;
+}
 @font-face{
-    font-family: "Noto Sans";
-    src: url("fonts/NotoSans-Bold.ttf");
-    font-weight: bold;
-    font-style: normal;
-  }
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 @font-face{
-    font-family: "Noto Sans";
-    src: url("fonts/NotoSans-Italic.ttf");
-    font-weight: normal;
-    font-style: italic;
-  }
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
 body {
   --tw-text-opacity: 1;
   color: rgb(87 95 101 / var(--tw-text-opacity));
 }
 h1, h2, h3, h4 {
-  font-family: AvantGarde;
-  font-weight: 700;
+  font-family: Raleway;
+  font-weight: 900;
   --tw-text-opacity: 1;
   color: rgb(41 44 82 / var(--tw-text-opacity));
 }
 h1 {
-    font-size: 2rem;    
+    font-size: 2.5rem;    
   }
 @media (min-width: 1024px) {
 
@@ -507,7 +512,7 @@ h1 {
   }
     }
 h2 {
-    font-size: 1.5rem;   
+    font-size: 2rem;   
   }
 @media (min-width: 1024px) {
 
@@ -516,7 +521,7 @@ h2 {
   }
     }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 @media (min-width: 1024px) {
 
@@ -526,6 +531,9 @@ h3 {
     }
 h4 {
   font-size: 1.25rem;
+}
+p {
+  font-family: Poppins;
 }
 a {
   --tw-text-opacity: 1;
@@ -718,7 +726,7 @@ select:active, select:focus {
   padding-right: 2.25rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  font-family: AvantGarde;
+  font-family: Raleway;
   font-size: 1.25rem;
   font-weight: 700;
 }
@@ -1406,7 +1414,7 @@ nav .navbar ul li.submenu ul li:hover span {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  font-family: Noto Sans;
+  font-family: Poppins;
   font-size: 1rem;
   font-weight: 600;
   font-style: normal;
@@ -2325,7 +2333,7 @@ nav .navbar ul li.submenu ul li:hover span {
   text-align: right;
 }
 .text-sm {
-  font-size: .8rem;
+  font-size: .8125rem;
 }
 .text-base {
   font-size: 1rem;
@@ -2336,6 +2344,12 @@ nav .navbar ul li.submenu ul li:hover span {
 }
 .font-bold {
   font-weight: 700;
+}
+.font-extrabold {
+  font-weight: 800;
+}
+.font-black {
+  font-weight: 900;
 }
 .font-normal {
   font-weight: 400;
