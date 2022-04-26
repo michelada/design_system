@@ -51,5 +51,8 @@
   "bugs": {
     "url": "https://github.com/michelada/design_system/issues"
   },
-  "homepage": "https://github.com/michelada/design_system#readme"
+  "homepage": "https://github.com/michelada/design_system#readme",
+  "description": "<p>   <a href=\"https://michelada.github.io/design_system/site/\" target=\"_blank\">     <img src=\"https://michelada.github.io/design_system/site/assets/img/sips-bits-logo.svg\" alt=\"Sips & Bits Logo\"  height=\"200\">   </a> </p>",
+  "main": "postcss.config.js",
+  "license": "ISC"
 }

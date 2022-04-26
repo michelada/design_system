@@ -73,6 +73,7 @@ Reset links to optimize for opt-in styling instead of opt-out.
 a {
   color: inherit;
   text-decoration: inherit;
+  font-family: Poppins;
 }
 /*
 Add the correct font weight in Edge and Safari.
@@ -80,6 +81,7 @@ Add the correct font weight in Edge and Safari.
 b,
 strong {
   font-weight: bolder;
+  font-family: Poppins;
 }
 /*
 1. Use the user's configured `mono` font family by default.
@@ -140,6 +142,10 @@ textarea {
   color: inherit; /* 1 */
   margin: 0; /* 2 */
   padding: 0; /* 3 */
+}
+button {
+  font-family: Raleway;
+  font-size: 1.25rem;
 }
 /*
 Remove the inheritance of text transform in Edge and Firefox.

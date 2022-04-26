@@ -39,7 +39,7 @@
   }
 
   body {
-    @apply text-gray;
+    @apply text-gray font-poppins;
   }
 
   h1,
@@ -47,6 +47,11 @@
   h3,
   h4 {
     @apply font-black font-raleway text-blue-dark;
+  }
+
+  button {
+    font-size: 1.25rem;
+    @apply font-raleway font-extrabold;
   }
 
   h1 {
