@@ -1,7 +1,7 @@
 @import "fullcalendar/main.min.css";
 
 .fc-daygrid-day-number {
-  @apply text-dark-charcoal;
+  @apply text-black;
 }
 
 .fc-toolbar-title {
@@ -12,12 +12,12 @@
   justify-content: center !important;
 
   .fc-button-primary {
-    @apply bg-transparent border-0 text-blue-dark !important;
+    @apply bg-transparent border-0 !important;
   }
 }
 
 .fc-daygrid-day {
-  border-color: text-gray-lighter !important;
+  border-color: text-white !important;
 }
 
 .fc-theme-standard {
@@ -43,12 +43,7 @@
 .fc-h-event.bg-fullcalendar-event-3 {
   background-color: var(--fullcalendar-event-3);
   border-color: var(--fullcalendar-event-3);
-}
-
-.fc-h-event.bg-fullcalendar-event-4 {
-  background-color: var(--fullcalendar-event-4);
-  border-color: var(--fullcalendar-event-4);
-} */
+}*/
 
 .fc-daygrid-day-events > :nth-child(4n+1) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
   @apply bg-fullcalendar-event-1;
@@ -62,28 +57,24 @@
   @apply bg-fullcalendar-event-3;
 }
 
-.fc-daygrid-day-events > :nth-child(4n+4) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-fullcalendar-event-4;
-}
-
 .fc-day {
   @apply bg-white-ish !important;
 
   &:hover {
-    @apply bg-blue-lavender !important; 
+    @apply bg-purple !important; 
 
     .fc-daygrid-day-number {
       @apply text-white !important;
     }
 
     .fc-col-header-cell-cushion, .fc-scrollgrid-sync-inner {
-      @apply bg-blue text-white !important;
+      @apply bg-purple text-white !important;
     }
   }
 }
 
 .fc-day-today {
-  @apply bg-blue-dark !important;
+  @apply bg-purple-dark !important;
 
   .fc-daygrid-day-number {
     @apply text-white !important;
@@ -91,13 +82,13 @@
 }
 
 .fc-day-past {
-  @apply bg-gray-lighter !important;
+  @apply bg-white !important;
 }
 
 .fc-day-other {
-  @apply bg-gray-silver !important;
+  @apply bg-fullcalendar-event-3 !important;
 }
 
 .fc-col-header-cell > .fc-scrollgrid-sync-inner > * {
-  @apply text-gray-lighter font-normal;
+  @apply text-white font-normal;
 }
