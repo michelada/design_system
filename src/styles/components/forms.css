@@ -4,27 +4,39 @@
   }
 
   input[type="radio"] {
-    @apply w-6 h-6 focus:ring-0;
+    @apply text-primary w-6 h-6 focus:ring-0;
+
+    &:hover {
+      @apply border-primary bg-white-ish border-2;
+    }
   }
 
   input[type="checkbox"] {
-    @apply  w-6 h-6 focus:ring-0 rounded;
+    @apply text-primary w-6 h-6 focus:ring-0 rounded;
+
+    &:checked {
+      @apply bg-primary;
+    }
+
+    &:hover {
+      @apply border-primary bg-white-ish border-2;
+    }
   }
 
   input[type="text"] {
-    @apply rounded-lg border-gray-lighter placeholder-blue-wind;
+    @apply rounded-lg border-gray-lighter text-gray-lighter;
 
     &:hover {
-      @apply border-blue;
+      @apply border-primary;
     }
 
     &:active,
     &:focus {
-      @apply border-gray-lighter ring-0 text-dark-charcoal;
+      @apply border-gray-lighter ring-0;
     }
 
     &[disabled] {
-      @apply bg-white-antiflash text-gray-light;
+      @apply bg-gray-ish text-gray-silver;
     }
   }
 
@@ -35,12 +47,12 @@
     background-size: 1.7em;
 
     &:hover {
-      @apply border-blue;
+      @apply border-primary;
     }
 
     &:active,
     &:focus {
-      @apply border-gray-lighter ring-0 text-dark-charcoal;
+      @apply border-gray-lighter ring-0;
     }
   }
 }
@@ -48,11 +60,11 @@
 @layer components {
   input[type="text"] {
     &.valid {
-      @apply border-green text-dark-charcoal;
+      @apply border-aqua;
     }
 
     &.invalid {
-      @apply border-red text-dark-charcoal;
+      @apply border-red;
     }
   }
 
@@ -67,8 +79,6 @@
     }
 
     & .icon {
-      @apply text-blue;
-
       position: absolute;
       right: 0;
       margin-right: 10px;
@@ -100,11 +110,11 @@
       }
   
       input {
-        @apply w-full text-dark;
+        @apply w-full;
       }
   
       select {
-        @apply border-gray-lightest text-dark;
+        @apply border-gray-lightest;
       }
   
       input[type=text], select {
@@ -115,16 +125,16 @@
           @apply rounded-lg border-x-gray-lightest;
   
           &:hover {
-              @apply border-blue;
+              @apply border-primary;
           }
   
           &:active,
           &:focus {
-              @apply border-gray-light ring-0 text-dark-charcoal;
+              @apply border-gray-light ring-0;
           }
   
           &[disabled] {
-              @apply bg-white-antiflash text-gray-light;
+              @apply bg-white-ish text-gray-light;
           }
       }
   
@@ -151,10 +161,10 @@
       }
   
       textarea {
-        @apply rounded-lg border-gray-lightest placeholder-blue-wind resize-none w-full h-24;
+        @apply rounded-lg border-gray-lightest resize-none w-full h-24;
   
         &:hover {
-          @apply border-blue;
+          @apply border-primary;
         }
         
         &::placeholder {
@@ -163,11 +173,11 @@
   
         &:active,
         &:focus {
-          @apply border-gray-lightest ring-0 text-dark-charcoal;
+          @apply border-gray-lightest ring-0;
         }
   
         &[disabled] {
-          @apply bg-white-antiflash;
+          @apply bg-white-ish;
         }
       }
     }
