@@ -5,8 +5,8 @@
       .thead {
         @apply w-full flex justify-between p-4;
   
-        &.blue {
-          @apply bg-blue-dark text-white border border-gray;
+        &.primary {
+          @apply bg-purple-dark text-white border border-gray;
         }
   
         &.white {
