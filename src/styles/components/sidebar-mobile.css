@@ -1,9 +1,9 @@
 @layer components {
   .sidebar-mobile {
-    @apply flex justify-between flex-col overflow-y-auto overflow-x-hidden shadow-lg bg-dark h-full absolute top-0 inset-x-0 transition transform origin-top-right md:hidden;
+    @apply flex justify-between flex-col overflow-y-auto overflow-x-hidden shadow-lg bg-primary h-full absolute top-0 inset-x-0 transition transform origin-top-right md:hidden;
 
     .btn-sb-header {
-      @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-blue-dark;
+      @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-purple-dark;
     }
 
     .menu-items {
@@ -14,7 +14,7 @@
       @apply mt-6 pt-4 pb-6 flex-1;
     }
     .submenu-items {
-      @apply py-6 bg-blue-dark;
+      @apply py-6 bg-purple-dark;
       flex: auto;
     }
 
@@ -29,7 +29,7 @@
     }
 
     .item {
-      @apply -m-3 p-3 pl-10 flex text-gray-lighter items-center relative hover:bg-blue-dark hover:text-gray-lighter hover:font-bold;
+      @apply -m-3 p-3 pl-10 flex text-yellow items-center relative hover:bg-purple-dark hover:text-white hover:font-bold;
 
       &.sub-link {
         @apply text-white;
@@ -48,15 +48,15 @@
       }
 
       &.is-selected {
-        @apply bg-blue-dark font-bold text-white;
+        @apply bg-purple-dark font-bold text-white;
       }
     }
 
     .sub-item {
-      @apply -m-3 p-3 pl-10 flex text-gray-lighter items-center hover:text-gray-lighter hover:font-bold hover:bg-dark;
+      @apply -m-3 p-3 pl-10 flex text-yellow items-center hover:text-white hover:font-bold hover:bg-primary;
 
       &.is-selected {
-        @apply bg-dark font-bold text-white;
+        @apply bg-primary font-bold text-white;
       }
     }
 
