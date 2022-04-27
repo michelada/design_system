@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply border rounded-[20px] px-9 py-2 font-bold font-avant text-lg w-full cursor-pointer;
+    @apply border rounded-full px-9 py-2 font-bold font-avant text-lg w-full cursor-pointer;
 
     @screen lg {
       @apply w-auto;
@@ -9,55 +9,68 @@
     &[disabled] {
       @apply cursor-not-allowed;
     }
-   
-    &.text {
-      @apply text-blue;
-      @apply hover:text-blue-dark;
-
-      &[disabled] {
-        @apply text-gray-lighter;
-      }
-
-    }
 
     &.primary {
-      @apply bg-blue text-white;
-      @apply hover:bg-blue-crayola;
+      @apply bg-gradient-to-r from-purple to-purple-dark text-white;
 
       &[disabled] {
-        @apply bg-gray-lighter text-gray-lightest;
+        @apply bg-gradient-to-r from-white-ish to-white-ish text-gray-lightest;
       }
     }
 
     &.outline-primary {
-      @apply border-2 border-blue text-blue;
-
-      &:hover {
-        @apply border-blue-dark text-blue-dark;
-      }
+      @apply border-2 border-primary text-primary;
 
       &[disabled] {
-        @apply border-gray-lighter text-gray-lighter;
+        @apply border-gray-lightest text-gray-lightest;
       }
     }
 
-    &.secondary {
-      @apply bg-blue-dark text-white hover:bg-dark-charcoal;
+    &.yellow {
+      @apply bg-yellow text-primary;
 
       &[disabled] {
-        @apply bg-gray-lighter text-gray-lightest;
+        @apply bg-white-ish text-gray-lightest;
       }
     }
 
-    &.outline-secondary {
-      @apply border-2 border-blue-dark text-blue-dark;
-
-      &:hover {
-        @apply border-dark-charcoal text-dark-charcoal;
-      }
+    &.outline-yellow {
+      @apply border-2 border-yellow text-primary;
 
       &[disabled] {
-        @apply border-gray-lighter text-gray-lighter;
+        @apply border-gray-lightest text-gray-lightest;
+      }
+    }
+
+    &.aqua {
+      @apply bg-aqua text-primary;
+
+      &[disabled] {
+        @apply bg-white-ish text-gray-lightest;
+      }
+    }
+
+    &.outline-aqua {
+      @apply border-2 border-aqua text-primary;
+
+      &[disabled] {
+        @apply border-gray-lightest text-gray-lightest;
+      }
+    }
+
+    &.gray-lightest {
+      @apply bg-gray-lightest text-primary;
+
+      &[disabled] {
+        @apply bg-white-ish text-gray-lightest;
+      }
+    }
+
+    &.outline-gray-lightest {
+      @apply border-2 border-gray-lightest text-primary;
+
+      &[disabled] {
+        @apply border-gray-lightest text-gray-lightest;
       }
     }
 
