@@ -1,5 +1,5 @@
 @layer components {
     .description-container {
-      @apply grid grid-cols-1 md:grid-cols-3 border-b-2 pb-4 border-gray-lightest;
+      @apply grid grid-cols-1 md:grid-cols-3 border-b-2 pb-4 border-gray-magnolia;
     }
   }

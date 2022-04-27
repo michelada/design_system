@@ -11,10 +11,10 @@
     }
 
     &.primary {
-      @apply bg-gradient-to-r from-purple to-purple-dark text-white;
+      @apply bg-gradient-to-r from-violet to-violet-russian text-white;
 
       &[disabled] {
-        @apply bg-gradient-to-r from-white-ish to-white-ish text-gray-lightest;
+        @apply bg-gradient-to-r from-white-ghost to-white-ghost text-gray-magnolia;
       }
     }
 
@@ -22,23 +22,23 @@
       @apply border-2 border-primary text-primary;
 
       &[disabled] {
-        @apply border-gray-lightest text-gray-lightest;
+        @apply border-gray-magnolia text-gray-magnolia;
       }
     }
 
-    &.yellow {
-      @apply bg-yellow text-primary;
+    &.secondary {
+      @apply bg-secondary text-primary;
 
       &[disabled] {
-        @apply bg-white-ish text-gray-lightest;
+        @apply bg-white-ghost text-gray-magnolia;
       }
     }
 
-    &.outline-yellow {
-      @apply border-2 border-yellow text-primary;
+    &.outline-secondary {
+      @apply border-2 border-secondary text-primary;
 
       &[disabled] {
-        @apply border-gray-lightest text-gray-lightest;
+        @apply border-gray-magnolia text-gray-magnolia;
       }
     }
 
@@ -46,7 +46,7 @@
       @apply bg-aqua text-primary;
 
       &[disabled] {
-        @apply bg-white-ish text-gray-lightest;
+        @apply bg-white-ghost text-gray-magnolia;
       }
     }
 
@@ -54,23 +54,23 @@
       @apply border-2 border-aqua text-primary;
 
       &[disabled] {
-        @apply border-gray-lightest text-gray-lightest;
+        @apply border-gray-magnolia text-gray-magnolia;
       }
     }
 
-    &.gray-lightest {
-      @apply bg-gray-lightest text-primary;
+    &.gray-magnolia {
+      @apply bg-gray-magnolia text-primary;
 
       &[disabled] {
-        @apply bg-white-ish text-gray-lightest;
+        @apply bg-white-ghost text-gray-magnolia;
       }
     }
 
-    &.outline-gray-lightest {
-      @apply border-2 border-gray-lightest text-primary;
+    &.outline-gray-magnolia {
+      @apply border-2 border-gray-magnolia text-primary;
 
       &[disabled] {
-        @apply border-gray-lightest text-gray-lightest;
+        @apply border-gray-magnolia text-gray-magnolia;
       }
     }
 

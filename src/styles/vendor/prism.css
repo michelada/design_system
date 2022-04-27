@@ -12,7 +12,7 @@ pre[class*="language-"] {
 }
 
 .token.attr-name {
-  @apply text-yellow;
+  @apply text-secondary;
 }
 
 .token.string,

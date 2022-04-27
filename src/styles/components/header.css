@@ -37,12 +37,12 @@
         @apply md:inline-block;
 
         .nav-link {
-          @apply flex space-x-6 md:space-x-0 text-white/80 p-6 hover:bg-purple-dark hover:text-white;
+          @apply flex space-x-6 md:space-x-0 text-white/80 p-6 hover:bg-violet-russian hover:text-white;
         }
       }
 
       li.my-profile {
-        @apply bg-purple-dark relative;
+        @apply bg-violet-russian relative;
 
         a {
           @apply p-6 md:p-4;
@@ -53,14 +53,14 @@
         }
 
         .submenu {
-          @apply bg-purple-dark md:absolute md:right-0 w-max;
+          @apply bg-violet-russian md:absolute md:right-0 w-max;
 
           li {
             @apply md:block;
           }
 
           .nav-link {
-            @apply flex space-x-6 p-6 text-white/80 hover:bg-purple-dark hover:text-white; 
+            @apply flex space-x-6 p-6 text-white/80 hover:bg-violet-russian hover:text-white; 
           }
         }
       }

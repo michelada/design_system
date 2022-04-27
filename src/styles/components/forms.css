@@ -7,7 +7,7 @@
     @apply text-primary w-6 h-6 focus:ring-0;
 
     &:hover {
-      @apply border-primary bg-white-ish border-2;
+      @apply border-primary bg-white-ghost border-2;
     }
   }
 
@@ -19,12 +19,12 @@
     }
 
     &:hover {
-      @apply border-primary bg-white-ish border-2;
+      @apply border-primary bg-white-ghost border-2;
     }
   }
 
   input[type="text"] {
-    @apply rounded-lg border-gray-lighter text-gray-lighter;
+    @apply rounded-lg border-gray-cool text-gray-cool;
 
     &:hover {
       @apply border-primary;
@@ -32,16 +32,16 @@
 
     &:active,
     &:focus {
-      @apply border-gray-lighter ring-0;
+      @apply border-gray-cool ring-0;
     }
 
     &[disabled] {
-      @apply bg-gray-ish text-gray-silver;
+      @apply bg-gray-ghost text-gray-manatee;
     }
   }
 
   select {
-    @apply block w-full rounded-lg border-gray-lighter shadow-sm;
+    @apply block w-full rounded-lg border-gray-cool shadow-sm;
 
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%233264FA' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
     background-size: 1.7em;
@@ -52,7 +52,7 @@
 
     &:active,
     &:focus {
-      @apply border-gray-lighter ring-0;
+      @apply border-gray-cool ring-0;
     }
   }
 }
@@ -114,15 +114,15 @@
       }
   
       select {
-        @apply border-gray-lightest;
+        @apply border-gray-magnolia;
       }
   
       input[type=text], select {
-        @apply border-gray-lightest
+        @apply border-gray-magnolia
       }
   
       input[type=date], input[type=tel] {
-          @apply rounded-lg border-x-gray-lightest;
+          @apply rounded-lg border-x-gray-magnolia;
   
           &:hover {
               @apply border-primary;
@@ -130,11 +130,11 @@
   
           &:active,
           &:focus {
-              @apply border-gray-light ring-0;
+              @apply border-gray-old ring-0;
           }
   
           &[disabled] {
-              @apply bg-white-ish text-gray-light;
+              @apply bg-white-ghost text-gray-old;
           }
       }
   
@@ -153,31 +153,31 @@
       }
   
       input[type="text"] {
-        @apply border-gray-lightest;
+        @apply border-gray-magnolia;
   
         &::placeholder {
-          @apply text-gray-lighter;
+          @apply text-gray-cool;
         }
       }
   
       textarea {
-        @apply rounded-lg border-gray-lightest resize-none w-full h-24;
+        @apply rounded-lg border-gray-magnolia resize-none w-full h-24;
   
         &:hover {
           @apply border-primary;
         }
         
         &::placeholder {
-          @apply text-gray-lighter;
+          @apply text-gray-cool;
         }
   
         &:active,
         &:focus {
-          @apply border-gray-lightest ring-0;
+          @apply border-gray-magnolia ring-0;
         }
   
         &[disabled] {
-          @apply bg-white-ish;
+          @apply bg-white-ghost;
         }
       }
     }

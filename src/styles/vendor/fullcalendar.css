@@ -58,23 +58,23 @@
 }
 
 .fc-day {
-  @apply bg-white-ish !important;
+  @apply bg-white-ghost !important;
 
   &:hover {
-    @apply bg-purple !important; 
+    @apply bg-violet !important; 
 
     .fc-daygrid-day-number {
       @apply text-white !important;
     }
 
     .fc-col-header-cell-cushion, .fc-scrollgrid-sync-inner {
-      @apply bg-purple text-white !important;
+      @apply bg-violet text-white !important;
     }
   }
 }
 
 .fc-day-today {
-  @apply bg-purple-dark !important;
+  @apply bg-violet-russian !important;
 
   .fc-daygrid-day-number {
     @apply text-white !important;

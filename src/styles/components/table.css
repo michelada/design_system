@@ -6,7 +6,7 @@
         @apply w-full flex justify-between p-4;
   
         &.primary {
-          @apply bg-purple-dark text-white border border-gray;
+          @apply bg-violet-russian text-white border border-gray;
         }
   
         &.white {
@@ -18,7 +18,7 @@
         @apply p-4 border-b-2;
   
         &.even {
-          @apply bg-gray-light;
+          @apply bg-gray-old;
         }
       }
   

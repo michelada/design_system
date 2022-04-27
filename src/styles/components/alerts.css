@@ -5,7 +5,7 @@
     @apply container mx-auto;
 
     &.info {
-      @apply bg-gray-lightest bg-opacity-10 border border-gray-silver border-opacity-50 text-gray-silver font-bold text-base;
+      @apply bg-gray-magnolia bg-opacity-10 border border-gray-manatee border-opacity-50 text-gray-manatee font-bold text-base;
     }
 
     & .message {
@@ -63,7 +63,7 @@
     }
 
     &.warning {
-      @apply bg-yellow text-black;
+      @apply bg-secondary text-black;
     }
 
     &.turbo-notification {

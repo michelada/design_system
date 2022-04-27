@@ -3,7 +3,7 @@
     @apply flex justify-between flex-col overflow-y-auto overflow-x-hidden shadow-lg bg-primary h-full absolute top-0 inset-x-0 transition transform origin-top-right md:hidden;
 
     .btn-sb-header {
-      @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-purple-dark;
+      @apply rounded-md p-2 inline-flex items-center justify-center hover:bg-violet-russian;
     }
 
     .menu-items {
@@ -14,7 +14,7 @@
       @apply mt-6 pt-4 pb-6 flex-1;
     }
     .submenu-items {
-      @apply py-6 bg-purple-dark;
+      @apply py-6 bg-violet-russian;
       flex: auto;
     }
 
@@ -29,7 +29,7 @@
     }
 
     .item {
-      @apply -m-3 p-3 pl-10 flex text-yellow items-center relative hover:bg-purple-dark hover:text-white hover:font-bold;
+      @apply -m-3 p-3 pl-10 flex text-secondary items-center relative hover:bg-violet-russian hover:text-white hover:font-bold;
 
       &.sub-link {
         @apply text-white;
@@ -48,12 +48,12 @@
       }
 
       &.is-selected {
-        @apply bg-purple-dark font-bold text-white;
+        @apply bg-violet-russian font-bold text-white;
       }
     }
 
     .sub-item {
-      @apply -m-3 p-3 pl-10 flex text-yellow items-center hover:text-white hover:font-bold hover:bg-primary;
+      @apply -m-3 p-3 pl-10 flex text-secondary items-center hover:text-white hover:font-bold hover:bg-primary;
 
       &.is-selected {
         @apply bg-primary font-bold text-white;
@@ -70,10 +70,10 @@
   }
   .code {
     height: 40rem;
-    @apply overflow-y-auto bg-white-ish p-2 py-0 text-sm;
+    @apply overflow-y-auto bg-white-ghost p-2 py-0 text-sm;
   }
   .icon-arrow {
-    @apply absolute border-r-2 border-b-2 h-2.5 w-2.5 bg-transparent border-gray-light rounded-sm;
+    @apply absolute border-r-2 border-b-2 h-2.5 w-2.5 bg-transparent border-gray-old rounded-sm;
     content: '';
   }
 }

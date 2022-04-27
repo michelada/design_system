@@ -12,27 +12,27 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: '#000',
+      black: '#000000',
       primary: '#712384',
-      yellow: '#F1CF5A',
+      secondary: '#F1CF5A',
       red: '#CA2438',
       aqua: '#6DD6C4',
       orange: '#ECAA32',
-      purple: {
+      violet: {
         DEFAULT: '#571F7C',
-        dark: '#38164E'
+        russian: '#38164E'
       },
       gray: {
         DEFAULT: '#413E47',
-        light: '#666170',
-        lighter: '#8B8599',
-        silver: '#AAA5B8',
-        lightest: '#EBE6F0',
-        ish: '#F8F5FA'
+        old: '#666170',
+        cool: '#8B8599',
+        manatee: '#AAA5B8',
+        magnolia: '#EBE6F0',
+        ghost: '#F8F5FA'
       },
       white: {
         DEFAULT: '#FFFFFF',
-        ish: '#FAFAFA'
+        ghost: '#FAFAFA'
       },
       fullcalendar: {
         "event-1": 'var(--fullcalendar-event-1)',
@@ -60,10 +60,6 @@ module.exports = {
         '7xl': '5.96rem',
         '8xl': '7.451rem',
         '9xl': '9.313rem',
-      },
-      colors: {
-        'norden-violet': '#712384',
-        'norden-purple': '#38164E'
       },
     },
   },
