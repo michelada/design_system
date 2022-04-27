@@ -2,7 +2,7 @@
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  @apply bg-dark;
+  @apply bg-primary;
 }
 
 .token.tag,
@@ -20,5 +20,5 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.regex,
 .token.variable {
-  @apply text-green;
+  @apply text-aqua;
 }
