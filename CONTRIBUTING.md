@@ -120,12 +120,14 @@ You can take a look at the milestones list to know in what milestone we are work
 
 ## How to publish a new version in npm
 
-1. Logging into npm (be part of michelada organization in npm)
+1. Log into npm (be part of michelada organization in npm)
 2. Update the version number in package.json
    - You can do it manually, updating the version number in the package.json.
    - Or using the command `npm --no-git-tag-version version <update_type|number>` in the folder terminal. https://docs.npmjs.com/cli/v7/commands/npm-version
    - The "version" field must be in the form x.x.x and follow the semantic-versioning guidelines. https://docs.npmjs.com/about-semantic-versioning
-3. Run the command `npm publish --access public`
-4. Verify in npm if the new version and the package is updated.
-   **_ Do not forget to push your changes _**
-   []
+3. Run the following commands in order:
+  * `npm run build`
+  * `npm run pre-publish`
+  * `npm run post-pre-publish`
+  * `npm run upload`
+4. Verify in npm if the new version and the package is updated. **_Do not forget to push your changes_**
