@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-dark;
+  @apply bg-primary;
   @apply container mx-auto flex justify-between items-center flex-wrap relative;
 
   .brand {
@@ -12,7 +12,7 @@
 
   .avatar {
     @apply rounded-full;
-    @apply bg-blue font-bold text-white text-center leading-9;
+    @apply bg-primary font-bold text-white text-center leading-9;
   }
 
   .close-toggle {
@@ -28,7 +28,7 @@
   }
 
   .nav-links {
-    @apply basis-full md:basis-auto bg-dark absolute md:static w-full md:w-auto top-[72px] md:block;
+    @apply basis-full md:basis-auto bg-primary absolute md:static w-full md:w-auto top-[72px] md:block;
 
     > ul {
       @apply md:flex items-center;
@@ -37,12 +37,12 @@
         @apply md:inline-block;
 
         .nav-link {
-          @apply flex space-x-6 md:space-x-0 text-white/80 p-6 hover:bg-blue-dark hover:text-white;
+          @apply flex space-x-6 md:space-x-0 text-white/80 p-6 hover:bg-violet-russian hover:text-white;
         }
       }
 
       li.my-profile {
-        @apply bg-blue-dark relative;
+        @apply bg-violet-russian relative;
 
         a {
           @apply p-6 md:p-4;
@@ -53,14 +53,14 @@
         }
 
         .submenu {
-          @apply bg-blue-dark md:absolute md:right-0 w-max;
+          @apply bg-violet-russian md:absolute md:right-0 w-max;
 
           li {
             @apply md:block;
           }
 
           .nav-link {
-            @apply flex space-x-6 p-6 text-white/80 hover:bg-blue-dark hover:text-white; 
+            @apply flex space-x-6 p-6 text-white/80 hover:bg-violet-russian hover:text-white; 
           }
         }
       }

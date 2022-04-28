@@ -10,90 +10,125 @@
     </style>
   </head>
   <body class="flex gap-5" data-controller="sips-and-bits">
-    <aside class="bg-dark h-[100vh] sticky top-0 min-w-fit hidden" data-sips-and-bits-target="sidebar">
+    <aside class="bg-primary h-[100vh] sticky top-0 min-w-fit hidden" data-sips-and-bits-target="sidebar">
       <header class="p-5">
         <img class="block mx-auto" src="assets/img/sips-bits-logo-white.svg">
       </header>
       <nav class="flex flex-col items-start" id="navbar-spy">
-        <a href="#typography" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#typography" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z" />
           </svg>
           <span class="ml-5">Typography</span>
         </a>
 
-        <a href="#color-palette" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#color-palette" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Color palette</span>
         </a>
         
-        <a href="#calendar" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#calendar" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Calendar</span>
         </a>
         
-        <a href="#menus" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#menus" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Menu</span>
         </a>
         
-        <a href="#tabs" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#tabs" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
           </svg>
           <span class="ml-5">Tabs</span>
         </a>
         
-        <a href="#sidebar-mobile" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#sidebar-mobile" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Sidebar mobile</span>
         </a>
 
-        <a href="#headers" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#headers" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Headers</span>
         </a>
 
-        <a href="#buttons" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#buttons" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Buttons</span>
         </a>
 
-        <a href="#forms" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#forms" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Forms</span>
         </a>
 
-        <a href="#alerts" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#alerts" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
           </svg>
           <span class="ml-5">Alerts</span>
         </a>
 
-        <a href="#tables" class="flex items-center w-full text-white p-5 px-12 bg-dark hover:bg-blue-dark">
+        <a href="#tables" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
           <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
           </svg>
           <span class="ml-5">Tables</span>
         </a>
+
+        <a href="#utils" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Utils</span>
+        </a>
+
+        <a href="#cards" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Cards</span>
+        </a>
+
+        <a href="#notifications" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Notifications</span>
+        </a>
+
+        <a href="#table-mobile" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Table mobile</span>
+        </a>
+
+        <a href="#navbar-section" class="flex items-center w-full text-secondary p-5 px-12 bg-primary hover:bg-violet-russian hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"  class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clip-rule="evenodd" />
+          </svg>
+          <span class="ml-5">Navbar</span>
+        </a>
       </nav>
       <footer class="absolute bottom-0 right-0">
-        <a href="#" class="text-white block p-5" id="sb-sidebar-toggle">
+        <a href="#" class="text-secondary block p-5" id="sb-sidebar-toggle">
           <svg data-role="open" class="hidden" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M9.49491 12.6479L5.35714 16.7857L6.82688 18.1709C7.50188 18.8459 7.02384 20 6.06929 20H1.06929C0.477545 20 0 19.5203 0 18.9286V13.9286C0 12.974 1.15192 12.496 1.82688 13.1709L3.21429 14.6429L7.35205 10.5051C7.63098 10.2262 8.08326 10.2262 8.36219 10.5051L9.49491 11.6378C9.77388 11.9167 9.77388 12.369 9.49491 12.6479V12.6479ZM10.5051 7.35205L14.6429 3.21429L13.1731 1.82906C12.4981 1.15406 12.9762 0 13.9307 0H18.9307C19.5225 0 20 0.479688 20 1.07143V6.07143C20 7.02598 18.8481 7.50402 18.1731 6.82906L16.7857 5.35714L12.6479 9.49491C12.369 9.77384 11.9167 9.77384 11.6378 9.49491L10.5051 8.36219C10.2261 8.08326 10.2261 7.63103 10.5051 7.35205V7.35205Z"
@@ -108,9 +143,9 @@
       </footer>
     </aside>
     <main class="container">
-      <section id="typography" class="pb-5">
+      <section class="pb-5" id="typography">
         <header>
-          <h1 class='text-red'>Typography</h1>
+          <h1 class="text-violet-russian">Typography</h1>
         </header>
         <h1>H1 ITC Avant Garde Gothic - Bold 39px</h1>
         <h2>H2 ITC Avant Garde Gothic - Bold 31px</h2>
@@ -118,7 +153,7 @@
         <h4>H4 ITC Avant Garde Gothic - Bold 20px </h4>
         <p>Noto Sand Regular 16px</p>
         <p class='font-bold'>Noto Sand Regular 16px</p>
-        <p class='text-gray-lighter'>Noto Sand Regular 16px</p>
+        <p class='text-gray-cool'>Noto Sand Regular 16px</p>
         <p class='text-sm'>notes 12.8px</p>
         <small>more notes in small</small>
         <div>
@@ -131,7 +166,7 @@
   &lt;h4>H4 ITC Avant Garde Gothic - Bold 20px&lt;/h2>
   &lt;p>Nodo Sans Regular 16px&lt;/p>
   &lt;p class="font-bold">Nodo Sans Regular 16px&lt;/p>
-  &lt;p class="text-gray-lighter">Nodo Sans Regular 16px&lt;/p>
+  &lt;p class="text-gray-cool">Nodo Sans Regular 16px&lt;/p>
   &lt;p class="text-sm">notes 12.8px&lt;/p>
   &lt;small>notes in small&lt;/small>
   &lt;a href="#">This is a link&lt;/a>
@@ -139,7 +174,7 @@
         <article class="my-5">
           <h2>Lists</h2>
           <div class="my-2">
-            <h4 class="text-red">Simple list</h3>
+            <h4 class="text-primary">Simple list</h3>
             <ul class="responsive-aligned">
               <li>List item 1</li>
               <li>List item 2</li>
@@ -154,7 +189,7 @@
             </code></pre>
           </div>
           <div class="my-2">
-            <h4 class="text-red">with title / subtitle</h4>
+            <h4 class="text-primary">with title / subtitle</h4>
             <ul class="responsive-aligned">
               <li class="title">Title01</li>
               <li class="subtitle">subtitle</li>
@@ -174,124 +209,105 @@
           </div>
         </article>
       </section>
-      <section class="mt-10" id="color-palette">
+      <section class="pt-5" id="color-palette">
         <header>
-          <h1 class='text-red'>Color palette</h1>
+          <h1 class="text-violet-russian">Color palette</h1>
         </header>
         <table class="table-auto mb-10">
           <tbody>
             <tr>
               <td class="text-right font-bold text-gray-500">
-                main palette
+                Main palette
               </td>
               <td>
                 <div class="ml-5 grid grid-cols-5 gap-7">
                   <div class="text-center">
-                    <div class="bg-dark w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#15162F</div>
-                    <div class="w-full font-bold ">dark</div>
+                    <div class="w-full font-bold ">primary</div>
+                    <div class="bg-primary w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#712384</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-blue-dark w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#292C52</div>
-                    <div class="w-full font-bold">blue-dark</div>
+                    <div class="w-full font-bold">secondary</div>
+                    <div class="bg-secondary w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#F1CF5A</div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-right font-bold text-gray-500">
+                Secondary palette
+              </td>
+              <td>
+                <div class="ml-5 grid grid-cols-5 gap-7">
+                  <div class="text-center">
+                    <div class="w-full font-bold ">aqua</div>
+                    <div class="bg-aqua w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#6DD6C4</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-red w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#EA3434</div>
                     <div class="w-full font-bold">red</div>
+                    <div class="bg-red w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#CA2438</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-yellow w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#F9D026</div>
-                    <div class="w-full font-bold">yellow</div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-right font-bold text-gray-500">
-                secondary palette
-              </td>
-              <td>
-                <div class="ml-5 grid grid-cols-5 gap-7">
-                  <div class="text-center">
-                    <div class="bg-green w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#00B5AF</div>
-                    <div class="w-full font-bold ">green</div>
+                    <div class="w-full font-bold">violet</div>
+                    <div class="bg-violet w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#571F7C</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-blue-picton w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#43B7E9</div>
-                    <div class="w-full font-bold">blue-picton</div>
+                    <div class="w-full font-bold">violet-russian</div>
+                    <div class="bg-violet-russian w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#38164E</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-blue w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#3264FA</div>
-                    <div class="w-full font-bold">blue</div>
-                  </div>
-                  <div class="text-center">
-                    <div class="bg-blue-lavender w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#C1DBFC</div>
-                    <div class="w-full font-bold">blue-lavender</div>
+                    <div class="w-full font-bold">orange</div>
+                    <div class="bg-orange w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#ECAA32</div>
                   </div>
                 </div>
               </td>
             </tr>
             <tr>
               <td class="text-right font-bold text-gray-500">
-                gray scale
+                Gray scale
               </td>
               <td>
                 <div class="ml-5 grid grid-cols-5 gap-7">
                   <div class="text-center">
-                    <div class="bg-gray w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#15162F</div>
                     <div class="w-full font-bold ">gray</div>
+                    <div class="bg-gray w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#413E47</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-gray-light w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#828F96</div>
-                    <div class="w-full font-bold">gray-light</div>
+                    <div class="w-full font-bold">gray-old</div>
+                    <div class="bg-gray-old w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#666170</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-gray-lighter w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#A5B1B8</div>
-                    <div class="w-full font-bold">gray-lighter</div>
+                    <div class="w-full font-bold">gray-cool</div>
+                    <div class="bg-gray-cool w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#8B8599</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-gray-silver w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#D2D5DA</div>
-                    <div class="w-full font-bold">gray-silver</div>
+                    <div class="w-full font-bold">gray-manatee</div>
+                    <div class="bg-gray-manatee w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#AAA5B8</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-gray-lightest w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#E6EDF0</div>
-                    <div class="w-full font-bold">gray-lightest</div>
+                    <div class="w-full font-bold">gray-magnolia</div>
+                    <div class="bg-gray-magnolia w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#EBE6F0</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-white-ish w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#F5F8FA</div>
-                    <div class="w-full font-bold">white-ish</div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="text-right font-bold text-gray-500">
-                other colors
-              </td>
-              <td>
-                <div class="ml-5 grid grid-cols-5 gap-7">
-                  <div class="text-center">
-                    <div class="bg-dark-charcoal w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#333333</div>
-                    <div class="w-full font-bold ">dark-charcoal</div>
+                    <div class="w-full font-bold">gray-ghost</div>
+                    <div class="bg-gray-ghost w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#F8F5FA</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-blue-wind w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#9CAFC8</div>
-                    <div class="w-full font-bold ">blue-wind</div>
+                    <div class="w-full font-bold">white-ghost</div>
+                    <div class="bg-white-ghost w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#FAFAFA</div>
                   </div>
                 </div>
               </td>
@@ -303,24 +319,19 @@
               <td>
                 <div class="ml-5 grid grid-cols-5 gap-7">
                   <div class="text-center">
-                    <div class="bg-fullcalendar-event-1 w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#434884</div>
                     <div class="w-full font-bold ">fullcalendar-event-1</div>
+                    <div class="bg-fullcalendar-event-1 w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#571F7C</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-fullcalendar-event-2 w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#5C62B2</div>
                     <div class="w-full font-bold ">fullcalendar-event-2</div>
+                    <div class="bg-fullcalendar-event-2 w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#38164E</div>
                   </div>
                   <div class="text-center">
-                    <div class="bg-fullcalendar-event-3 w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#6D73CB</div>
                     <div class="w-full font-bold ">fullcalendar-event-3</div>
-                  </div>
-                  <div class="text-center">
-                    <div class="bg-fullcalendar-event-4 w-10 h-10 rounded-full mx-auto"></div>
-                    <div class="w-full">#848CF0</div>
-                    <div class="w-full font-bold ">fullcalendar-event-4</div>
+                    <div class="bg-fullcalendar-event-3 w-10 h-10 rounded-full mx-auto"></div>
+                    <div class="w-full">#EBE6F0</div>
                   </div>
                 </div>
               </td>
@@ -329,11 +340,11 @@
         </table>
         <pre class="language-markup rounded-xl"><code>
   You can use the color palette to colorize your texts. 
-    i.e &lt;span class="text-red">text in red&lt;/span> will produce an span in #EA3434 color.
+    i.e &lt;span class="text-red">text in red&lt;/span> will produce an span in #CA2438 color.
   additionally can use the palette as background colors. 
-    i.e &lt;div class="bg-red">text in red&lt;/div> will produce an div in #EA3434 color.
+    i.e &lt;div class="bg-red">text in red&lt;/div> will produce an div in #CA2438 color.
   Controll the opacity of the colors by using the slash modifier. 
-    i.e &lt;span class="text-red/50">text in red&lt;/span> will produce an span in #EA3434 color with 50% opacity."
+    i.e &lt;span class="text-red/50">text in red&lt;/span> will produce an span in #CA2438 color with 50% opacity."
             </code></pre>
         </code></pre>
         <div class="text-sm leading-tight"> 
@@ -343,9 +354,9 @@
         </div>
       </section>
       
-      <section class="mt-10" id="calendar">
+      <section class="pt-5" id="calendar">
         <header>
-          <h1 class='text-red'>Calendar</h1>
+          <h1 class="text-violet-russian">Calendar</h1>
         </header>
         <div id="calendarWidget"></div>
   <pre class="language-markup rounded-xl"><code>
@@ -357,9 +368,9 @@
   </div>
       </section>
   
-      <section class='mt-10' id="menus">
+      <section class='pt-5' id="menus">
         <header>
-          <h1 class="text-red">Menus</h1>
+          <h1 class="text-violet-russian">Menus</h1>
         </header>
   
         <div class="flex">
@@ -403,11 +414,11 @@
         </div>
       </section>
   
-      <section class="mt-10">
+      <section class="pt-5">
         <header>
-          <h1 class="text-red">Tabs</h1>
+          <h1 class="text-violet-russian">Tabs</h1>
         </header>
-        <section class="mt-10" data-controller="tabs" id="tabs">
+        <section class="pt-5" data-controller="tabs" id="tabs">
           <ul class="nav nav-tabs" data-action="click->tabs#handleTab">
             <li class="nav-item" data-tabs-target="tab">
               <a href="#" class="pointer-events-none">
@@ -483,9 +494,9 @@
   </code></pre>
       </section>
   
-      <section class="mt-10" id="sidebar-mobile">
+      <section class="pt-5" id="sidebar-mobile">
         <div class="w-full h-auto overflow-y-hidden">
-          <h1 class="text-red">Sidebar - mobile</h1>
+          <h1 class="text-violet-russian">Sidebar - mobile</h1>
           <div class="flex">
             <html-import title="sidebar" class="mr-10" style="width:375px" src="./sidebar-mobile.html"></html-import>
   <pre class="language-markup rounded-xl flex-grow"><code>
@@ -535,9 +546,9 @@
         </div>
       </section>
   
-      <section class="mt-10" id="headers">
+      <section class="pt-5" id="headers">
         <header>
-          <h1 class="text-red">Headers</h1>
+          <h1 class="text-violet-russian">Headers</h1>
         </header>
         <div>
           <h4>Basic Header</h4>
@@ -619,7 +630,7 @@
                 </section>
                 <aside>
                   <div class="input-icon">
-                    <input type='text' id='full-name' placeholder="Search your name" />
+                    <input type='text' id='full-name' placeholder="Placeholder" />
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" viewBox="0 0 24 24"
                       stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -653,14 +664,14 @@
         </div>
       </section> 
   
-      <section class="mt-10" id="buttons">
+      <section class="pt-5" id="buttons">
         <header>
-          <h1 class="text-red">Buttons</h1>
+          <h1 class="text-violet-russian">Buttons</h1>
         </header>
         <div>
           <article>
             <h4>Primary</h4>
-            <div class="md:flex gap-5 bg-blue-dark p-10">
+            <div class="md:flex gap-5 p-10">
               <button class='btn primary'>Text Sample</button>
               <a class='btn primary'>Text Sample</a>
               <button class='btn primary' disabled>Text</button>
@@ -668,11 +679,12 @@
           </article>
   <pre class="language-markup rounded-xl flex-grow"><code>
   &lt;button class='btn primary'>Text Sample&lt;/button>
+  &lt;a class='btn primary'>Text Sample&lt;/a>
   &lt;button class='btn primary' disabled>Text&lt;/button>
   </code></pre>
-          <article class="mt-5">
+          <article class="mt-10">
             <h4>Primary outline</h4>
-            <div class="md:flex gap-5">
+            <div class="md:flex gap-5 p-10">
               <button class='btn outline-primary'>Text Sample</button>
               <button class='btn outline-primary' disabled>Text</button>
             </div>
@@ -682,8 +694,8 @@
   &lt;button class='btn outline-primary' disabled>Text&lt;/button>
   </code></pre>
           <article class="mt-10">
-            <h4>Secondary</h4>
-            <div class="md:flex gap-5">
+            <h4>secondary</h4>
+            <div class="md:flex gap-5 p-10">
               <button class='btn secondary'>Text Sample</button>
               <button class='btn secondary' disabled>Text</button>
             </div>
@@ -693,8 +705,8 @@
 &lt;button class='btn secondary' disabled>Text&lt;/button>
 </code></pre>
           <article class="mt-10">
-            <h4>Secondary outline</h4>
-            <div class="md:flex gap-5">
+            <h4>secondary outline</h4>
+            <div class="md:flex gap-5 p-10">
               <button class='btn outline-secondary'>Text Sample</button>
               <button class='btn outline-secondary' disabled>Text</button>
             </div>
@@ -703,42 +715,60 @@
 &lt;button class='btn outline-secondary'>Text Sample&lt;/button>
 &lt;button class='btn outline-secondary' disabled>Text&lt;/button>
 </code></pre>
-
           <article class="mt-10">
-            <h4>Text buttons</h4>
-            <div class="md:flex gap-5">
-              <button class='btn text'>Text Button</button>
-              <button class='btn text' disabled>Text</button>
+            <h4>Aqua</h4>
+            <div class="md:flex gap-5 p-10">
+              <button class='btn aqua'>Text Sample</button>
+              <button class='btn aqua' disabled>Text</button>
             </div>
           </article>
 <pre class="language-markup rounded-xl flex-grow"><code>
-&lt;button class='btn text'>Text Button&lt;/button>
-&lt;button class='btn text' disabled>Text&lt;/button>
+&lt;button class='btn aqua'>Text Sample&lt;/button>
+&lt;button class='btn aqua' disabled>Text&lt;/button>
 </code></pre>
+          <article class="mt-10">
+            <h4>Aqua outline</h4>
+            <div class="md:flex gap-5 p-10">
+              <button class='btn outline-aqua'>Text Sample</button>
+              <button class='btn outline-aqua' disabled>Text</button>
+            </div>
+          </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn outline-aqua'>Text Sample&lt;/button>
+&lt;button class='btn outline-aqua' disabled>Text&lt;/button>
+</code></pre>
+
+          <article class="mt-10">
+            <h4>gray-magnolia</h4>
+            <div class="md:flex gap-5 p-10">
+              <button class='btn gray-magnolia'>Text Sample</button>
+              <button class='btn gray-magnolia' disabled>Text</button>
+            </div>
+          </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn gray-ghost'>Text Sample&lt;/button>
+&lt;button class='btn gray-ghost' disabled>Text&lt;/button>
+</code></pre>
+          <article class="mt-10">
+            <h4>Gray outline</h4>
+            <div class="md:flex gap-5 p-10">
+              <button class='btn outline-gray-magnolia'>Text Sample</button>
+              <button class='btn outline-gray-magnolia' disabled>Text</button>
+            </div>
+          </article>
+<pre class="language-markup rounded-xl flex-grow"><code>
+&lt;button class='btn outline-gray-magnolia'>Text Sample&lt;/button>
+&lt;button class='btn outline-gray-magnolia' disabled>Text&lt;/button>
+</code></pre>
+
         </div>
-        <div class="bg-white-ish p-6 rounded-lg mt-10">
+        <div class="bg-white-ghost p-6 rounded-lg mt-10">
           <b class="text-blue-dark">Note:</b> Buttons are full-width on mobile & tablet.
         </div>
       </section>
-      <section>
+      <section class='pt-5' id="forms">
         <header>
-          <h1 class='text-red'>Utils</h1>
-        </header>
-        <article class="mt-10">
-          <h2>Stretched link</h2>
-        </article>
-        <div class="bg-gray-lightest rounded border border-black w-[400px] p-10 relative">
-          <p>
-           Aute officia magna mollit nulla. Officia commodo consectetur consectetur culpa. Id ullamco labore consequat ex commodo exercitation amet ad ullamco amet mollit consequat. Sunt fugiat consectetur minim voluptate laboris duis. Fugiat non adipisicing fugiat cillum anim tempor. 
-          </p>
-          <footer class="mt-10">
-            <a href="http://michelada.io" target="_blank" class="stretched-link btn primary">michelada.io</a>
-          </footer>
-        </div>
-      </section>
-      <section class='mt-10' id="forms">
-        <header>
-          <h1 class='text-red'>Forms</h1>
+          <h1 class="text-violet-russian">Forms</h1>
         </header>
         <div class='flex flex-col lg:w-1/4'>
           <label for='full-name'>Full Name</label>
@@ -902,9 +932,9 @@
   </code></pre>
         </div>
       </section>
-      <section class='mt-10' id="alerts">
+      <section class="pt-5" id="alerts">
         <header>
-          <h1 class='text-red'>Alerts</h1>
+          <h1 class="text-violet-russian">Alerts</h1>
         </header>
   
         <div class="block mt-4 ">
@@ -1086,21 +1116,38 @@
     &lt;/button>
   &lt;/div>
   </code></pre>
-        <section id="tables">
+
+      <section class="pt-5" id="utils">
+        <header>
+          <h1 class="text-violet-russian">Utils</h1>
+        </header>
+        <article class="mt-10">
+          <h2>Stretched link</h2>
+        </article>
+        <div class="bg-gray-magnolia rounded border border-black w-[400px] p-10 relative">
+          <p>
+           Aute officia magna mollit nulla. Officia commodo consectetur consectetur culpa. Id ullamco labore consequat ex commodo exercitation amet ad ullamco amet mollit consequat. Sunt fugiat consectetur minim voluptate laboris duis. Fugiat non adipisicing fugiat cillum anim tempor. 
+          </p>
+          <footer class="mt-10">
+            <a href="http://michelada.io" target="_blank" class="stretched-link btn primary">michelada.io</a>
+          </footer>
+        </div>
+      </section>
+        <section class="pt-5" id="tables">
           <header>
-            <h1 class='text-red'>Tables</h1>
+            <h1 class="text-violet-russian">Tables</h1>
           </header>
           <table class="w-full table-fixed">
             <thead>
               <tr>
-                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01</th>
-                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 02</th>
-                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 03</th>
-                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 04</th>
-                <th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05</th>
+                <th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 01</th>
+                <th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 02</th>
+                <th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 03</th>
+                <th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 04</th>
+                <th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 05</th>
               </tr>
             </thead>
-            <tr class="w-full bg-blue-dark text-white ">
+            <tr class="w-full bg-violet-russian text-white ">
               <td colspan="4" class="text-white py-4 pl-4">
                 Sección colapsable focus
               </td>
@@ -1135,7 +1182,7 @@
                 123456789
               </td>
             </tr>
-            <tr class="bg-white-ish border-b-2 border-light-gray">
+            <tr class="bg-white-ghost border-b-2 border-light-gray">
               <td class="pl-4 py-4 font-bold flex flex-col">
                 Info 01_hover
                 <span class="font-normal">
@@ -1206,12 +1253,12 @@
   &lt;table class="w-full table-fixed">
     &lt;thead>
       &lt;tr>
-        &lt;th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01&lt;/th>
+        &lt;th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 01&lt;/th>
         ...
-        &lt;th class=" text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05&lt;/th>
+        &lt;th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 05&lt;/th>
       &lt;/tr>
     &lt;/thead>
-    &lt;tr class="w-full bg-blue-dark text-white ">
+    &lt;tr class="w-full bg-violet-russian text-white ">
       &lt;td colspan="4" class="text-white py-4 pl-4">
         Sección colapsable focus
       &lt;/td>
@@ -1246,7 +1293,7 @@
         123456789
       &lt;/td>
     &lt;/tr>
-    &lt;tr class="bg-white-ish border-b-2 border-light-gray">
+    &lt;tr class="bg-white-ghost border-b-2 border-light-gray">
       &lt;td class="pl-4 py-4 font-bold flex flex-col">
         Info 01_hover
         &lt;span class="font-normal">
@@ -1285,11 +1332,11 @@
           <table class="w-full table-fixed mt-10">
             <thead>
               <tr>
-                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01</th>
-                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 02</th>
-                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 03</th>
-                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 04</th>
-                <th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05</th>
+                <th class="text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 01</th>
+                <th class="text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 02</th>
+                <th class="text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 03</th>
+                <th class="text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 04</th>
+                <th class="text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 05</th>
               </tr>
             </thead>
   
@@ -1355,9 +1402,9 @@
     &lt;table class="w-full table-fixed mt-10">
       &lt;thead>
         &lt;tr>
-          &lt;th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 01&lt;/th>
+          &lt;th class="text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 01&lt;/th>
           ...
-          &lt;th class="text-left text-gray-lighter font-normal pl-4 py-4 ">Titulo 05&lt;/th>
+          &lt;th class="text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 05&lt;/th>
         &lt;/tr>
       &lt;/thead>
   
@@ -1392,9 +1439,9 @@
     &lt;/table>
   </code></pre>
         </section>
-      <section class="mt-10">
+      <section class="pt-5" id="cards">
         <header>
-          <h1 class="text-red">Cards</h1>
+          <h1 class="text-violet-russian">Cards</h1>
         </header>
 
         <html-import src="cards.html">
@@ -1405,9 +1452,9 @@
     &lt;/div>
   </code></pre>
       </section>
-      <section class="mt-10">
+      <section class="pt-5" id="notifications">
         <header>
-          <h1 class="text-red">Notifications </h1>
+          <h1 class="text-violet-russian">Notifications</h1>
         </header>
         <html-import src="notifications.html">
         </html-import>
@@ -1427,13 +1474,13 @@
   </code></pre>
       </section>
       
-      <section class='mt-10 flex flex-wrap'>
+      <section class='pt-5 flex flex-wrap' id="table-mobile">
         <header class="w-full">
-          <h1 class="text-red">Table Collapsable Mobile</h1>
+          <h1 class="text-violet-russian">Table Collapsable Mobile</h1>
         </header>
         <html-import src="tbl-collapse-mobile.html"></html-import>
   <pre class="language-markup rounded-xl flex-grow"><code>
-    &lt;div id="tbl-collapse-mobile" class="h-full bg-white-ish">
+    &lt;div id="tbl-collapse-mobile" class="h-full bg-white-ghost">
     &lt;table class="tbl-collapsable-mbl">
       &lt;tr class="container-expand isSelected" data-toggle="collapse">
         &lt;td>
@@ -1490,11 +1537,11 @@
   &lt;/div>
   </code></pre>
       </section>
-      <section class="mt-10">
+      <section class="pt-5" id="navbar-section">
         <header>
-          <h1 class="text-red">NavBar </h1>
+          <h1 class="text-violet-russian">NavBar</h1>
         </header>
-        <header class="bg-dark">
+        <header class="bg-primary">
           <nav class="navbar" data-controller="header">
             <a href="#" class="brand">
               <img src="assets/img/logo.svg">
@@ -1554,7 +1601,7 @@
           </nav>
         </header>
   <pre class="language-markup rounded-xl flex-grow"><code>
-        &lt;header class="bg-dark">
+        &lt;header class="bg-primary">
           &lt;nav class="navbar" data-controller="header">
             &lt;a href="#" class="brand">
               &lt;img src="assets/img/logo.svg">

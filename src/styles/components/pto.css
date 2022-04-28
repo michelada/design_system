@@ -1,6 +1,6 @@
 @layer components {
     .pto-container {
-        @apply bg-white-ish px-4 pt-4 lg:pt-12 xl:px-8 lg:max-w-screen-md lg:mx-auto;
+        @apply bg-white-ghost px-4 pt-4 lg:pt-12 xl:px-8 lg:max-w-screen-md lg:mx-auto;
     }
     .pto-actions {
         @apply flex justify-between items-center py-6 md:pt-8 flex-col;
@@ -20,7 +20,7 @@
             }
       
             &[disabled] {
-              @apply border-gray-lighter text-gray-lighter w-auto;
+              @apply border-gray-cool text-gray-cool w-auto;
             }
         }
         &.cancel {
@@ -30,7 +30,7 @@
             }
     
             &[disabled] {
-                @apply text-gray-lighter;
+                @apply text-gray-cool;
             }
         }
     }

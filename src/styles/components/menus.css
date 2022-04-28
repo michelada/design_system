@@ -1,11 +1,11 @@
 @layer components {
   .menu.sidebar {
-    @apply bg-dark hidden md:flex flex-shrink-0 justify-center relative items-center flex-col w-72 h-full;
+    @apply bg-primary hidden md:flex flex-shrink-0 justify-center relative items-center flex-col w-72 h-full;
     & .logo {
       @apply inline-block cursor-pointer h-6 mt-4;
     }
     & li {
-      @apply flex flex-row justify-start items-center text-gray-light cursor-pointer font-sans not-italic font-semibold h-24 text-base leading-6;
+      @apply flex flex-row justify-start items-center text-secondary cursor-pointer font-sans not-italic font-semibold h-24 text-base leading-6;
 
       & img,
       & svg { 
@@ -16,16 +16,16 @@
       }
     }
     & li.active {
-      @apply bg-blue-dark;
+      @apply bg-violet-russian text-white;
       & img {
         @apply text-white;
       }
     }
     & li:hover {
-      @apply text-white bg-blue-dark;
+      @apply text-white bg-violet-russian;
     }
     .toggle-menu {
-      @apply flex flex-row flex-1 justify-end text-gray-lighter self-end items-end;
+      @apply flex flex-row flex-1 justify-end text-secondary self-end items-end;
       & svg {
         @apply cursor-pointer mb-5 mr-5;
       }
