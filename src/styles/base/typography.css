@@ -46,16 +46,16 @@
   h2,
   h3,
   h4 {
-    @apply font-black font-raleway text-blue-dark;
+    @apply font-black font-raleway text-gray;
   }
 
   button {
-    font-size: 1.25rem;
+    @apply text-lg;
     @apply font-raleway font-extrabold;
   }
 
   h1 {
-    font-size: 2rem;
+    @apply text-2xl;
 
     @screen lg {
       @apply text-3xl;
@@ -63,7 +63,7 @@
   }
 
   h2 {
-    font-size: 1.5rem;
+    @apply text-xl;
 
     @screen lg {
       @apply text-2xl;
@@ -83,24 +83,30 @@
   }
 
   p {
-    @apply font-poppins;
+    @apply font-poppins text-md;
   }
 
   a {
-    @apply text-primary;
+    @apply text-primary text-md;
+  }
+
+  small {
+    @apply text-sm;
   }
 
   li {
+    @apply font-poppins text-md;
+    
     &.title {
-      @apply text-lg font-bold mb-4;
+      @apply font-black font-raleway text-violet-russian text-lg;
     }
 
     &.subtitle {
-      @apply font-bold;
+      @apply font-bold font-poppins text-gray-old text-md;
     }
   }
   
   .font-bold, .font-extrabold, .font-black {
-    @apply text-primary;
+    @apply text-gray;
   }
 }

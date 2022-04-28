@@ -13,7 +13,7 @@
           @apply cursor-not-allowed;
         }
         &.secondary-pto {
-            @apply w-full lg:w-1/2 border-2 border-blue flex justify-center items-center text-white bg-blue;
+            @apply w-full lg:w-1/2 border-2 border-gray-cool flex justify-center items-center text-white bg-gray-cool;
       
             &:hover {
               @apply  cursor-pointer;
@@ -24,9 +24,9 @@
             }
         }
         &.cancel {
-            @apply w-full lg:w-1/2 text-blue px-4 flex justify-center items-center mt-2 !important;
+            @apply w-full lg:w-1/2 text-gray-cool px-4 flex justify-center items-center mt-2 !important;
             &:hover {
-                @apply  text-blue-dark;
+                @apply  text-gray;
             }
     
             &[disabled] {
