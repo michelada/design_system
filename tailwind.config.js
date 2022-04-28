@@ -12,44 +12,32 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      black: '#000',
-      gray: {
-        DEFAULT: '#575F65',
-        light: '#828F96',
-        lighter: '#A5B1B8',
-        silver: '#D2D5DA',
-        lightest: '#E6EDF0',
-        ish: '#808C93',
+      black: '#000000',
+      primary: '#712384',
+      secondary: '#F1CF5A',
+      red: '#CA2438',
+      aqua: '#6DD6C4',
+      orange: '#ECAA32',
+      violet: {
+        DEFAULT: '#571F7C',
+        russian: '#38164E'
       },
-      blue: {
-        dark: '#292C52',
-        DEFAULT: '#3264FA',
-        crayola: '#245AF9',
-        picton: '#43B7E9',
-        wind: '#9CAFC8',
-        lavender: '#C1DBFC'
+      gray: {
+        DEFAULT: '#413E47',
+        old: '#666170',
+        cool: '#8B8599',
+        manatee: '#AAA5B8',
+        magnolia: '#EBE6F0',
+        ghost: '#F8F5FA'
       },
       white: {
         DEFAULT: '#FFFFFF',
-        ish: '#F5F8FA',
-        antiflash: "#EAF1F9",
-        mystic: '#E6EDF0'
+        ghost: '#FAFAFA'
       },
-      dark: {
-        DEFAULT: '#15162F',
-        charcoal: '#333333',
-      },
-      yellow: {
-        DEFAULT: '#F9D026',
-        darker: '#FFC800'
-      },
-      red: '#EA3434',
-      green: '#00B5AF',
       fullcalendar: {
         "event-1": 'var(--fullcalendar-event-1)',
         "event-2": 'var(--fullcalendar-event-2)',
-        "event-3": 'var(--fullcalendar-event-3)',
-        "event-4": 'var(--fullcalendar-event-4)',
+        "event-3": 'var(--fullcalendar-event-3)'
       }
     },
     extend: {

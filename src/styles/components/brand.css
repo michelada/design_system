@@ -1,3 +1,4 @@
 .michelada {
-    @apply bg-red text-white p-2 font-bold hover:bg-blue-dark;
-  }
+  @apply bg-red text-white p-2 font-bold hover:bg-violet-russian;
+}
+

@@ -87,7 +87,7 @@
   }
 
   a {
-    @apply text-blue;
+    @apply text-primary;
   }
 
   li {
@@ -101,6 +101,6 @@
   }
   
   .font-bold, .font-extrabold, .font-black {
-    @apply text-blue-dark;
+    @apply text-primary;
   }
 }

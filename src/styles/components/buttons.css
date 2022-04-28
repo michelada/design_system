@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply border rounded-[20px] px-9 py-2 font-extrabold font-raleway text-lg w-full cursor-pointer;
+    @apply border rounded-full px-9 py-2 font-extrabold font-raleway text-lg w-full cursor-pointer;
 
     @screen lg {
       @apply w-auto;
@@ -9,55 +9,68 @@
     &[disabled] {
       @apply cursor-not-allowed;
     }
-   
-    &.text {
-      @apply text-blue;
-      @apply hover:text-blue-dark;
-
-      &[disabled] {
-        @apply text-gray-lighter;
-      }
-
-    }
 
     &.primary {
-      @apply bg-blue text-white;
-      @apply hover:bg-blue-crayola;
+      @apply bg-gradient-to-r from-violet to-violet-russian text-white;
 
       &[disabled] {
-        @apply bg-gray-lighter text-gray-lightest;
+        @apply bg-gradient-to-r from-white-ghost to-white-ghost text-gray-magnolia;
       }
     }
 
     &.outline-primary {
-      @apply border-2 border-blue text-blue;
-
-      &:hover {
-        @apply border-blue-dark text-blue-dark;
-      }
+      @apply border-2 border-primary text-primary;
 
       &[disabled] {
-        @apply border-gray-lighter text-gray-lighter;
+        @apply border-gray-magnolia text-gray-magnolia;
       }
     }
 
     &.secondary {
-      @apply bg-blue-dark text-white hover:bg-dark-charcoal;
+      @apply bg-secondary text-primary;
 
       &[disabled] {
-        @apply bg-gray-lighter text-gray-lightest;
+        @apply bg-white-ghost text-gray-magnolia;
       }
     }
 
     &.outline-secondary {
-      @apply border-2 border-blue-dark text-blue-dark;
-
-      &:hover {
-        @apply border-dark-charcoal text-dark-charcoal;
-      }
+      @apply border-2 border-secondary text-primary;
 
       &[disabled] {
-        @apply border-gray-lighter text-gray-lighter;
+        @apply border-gray-magnolia text-gray-magnolia;
+      }
+    }
+
+    &.aqua {
+      @apply bg-aqua text-primary;
+
+      &[disabled] {
+        @apply bg-white-ghost text-gray-magnolia;
+      }
+    }
+
+    &.outline-aqua {
+      @apply border-2 border-aqua text-primary;
+
+      &[disabled] {
+        @apply border-gray-magnolia text-gray-magnolia;
+      }
+    }
+
+    &.gray-magnolia {
+      @apply bg-gray-magnolia text-primary;
+
+      &[disabled] {
+        @apply bg-white-ghost text-gray-magnolia;
+      }
+    }
+
+    &.outline-gray-magnolia {
+      @apply border-2 border-gray-magnolia text-primary;
+
+      &[disabled] {
+        @apply border-gray-magnolia text-gray-magnolia;
       }
     }
 

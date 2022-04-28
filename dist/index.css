@@ -2247,15 +2247,15 @@ nav .navbar ul li.submenu ul li:hover span {
   --tw-bg-opacity: 1;
   background-color: rgb(87 95 101 / var(--tw-bg-opacity));
 }
-.bg-gray-light {
+.bg-gray-old {
   --tw-bg-opacity: 1;
   background-color: rgb(130 143 150 / var(--tw-bg-opacity));
 }
-.bg-gray-lighter {
+.bg-gray-cool {
   --tw-bg-opacity: 1;
   background-color: rgb(165 177 184 / var(--tw-bg-opacity));
 }
-.bg-gray-lightest {
+.bg-gray-magnolia {
   --tw-bg-opacity: 1;
   background-color: rgb(230 237 240 / var(--tw-bg-opacity));
 }
@@ -2377,7 +2377,7 @@ nav .navbar ul li.submenu ul li:hover span {
   --tw-text-opacity: 1;
   color: rgb(234 52 52 / var(--tw-text-opacity));
 }
-.text-gray-lighter {
+.text-gray-cool {
   --tw-text-opacity: 1;
   color: rgb(165 177 184 / var(--tw-text-opacity));
 }
@@ -3076,7 +3076,7 @@ pre[class*="language-"] {
   font-weight: 700 !important;
 }
 .fc-daygrid-day {
-  border-color: text-gray-lighter !important;
+  border-color: text-gray-cool !important;
 }
 .fc-theme-standard .fc-scrollgrid {
     border-width: 0 !important;
