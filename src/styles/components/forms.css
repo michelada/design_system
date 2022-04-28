@@ -31,8 +31,9 @@
     }
 
     &:active,
-    &:focus {
-      @apply border-gray-cool ring-0;
+    &:focus,
+    &:focus-visible {
+      @apply border-primary ring-0;
     }
 
     &[disabled] {
@@ -43,7 +44,7 @@
   select {
     @apply block w-full rounded-lg border-gray-cool shadow-sm;
 
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%233264FA' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23666170' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
     background-size: 1.7em;
 
     &:hover {
@@ -53,6 +54,10 @@
     &:active,
     &:focus {
       @apply border-gray-cool ring-0;
+    }
+
+    & option {
+      @apply font-poppins text-lg;
     }
   }
 }
