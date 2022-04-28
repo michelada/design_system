@@ -6,8 +6,8 @@ module.exports = {
   darkMode: 'media',
   theme: {
     fontFamily: {
-      sans: ['Noto Sans'],
-      avant: ['AvantGarde']
+      poppins: ['Poppins'],
+      raleway: ['Raleway']
     },
     colors: {
       transparent: 'transparent',
@@ -48,7 +48,7 @@ module.exports = {
         '120': '30rem',
       },
       fontSize: { // https://type-scale.com/ using major third type scale
-        'sm': '.8rem',
+        'sm': '.8125rem',
         'md': '.875rem',
         'lg': '1.25rem',
         'xl': '1.563rem',
