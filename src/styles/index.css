@@ -20,11 +20,11 @@
 @import 'components/cards';
 
 @import 'components/brand';
-@import 'components/description_container.css';
-@import 'components/footer.css';
-@import 'components/header.css';
-@import 'components/pto.css';
-@import 'components/table.css';
+@import 'components/description_container';
+@import 'components/footer';
+@import 'components/header';
+@import 'components/pto';
+@import 'components/table';
 
 @import 'vendor/prism';
 @import 'vendor/fullcalendar';
