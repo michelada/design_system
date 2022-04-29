@@ -2338,7 +2338,7 @@ body.collapsed > aside nav a span {
     line-height: 1.5rem;
   }
 }
-.navbar {
+.navbar-gradient {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #38164E;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(56 22 78 / 0));
@@ -2348,31 +2348,31 @@ body.collapsed > aside nav a span {
   width: 100%;
 }
 @media (min-width: 640px) {
-  .navbar {
+  .navbar-gradient {
     max-width: 640px;
   }
 }
 @media (min-width: 768px) {
-  .navbar {
+  .navbar-gradient {
     max-width: 768px;
   }
 }
 @media (min-width: 1024px) {
-  .navbar {
+  .navbar-gradient {
     max-width: 1024px;
   }
 }
 @media (min-width: 1280px) {
-  .navbar {
+  .navbar-gradient {
     max-width: 1280px;
   }
 }
 @media (min-width: 1536px) {
-  .navbar {
+  .navbar-gradient {
     max-width: 1536px;
   }
 }
-.navbar {
+.navbar-gradient {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -2381,14 +2381,14 @@ body.collapsed > aside nav a span {
   align-items: center;
   justify-content: space-between;
 }
-.navbar .brand {
+.navbar-gradient .brand {
   padding: 1.5rem;
 }
-.navbar .brand img {
+.navbar-gradient .brand img {
   display: inline-block;
   max-height: 1.5rem;
 }
-.navbar .avatar {
+.navbar-gradient .avatar {
   border-radius: 9999px;
   color: rgb(65 62 71 / var(--tw-text-opacity));
   text-align: center;
@@ -2397,100 +2397,100 @@ body.collapsed > aside nav a span {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.navbar .close-toggle {
+.navbar-gradient .close-toggle {
   cursor: pointer;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
-  .navbar .close-toggle {
+  .navbar-gradient .close-toggle {
     display: none;
   }
 }
-.navbar .close-toggle .action-wrapper {
+.navbar-gradient .close-toggle .action-wrapper {
   margin: 1rem;
   display: grid;
   min-height: 40px;
   min-width: 40px;
   place-items: center;
 }
-.navbar .close-toggle .action-wrapper .avatar {
+.navbar-gradient .close-toggle .action-wrapper .avatar {
   height: 2.5rem;
   width: 2.5rem;
 }
-.navbar .nav-links {
+.navbar-gradient .nav-links {
   position: absolute;
   top: 72px;
   width: 100%;
   flex-basis: 100%;
 }
 @media (min-width: 768px) {
-  .navbar .nav-links {
+  .navbar-gradient .nav-links {
     position: static;
     display: block;
     width: auto;
     flex-basis: auto;
   }
 }
-.navbar .nav-links > ul {
+.navbar-gradient .nav-links > ul {
   align-items: center;
 }
 @media (min-width: 768px) {
-  .navbar .nav-links > ul {
+  .navbar-gradient .nav-links > ul {
     display: flex;
   }
-  .navbar .nav-links > ul li {
+  .navbar-gradient .nav-links > ul li {
     display: inline-block;
   }
 }
-.navbar .nav-links > ul li .nav-link {
+.navbar-gradient .nav-links > ul li .nav-link {
   display: flex;
 }
-.navbar .nav-links > ul li .nav-link > :not([hidden]) ~ :not([hidden]) {
+.navbar-gradient .nav-links > ul li .nav-link > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.navbar .nav-links > ul li .nav-link {
+.navbar-gradient .nav-links > ul li .nav-link {
   padding: 1.5rem;
   color: rgb(255 255 255 / 0.8);
   --tw-text-opacity: 1;
   color: rgb(241 207 90 / var(--tw-text-opacity));
 }
-.navbar .nav-links > ul li .nav-link:hover {
+.navbar-gradient .nav-links > ul li .nav-link:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
-  .navbar .nav-links > ul li .nav-link > :not([hidden]) ~ :not([hidden]) {
+  .navbar-gradient .nav-links > ul li .nav-link > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0px * var(--tw-space-x-reverse));
     margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
   }
 }
-.navbar .nav-links > ul li.my-profile {
+.navbar-gradient .nav-links > ul li.my-profile {
   position: relative;
 }
-.navbar .nav-links > ul li.my-profile a {
+.navbar-gradient .nav-links > ul li.my-profile a {
   padding: 1.5rem;
 }
 @media (min-width: 768px) {
-  .navbar .nav-links > ul li.my-profile a {
+  .navbar-gradient .nav-links > ul li.my-profile a {
     padding: 1rem;
   }
 }
-.navbar .nav-links > ul li.my-profile .avatar {
+.navbar-gradient .nav-links > ul li.my-profile .avatar {
   height: 1.5rem;
   width: 1.5rem;
   line-height: 1.5rem;
 }
 @media (min-width: 768px) {
-  .navbar .nav-links > ul li.my-profile .avatar {
+  .navbar-gradient .nav-links > ul li.my-profile .avatar {
     height: 2.5rem;
     width: 2.5rem;
   }
 }
-.navbar .nav-links > ul li.my-profile .submenu {
+.navbar-gradient .nav-links > ul li.my-profile .submenu {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -2500,28 +2500,28 @@ body.collapsed > aside nav a span {
   --tw-gradient-to: #712384;
 }
 @media (min-width: 768px) {
-  .navbar .nav-links > ul li.my-profile .submenu {
+  .navbar-gradient .nav-links > ul li.my-profile .submenu {
     position: absolute;
     right: 0px;
   }
-  .navbar .nav-links > ul li.my-profile .submenu li {
+  .navbar-gradient .nav-links > ul li.my-profile .submenu li {
     display: block;
   }
 }
-.navbar .nav-links > ul li.my-profile .submenu .nav-link {
+.navbar-gradient .nav-links > ul li.my-profile .submenu .nav-link {
   display: flex;
 }
-.navbar .nav-links > ul li.my-profile .submenu .nav-link > :not([hidden]) ~ :not([hidden]) {
+.navbar-gradient .nav-links > ul li.my-profile .submenu .nav-link > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(1.5rem * var(--tw-space-x-reverse));
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
-.navbar .nav-links > ul li.my-profile .submenu .nav-link {
+.navbar-gradient .nav-links > ul li.my-profile .submenu .nav-link {
   padding: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(241 207 90 / var(--tw-text-opacity));
 }
-.navbar .nav-links > ul li.my-profile .submenu .nav-link:hover {
+.navbar-gradient .nav-links > ul li.my-profile .submenu .nav-link:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(56 22 78 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
