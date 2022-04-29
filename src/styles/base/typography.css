@@ -105,6 +105,25 @@
       @apply font-bold font-poppins text-gray-old text-md;
     }
   }
+
+  table.collapsable-table,
+  .tbl-collapsable-mbl {
+    tbody {
+      tr {
+        &:first-child {
+          td {
+            &:first-child {
+              @apply font-raleway font-black text-white text-lg;
+
+            span {
+              @apply text-gray-manatee;
+            }
+            }
+          }
+        }
+      }
+    }
+  }
   
   .font-bold, .font-extrabold, .font-black {
     @apply text-gray;
