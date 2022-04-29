@@ -1,4 +1,9 @@
-.michelada {
-  @apply bg-red text-white p-2 font-bold hover:bg-violet-russian;
-}
+@layer components {
+  .michelada {
+    @apply bg-red text-white p-2 font-bold hover:bg-violet-russian;
+  }
 
+  .norden-gradient {
+    @apply bg-gradient-to-r from-violet-russian to-primary text-secondary;
+  }
+}
