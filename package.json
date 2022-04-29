@@ -1,7 +1,7 @@
 {
   "version": "2.2.0",
   "author": "michelada.io",
-  "name": "@micheladaio/sips-and-bits",
+  "name": "@micheladaio/sips-and-bits.css",
   "scripts": {
     "start": "webpack serve --mode=development --open",
     "build": "export NODE_ENV=production && webpack",
