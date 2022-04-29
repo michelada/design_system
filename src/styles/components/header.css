@@ -1,5 +1,5 @@
 .navbar {
-  @apply bg-primary;
+  @apply bg-gradient-to-r from-violet-russian to-primary text-secondary;
   @apply container mx-auto flex justify-between items-center flex-wrap relative;
 
   .brand {
@@ -12,7 +12,7 @@
 
   .avatar {
     @apply rounded-full;
-    @apply bg-primary font-bold text-white text-center leading-9;
+    @apply font-bold text-white text-center leading-9;
   }
 
   .close-toggle {
@@ -28,7 +28,7 @@
   }
 
   .nav-links {
-    @apply basis-full md:basis-auto bg-primary absolute md:static w-full md:w-auto top-[72px] md:block;
+    @apply basis-full md:basis-auto absolute md:static w-full md:w-auto top-[72px] md:block;
 
     > ul {
       @apply md:flex items-center;
@@ -37,12 +37,12 @@
         @apply md:inline-block;
 
         .nav-link {
-          @apply flex space-x-6 md:space-x-0 text-white/80 p-6 hover:bg-violet-russian hover:text-white;
+          @apply flex space-x-6 md:space-x-0 text-white/80 p-6 text-secondary hover:text-white;
         }
       }
 
       li.my-profile {
-        @apply bg-violet-russian relative;
+        @apply relative;
 
         a {
           @apply p-6 md:p-4;
