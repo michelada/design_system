@@ -1139,7 +1139,8 @@
           <header>
             <h1 class="text-violet-russian">Tables</h1>
           </header>
-          <table class="w-full table-fixed">
+            <h3 class="text-violet-russian">Collapsable Tables</h3>
+          <table class="w-full table-fixed collapsable-table">
             <thead>
               <tr>
                 <th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 01</th>
@@ -1151,7 +1152,7 @@
             </thead>
             <tr class="w-full bg-violet-russian text-white ">
               <td colspan="4" class="text-white py-4 pl-4">
-                Sección colapsable focus
+                Sección colapsable
               </td>
               <td class="flex justify-end items-center h-14">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-4" fill="none" viewBox="0 0 24 24"
@@ -1252,7 +1253,7 @@
             </tr>
           </table>
   <pre class="language-markup rounded-xl flex-grow"><code>
-  &lt;table class="w-full table-fixed">
+  &lt;table class="w-full table-fixed collapsable-table">
     &lt;thead>
       &lt;tr>
         &lt;th class=" text-left text-gray-cool font-normal pl-4 py-4 ">Titulo 01&lt;/th>
@@ -1330,7 +1331,9 @@
     &lt;/tr>
   &lt;/table>
   </code></pre>
-  
+
+
+          <h3 class="text-violet-russian">Normal Tables</h3>  
           <table class="w-full table-fixed mt-10">
             <thead>
               <tr>
@@ -1486,9 +1489,8 @@
     &lt;table class="tbl-collapsable-mbl">
       &lt;tr class="container-expand isSelected" data-toggle="collapse">
         &lt;td>
-          &lt;p class="font-bold ">La Barra
+            La Barra
             &lt;span>6 personas&lt;/span>
-          &lt;/p>
           &lt;input id="collapsible" checked type="checkbox">
           &lt;img alt="open" class="icon-see-less" src="assets/img/tbl-collapse-mbl/icon-less.svg" />
         &lt;/td>
