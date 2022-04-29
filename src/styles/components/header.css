@@ -53,14 +53,14 @@
         }
 
         .submenu {
-          @apply bg-violet-russian md:absolute md:right-0 w-max;
+          @apply bg-gradient-to-r from-violet-russian to-primary md:absolute md:right-0 w-max;
 
           li {
             @apply md:block;
           }
 
           .nav-link {
-            @apply flex space-x-6 p-6 text-white/80 hover:bg-violet-russian hover:text-white; 
+            @apply flex space-x-6 p-6 text-secondary hover:bg-violet-russian hover:text-white; 
           }
         }
       }
