@@ -11,7 +11,7 @@
     }
 
     &.primary {
-      @apply bg-gradient-to-r from-violet to-violet-russian text-white;
+      @apply bg-gradient-to-r from-violet-russian to-primary text-white;
 
       &[disabled] {
         @apply bg-gradient-to-r from-white-ghost to-white-ghost text-gray-magnolia;
