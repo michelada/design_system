@@ -60,15 +60,16 @@
 .fc-day {
   @apply bg-white-ghost !important;
 
+  .fc-col-header-cell-cushion {
+    @apply text-gray-manatee !important;
+  }
+
   &:hover {
-    @apply bg-violet !important; 
+    @apply bg-primary !important; 
 
-    .fc-daygrid-day-number {
+    .fc-daygrid-day-number,
+    .fc-col-header-cell-cushion {
       @apply text-white !important;
-    }
-
-    .fc-col-header-cell-cushion, .fc-scrollgrid-sync-inner {
-      @apply bg-violet text-white !important;
     }
   }
 }
@@ -87,6 +88,10 @@
 
 .fc-day-other {
   @apply bg-fullcalendar-event-3 !important;
+
+  &:hover {
+    @apply text-red !important;
+  }
 }
 
 .fc-col-header-cell > .fc-scrollgrid-sync-inner > * {
