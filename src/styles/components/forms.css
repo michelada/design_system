@@ -23,7 +23,7 @@
     }
   }
 
-  input[type="text"] {
+  input[type="text"], input[type="password"], input[type="email"] {
     @apply rounded-lg border-gray-cool text-gray-cool;
 
     &:hover {
@@ -157,7 +157,7 @@
         @apply mb-4 lg:mb-0
       }
   
-      input[type="text"] {
+      input[type="text"], input[type="password"], input[type="email"] {
         @apply border-gray-magnolia;
   
         &::placeholder {
