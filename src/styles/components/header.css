@@ -1,6 +1,5 @@
 @layer components {
-  .navbar-gradient {
-    @apply bg-gradient-to-r from-violet-russian to-primary text-secondary;
+  .navbar {
     @apply container mx-auto flex justify-between items-center flex-wrap relative;
 
     .brand {
