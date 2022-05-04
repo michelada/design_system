@@ -83,11 +83,11 @@
   }
 
   p {
-    @apply font-poppins text-md;
+    @apply font-poppins text-base;
   }
 
   a {
-    @apply text-primary text-md;
+    @apply text-primary text-base;
   }
 
   small {
@@ -95,14 +95,14 @@
   }
 
   li {
-    @apply font-poppins text-md;
+    @apply font-poppins text-base;
     
     &.title {
       @apply font-black font-raleway text-violet-russian text-lg;
     }
 
     &.subtitle {
-      @apply font-bold font-poppins text-gray-old text-md;
+      @apply font-bold font-poppins text-gray-old text-base;
     }
   }
 

@@ -50,6 +50,7 @@ module.exports = {
       fontSize: { // https://type-scale.com/ using major third type scale
         'sm': '.8125rem',
         'md': '.875rem',
+        'base': '1rem',
         'lg': '1.25rem',
         'xl': '1.563rem',
         '2xl': '1.953rem',
