@@ -1768,6 +1768,10 @@ input[type="text"].invalid {
   --tw-text-opacity: 1;
   color: rgb(241 207 90 / var(--tw-text-opacity));
 }
+.icon, .left-icon, .input-icon, .right-icon {
+  --tw-text-opacity: 1;
+  color: rgb(113 35 132 / var(--tw-text-opacity));
+}
 .navbar {
   width: 100%;
 }
