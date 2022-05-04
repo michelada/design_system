@@ -6,4 +6,8 @@
   .norden-gradient {
     @apply bg-gradient-to-r from-violet-russian to-primary text-secondary;
   }
+
+  .icon, .left-icon, .input-icon, .right-icon {
+    @apply text-primary;
+  }
 }
