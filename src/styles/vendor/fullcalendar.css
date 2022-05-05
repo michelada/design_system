@@ -5,7 +5,8 @@
 }
 
 .fc-toolbar-title {
-  @apply text-xl !important;
+  @apply text-lg text-primary px-8 md:text-xl !important;
+
 }
 
 .fc-toolbar {
@@ -14,10 +15,6 @@
   .fc-button-primary {
     @apply bg-transparent border-0 !important;
   }
-}
-
-.fc-daygrid-day {
-  border-color: text-white !important;
 }
 
 .fc-theme-standard {
@@ -29,6 +26,15 @@
     }
   }
 }
+
+.fc-scrollgrid tbody {
+  @apply drop-shadow-xl;
+}
+
+.fc .fc-highlight {
+  @apply bg-primary !important;
+}
+
 
 /* .fc-h-event.bg-fullcalendar-event-1 {
   background-color: var(--fullcalendar-event-1);
@@ -46,15 +52,15 @@
 }*/
 
 .fc-daygrid-day-events > :nth-child(4n+1) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-fullcalendar-event-1;
+  @apply bg-aqua;
 }
 
 .fc-daygrid-day-events > :nth-child(4n+2) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-fullcalendar-event-2;
+  @apply bg-aqua;
 }
 
 .fc-daygrid-day-events > :nth-child(4n+3) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-fullcalendar-event-3;
+  @apply bg-aqua;
 }
 
 .fc-day {
@@ -65,7 +71,7 @@
   }
 
   &:hover {
-    @apply bg-primary !important; 
+    @apply bg-primary opacity-50 text-white !important; 
 
     .fc-daygrid-day-number,
     .fc-col-header-cell-cushion {
@@ -94,6 +100,37 @@
   }
 }
 
+.fc-icon {
+  @apply text-primary !important;
+}
+
 .fc-col-header-cell > .fc-scrollgrid-sync-inner > * {
   @apply text-white font-normal;
+}
+
+.fc-scrollgrid-sync-table tbody tr td {
+  @apply rounded-sm border-gray-manatee border-[3px] !important;
+}
+
+.fc-scrollgrid-sync-table tbody tr:first-child td:first-child {
+  @apply rounded-tl-lg;
+}
+.fc-scrollgrid-sync-table tbody tr:first-child td:last-child {
+  @apply rounded-tr-lg;
+}
+.fc-scrollgrid-sync-table tbody tr:last-child td:last-child {
+  @apply rounded-br-lg;
+}
+.fc-scrollgrid-sync-table tbody tr:last-child td:first-child {
+  @apply rounded-bl-lg;
+}
+.fc-scrollgrid-sync-table tbody tr:first-child {
+  @apply rounded-t-lg;
+}
+.fc-scrollgrid-sync-table tbody tr:last-child {
+  @apply rounded-b-lg;
+}
+
+.fc-scroller.fc-scroller-liquid-absolute {
+  @apply rounded-lg;
 }
