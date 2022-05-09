@@ -2952,10 +2952,12 @@ pre[class*="language-"] {
 .fc-daygrid-day-events > :nth-child(4n+2) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
   --tw-bg-opacity: 1;
   background-color: rgb(109 214 196 / var(--tw-bg-opacity));
+  opacity: 0.7;
 }
 .fc-daygrid-day-events > :nth-child(4n+3) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
   --tw-bg-opacity: 1;
   background-color: rgb(109 214 196 / var(--tw-bg-opacity));
+  opacity: 0.4;
 }
 .fc-day {
   --tw-bg-opacity: 1 !important;
@@ -3006,7 +3008,7 @@ pre[class*="language-"] {
 }
 .fc-scrollgrid-sync-table tbody tr td {
   border-radius: 0.125rem !important;
-  border-width: 3px !important;
+  border-width: 2px !important;
   --tw-border-opacity: 1 !important;
   border-color: rgb(170 165 184 / var(--tw-border-opacity)) !important;
 }
