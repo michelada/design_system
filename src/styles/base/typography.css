@@ -55,27 +55,15 @@
   }
 
   h1 {
-    @apply text-2xl;
-
-    @screen lg {
-      @apply text-3xl;
-    }    
+    @apply text-3xl;
   }
 
   h2 {
-    @apply text-xl;
-
-    @screen lg {
-      @apply text-2xl;
-    }   
+    @apply text-2xl;
   }
 
   h3 {
-    @apply text-lg;
-
-    @screen lg {
-      @apply text-xl;
-    }  
+    @apply text-xl;
   }
 
   h4 {
@@ -90,7 +78,7 @@
     @apply text-primary text-base;
   }
 
-  small {
+  small, .small {
     @apply text-sm;
   }
 
