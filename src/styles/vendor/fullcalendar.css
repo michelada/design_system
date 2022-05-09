@@ -56,11 +56,11 @@
 }
 
 .fc-daygrid-day-events > :nth-child(4n+2) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-aqua;
+  @apply bg-aqua opacity-70;
 }
 
 .fc-daygrid-day-events > :nth-child(4n+3) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-aqua;
+  @apply bg-aqua opacity-40;
 }
 
 .fc-day {
@@ -109,7 +109,7 @@
 }
 
 .fc-scrollgrid-sync-table tbody tr td {
-  @apply rounded-sm border-gray-manatee border-[3px] !important;
+  @apply rounded-sm border-gray-manatee border-2 !important;
 }
 
 .fc-scrollgrid-sync-table tbody tr:first-child td:first-child {
