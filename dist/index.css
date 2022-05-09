@@ -515,32 +515,14 @@ button {
   font-weight: 800;
 }
 h1 {
-  font-size: 1.953rem;
+  font-size: 2.5rem;
 }
-@media (min-width: 1024px) {
-
-  h1 {
-    font-size: 2.441rem;
-  }
-    }
 h2 {
-  font-size: 1.563rem;
+  font-size: 2rem;
 }
-@media (min-width: 1024px) {
-
-  h2 {
-    font-size: 1.953rem;
-  }
-    }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
-@media (min-width: 1024px) {
-
-  h3 {
-    font-size: 1.563rem;
-  }
-    }
 h4 {
   font-size: 1.25rem;
 }
@@ -553,7 +535,7 @@ a {
   --tw-text-opacity: 1;
   color: rgb(113 35 132 / var(--tw-text-opacity));
 }
-small {
+small, .small {
   font-size: .8125rem;
 }
 li {
@@ -2907,7 +2889,7 @@ pre[class*="language-"] {
 }
 @media (min-width: 768px) {
   .fc-toolbar-title {
-    font-size: 1.563rem !important;
+    font-size: 1.5rem !important;
   }
 }
 .fc-toolbar {
