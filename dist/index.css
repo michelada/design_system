@@ -753,10 +753,10 @@ select option {
   cursor: pointer;
   border-radius: 9999px;
   border-width: 1px;
-  padding-left: 2.25rem;
-  padding-right: 2.25rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
   font-family: Raleway;
   font-size: 1.25rem;
   font-weight: 800;
@@ -872,6 +872,25 @@ select option {
   border-color: rgb(235 230 240 / var(--tw-border-opacity));
   --tw-text-opacity: 1;
   color: rgb(235 230 240 / var(--tw-text-opacity));
+}
+.btn.icon {
+  display: flex;
+  display: inline-flex;
+  align-items: center;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(113 35 132 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(113 35 132 / var(--tw-text-opacity));
+}
+.btn.icon svg {
+  margin-right: 0.5rem;
+}
+.btn.icon[disabled] {
+  --tw-border-opacity: 1;
+  border-color: rgb(113 35 132 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(113 35 132 / var(--tw-text-opacity));
 }
 input[type="text"].valid {
   --tw-border-opacity: 1;
