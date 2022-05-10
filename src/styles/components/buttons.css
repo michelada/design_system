@@ -1,6 +1,6 @@
 @layer components {
   .btn {
-    @apply border rounded-full py-1 px-10 font-extrabold font-raleway text-lg w-full cursor-pointer;
+    @apply border rounded-full py-1 px-9 font-extrabold font-raleway text-lg w-full cursor-pointer;
 
     @screen lg {
       @apply w-auto;
