@@ -86,6 +86,10 @@
   @apply rounded-lg;
 }
 
+.fc-col-header-cell.fc-day {
+  @apply border-solid border border-transparent;
+}
+
 .fc-col-header-cell.fc-day .fc-scrollgrid-sync-inner {
   .fc-col-header-cell-cushion {
     @apply text-gray-old bg-transparent;
