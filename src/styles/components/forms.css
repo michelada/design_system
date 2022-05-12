@@ -1,6 +1,6 @@
 @layer base {
   label {
-    @apply font-bold text-md mb-2;
+    @apply font-medium text-base mb-2;
   }
 
   input[type="radio"] {
