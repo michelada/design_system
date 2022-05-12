@@ -91,8 +91,9 @@
 }
 
 .fc-col-header-cell.fc-day .fc-scrollgrid-sync-inner {
+
   .fc-col-header-cell-cushion {
-    @apply text-gray-old bg-transparent;
+    @apply text-gray-manatee bg-transparent;
   }
 
   &:hover {
