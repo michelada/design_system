@@ -36,15 +36,15 @@
 }
 
 .fc-daygrid-day-events > :nth-child(4n+1) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-aqua;
+  @apply bg-aqua text-gray rounded-full border-0 !important;
 }
 
 .fc-daygrid-day-events > :nth-child(4n+2) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-aqua opacity-70;
+  @apply bg-aqua opacity-70 text-gray rounded-full border-0 !important;
 }
 
 .fc-daygrid-day-events > :nth-child(4n+3) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
-  @apply bg-aqua opacity-40;
+  @apply bg-aqua opacity-40 text-gray rounded-full border-0 !important;
 }
 
 
