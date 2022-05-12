@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if(calendarEl !== null) {
         var calendar = new Calendar(calendarEl, {
         plugins: [ dayGridPlugin, timeGridPlugin, listPlugin ],
+        locale: "en",
         initialView: 'dayGridMonth',
         dayHeaders: true,
         headerToolbar: {
