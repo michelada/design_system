@@ -1379,7 +1379,7 @@ input[type="text"].invalid {
   color: rgb(65 62 71 / var(--tw-text-opacity));
   cursor: pointer;
   --tw-bg-opacity: 1;
-  background-color: rgb(248 245 250 / var(--tw-bg-opacity));
+  background-color: rgb(235 230 240 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   font-weight: 700;
