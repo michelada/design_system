@@ -12,23 +12,18 @@
   } 
 
   .nav-item {
-    @apply bg-gray-magnolia cursor-pointer font-bold py-3 text-black md:px-12;
-    @apply flex-1 lg:flex-initial justify-center;
-    @apply flex space-x-2;
-    @apply hover:bg-gray-cool hover:text-violet-russian;
-    @apply relative; /* for the stretch-link usage */
+    @apply bg-gray-magnolia cursor-pointer font-medium py-3 text-primary md:px-12;
+    @apply flex-1 relative space-x-2 lg:flex-initial justify-center;
    
     &:hover {
-      a {
-        @apply bg-gray-cool !important;
-      }
+      @apply bg-gray-manatee text-violet-russian;
     }
 
     &.active {
-      @apply bg-violet-russian text-white !important;
+      @apply bg-violet-russian text-white font-bold;
 
       a {
-        @apply bg-violet-russian text-white !important;
+        @apply bg-violet-russian text-white font-bold;
       }
     }
    
