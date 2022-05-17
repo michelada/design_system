@@ -1376,15 +1376,14 @@ input[type="text"].invalid {
   display: block;
 }
 .nav-item {
-  color: rgb(65 62 71 / var(--tw-text-opacity));
   cursor: pointer;
   --tw-bg-opacity: 1;
   background-color: rgb(235 230 240 / var(--tw-bg-opacity));
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  font-weight: 700;
+  font-weight: 500;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(113 35 132 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
   .nav-item {
@@ -1393,47 +1392,41 @@ input[type="text"].invalid {
   }
 }
 .nav-item {
+  position: relative;
   flex: 1 1 0%;
   justify-content: center;
-}
-@media (min-width: 1024px) {
-  .nav-item {
-    flex: 0 1 auto;
-  }
-}
-.nav-item {
-  display: flex;
 }
 .nav-item > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
+@media (min-width: 1024px) {
+  .nav-item {
+    flex: 0 1 auto;
+  }
+}
 .nav-item:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(139 133 153 / var(--tw-bg-opacity));
+  background-color: rgb(170 165 184 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(56 22 78 / var(--tw-text-opacity));
 }
-.nav-item {
-  position: relative;
-}
-/* for the stretch-link usage */
-.nav-item:hover a {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(139 133 153 / var(--tw-bg-opacity)) !important;
-}
 .nav-item.active {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(56 22 78 / var(--tw-bg-opacity)) !important;
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  color: rgb(65 62 71 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 22 78 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .nav-item.active a {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(56 22 78 / var(--tw-bg-opacity)) !important;
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  color: rgb(65 62 71 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 22 78 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .nav-item:first-of-type {
   border-top-left-radius: 0.5rem;
