@@ -12,7 +12,7 @@
   } 
 
   .nav-item {
-    @apply bg-gray-ghost cursor-pointer font-bold py-3 text-black md:px-12;
+    @apply bg-gray-magnolia cursor-pointer font-bold py-3 text-black md:px-12;
     @apply flex-1 lg:flex-initial justify-center;
     @apply flex space-x-2;
     @apply hover:bg-gray-cool hover:text-violet-russian;
