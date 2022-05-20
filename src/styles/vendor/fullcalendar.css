@@ -33,6 +33,10 @@
 
 .fc .fc-highlight {
   @apply bg-primary !important;
+
+  .fc-daygrid-day-number {
+    @apply text-white !important;
+  }
 }
 
 .fc-daygrid-day-events > :nth-child(4n+1) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
