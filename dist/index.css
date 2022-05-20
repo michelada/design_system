@@ -2923,6 +2923,10 @@ pre[class*="language-"] {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(113 35 132 / var(--tw-bg-opacity)) !important;
 }
+.fc .fc-highlight .fc-daygrid-day-number {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
 .fc-daygrid-day-events > :nth-child(4n+1) > .fc-daygrid-event > .fc-event-main > .fc-event-main-frame {
   border-radius: 9999px !important;
   border-width: 0px !important;
